@@ -29746,6 +29746,7 @@ function (_React$Component) {
     key: "render",
     value: function render() {
       return _react.default.createElement("div", null, _react.default.createElement("img", {
+        className: "logo",
         src: require("../images/logo.png")
       }), _react.default.createElement(_hamburger.default, null));
     }
@@ -29783,7 +29784,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58461" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59417" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

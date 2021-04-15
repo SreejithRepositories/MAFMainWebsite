@@ -7,7 +7,7 @@ class Header extends React.Component{
     render(){
         return (
         <div>
-        <img src = {require("../images/logo.png")}></img>
+        <img className = "logo" src = {require("../images/logo.png")}></img>
         <Hamburger/>
         </div>
         )

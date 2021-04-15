@@ -19,6 +19,7 @@ class Banner extends React.Component{
           timer: ''
         }
   this.timeOutMethod = this.timeOutMethod.bind(this)    
+  this.click = this.click.bind(this)
     }
     timeOutMethod(){
       if(this.state.counter == 4){
@@ -34,45 +35,51 @@ class Banner extends React.Component{
   componentDidMount(){
     this.state.timer = setInterval(this.timeOutMethod, 3000)
   }
+
+    click(){
+      alert("hi")
+    }
  
     render(){
         
-      var arr = [<img style ={{width: "25px", height: "25px", display: "inline-block", position: "absolute", left: "47%", top: "80%"}} src = {require("../images/carouselDot.png")}></img>,
-      <img style ={{width: "25px", height: "25px", display: "inline-block", position: "absolute", left: "50%", top: "80%"}} src = {require("../images/carouselDot.png")}></img>,
-      <img style ={{width: "25px", height: "25px", display: "inline-block", position: "absolute", left: "53%",top: "80%"}} src = {require("../images/carouselDot.png")}></img>,
-      <img style ={{width: "25px", height: "25px", display: "inline-block", position: "absolute", left: "56%",top: "80%"}} src = {require("../images/carouselDot.png")}></img>]
+      var arr = [<img style ={{width: "18px", height: "15px", display: "inline-block", position: "absolute", left: "47%", top: "80%"}} src = {require("../images/carouselDot.png")}></img>,
+      <img style ={{width: "18px", height: "18px", display: "inline-block", position: "absolute", left: "50%", top: "80%"}} src = {require("../images/carouselDot.png")}></img>,
+      <img style ={{width: "18px", height: "18px", display: "inline-block", position: "absolute", left: "53%",top: "80%"}} src = {require("../images/carouselDot.png")}></img>,
+      <img style ={{width: "18px", height: "18px", display: "inline-block", position: "absolute", left: "56%",top: "80%"}} src = {require("../images/carouselDot.png")}></img>]
       
       if(this.state.counter == 1){
-        var arr = [<img style ={{width: "25px", height: "25px", display: "inline-block", position: "absolute", left: "47%", top: "80%"}} src = {require("../images/carouselDot_red.png")}></img>,
-      <img style ={{width: "25px", height: "25px", display: "inline-block", position: "absolute", left: "50%", top: "80%"}} src = {require("../images/carouselDot.png")}></img>,
-      <img style ={{width: "25px", height: "25px", display: "inline-block", position: "absolute", left: "53%",top: "80%"}} src = {require("../images/carouselDot.png")}></img>,
-      <img style ={{width: "25px", height: "25px", display: "inline-block", position: "absolute", left: "56%",top: "80%"}} src = {require("../images/carouselDot.png")}></img>]
+        var arr = [<img style ={{width: "20px", height: "20px", display: "inline-block", position: "absolute", left: "47%", top: "80%"}} src = {require("../images/carouselDot_red.png")}></img>,
+      <img style ={{width: "20px", height: "20px", display: "inline-block", position: "absolute", left: "50%", top: "80%"}} src = {require("../images/carouselDot.png")}></img>,
+      <img style ={{width: "20px", height: "20px", display: "inline-block", position: "absolute", left: "53%",top: "80%"}} src = {require("../images/carouselDot.png")}></img>,
+      <img style ={{width: "20px", height: "20px", display: "inline-block", position: "absolute", left: "56%",top: "80%"}} src = {require("../images/carouselDot.png")}></img>]
       }
       else if(this.state.counter == 2){
-        var arr = [<img style ={{width: "25px", height: "25px", display: "inline-block", position: "absolute", left: "47%", top: "80%"}} src = {require("../images/carouselDot.png")}></img>,
-      <img style ={{width: "25px", height: "25px", display: "inline-block", position: "absolute", left: "50%", top: "80%"}} src = {require("../images/carouselDot_red.png")}></img>,
-      <img style ={{width: "25px", height: "25px", display: "inline-block", position: "absolute", left: "53%",top: "80%"}} src = {require("../images/carouselDot.png")}></img>,
-      <img style ={{width: "25px", height: "25px", display: "inline-block", position: "absolute", left: "56%",top: "80%"}} src = {require("../images/carouselDot.png")}></img>]
+        var arr = [<img style ={{width: "20px", height: "20px", display: "inline-block", position: "absolute", left: "47%", top: "80%"}} src = {require("../images/carouselDot.png")}></img>,
+      <img style ={{width: "20px", height: "20px", display: "inline-block", position: "absolute", left: "50%", top: "80%"}} src = {require("../images/carouselDot_red.png")}></img>,
+      <img style ={{width: "20px", height: "20px", display: "inline-block", position: "absolute", left: "53%",top: "80%"}} src = {require("../images/carouselDot.png")}></img>,
+      <img style ={{width: "20px", height: "20px", display: "inline-block", position: "absolute", left: "56%",top: "80%"}} src = {require("../images/carouselDot.png")}></img>]
       }
       else if(this.state.counter == 3){
-        var arr = [<img style ={{width: "25px", height: "25px", display: "inline-block", position: "absolute", left: "47%", top: "80%"}} src = {require("../images/carouselDot.png")}></img>,
-        <img style ={{width: "25px", height: "25px", display: "inline-block", position: "absolute", left: "50%", top: "80%"}} src = {require("../images/carouselDot.png")}></img>,
-        <img style ={{width: "25px", height: "25px", display: "inline-block", position: "absolute", left: "53%",top: "80%"}} src = {require("../images/carouselDot_red.png")}></img>,
-        <img style ={{width: "25px", height: "25px", display: "inline-block", position: "absolute", left: "56%",top: "80%"}} src = {require("../images/carouselDot.png")}></img>]
+        var arr = [<img style ={{width: "20px", height: "20px", display: "inline-block", position: "absolute", left: "47%", top: "80%"}} src = {require("../images/carouselDot.png")}></img>,
+        <img style ={{width: "20px", height: "20px", display: "inline-block", position: "absolute", left: "50%", top: "80%"}} src = {require("../images/carouselDot.png")}></img>,
+        <img style ={{width: "20px", height: "20px", display: "inline-block", position: "absolute", left: "53%",top: "80%"}} src = {require("../images/carouselDot_red.png")}></img>,
+        <img style ={{width: "20px", height: "20px", display: "inline-block", position: "absolute", left: "56%",top: "80%"}} src = {require("../images/carouselDot.png")}></img>]
       }
       else if(this.state.counter == 4){
-        var arr = [<img style ={{width: "25px", height: "25px", display: "inline-block", position: "absolute", left: "47%", top: "80%"}} src = {require("../images/carouselDot.png")}></img>,
-      <img style ={{width: "25px", height: "25px", display: "inline-block", position: "absolute", left: "50%", top: "80%"}} src = {require("../images/carouselDot.png")}></img>,
-      <img style ={{width: "25px", height: "25px", display: "inline-block", position: "absolute", left: "53%",top: "80%"}} src = {require("../images/carouselDot.png")}></img>,
-      <img style ={{width: "25px", height: "25px", display: "inline-block", position: "absolute", left: "56%",top: "80%"}} src = {require("../images/carouselDot_red.png")}></img>]
+        var arr = [<img style ={{width: "20px", height: "20px", display: "inline-block", position: "absolute", left: "47%", top: "80%"}} src = {require("../images/carouselDot.png")}></img>,
+      <img style ={{width: "20px", height: "20px", display: "inline-block", position: "absolute", left: "50%", top: "80%"}} src = {require("../images/carouselDot.png")}></img>,
+      <img style ={{width: "20px", height: "20px", display: "inline-block", position: "absolute", left: "53%",top: "80%"}} src = {require("../images/carouselDot.png")}></img>,
+      <img style ={{width: "20px", height: "20px", display: "inline-block", position: "absolute", left: "56%",top: "80%"}} src = {require("../images/carouselDot_red.png")}></img>]
       }
 
         return(
           <div>
-            <img style={{width:"100%", height:"638px"}} src = {require(this.state.imgUrlArr[this.state.counter - 1])}></img>
+            <img onClick = {this.click} style={{width:"100%", height:"638px"}} src = {require(this.state.imgUrlArr[this.state.counter - 1])}></img>
             <Carousel counter = {arr}/>
-            <img style = {{position: "absolute", left: "50%", top: "87%", height: "75px"}} src = {require("../images/chevron.png")}></img>
-            
+            <img style = {{position: "absolute", left: "5px", top: "45%", height: "50px"}} src = {require("../images/arrow_back.png")}></img>
+            <img style = {{position: "absolute", right: "20px", top: "45%", height: "50px"}} src = {require("../images/arrow_forward.png")}></img>
+            <img style = {{position: "absolute", left: "50%", top: "87%", height: "50px"}} src = {require("../images/chevron.png")}></img>
+   
           </div>
         )
     }

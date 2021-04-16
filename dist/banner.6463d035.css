@@ -11,5 +11,12 @@
   z-index: -1;
 }
 
+.leftArrow:hover {
+  cursor: pointer;
+}
+.rightArrow:hover {
+  cursor: pointer;
+}
+
 
 /*# sourceMappingURL=/banner.6463d035.css.map */

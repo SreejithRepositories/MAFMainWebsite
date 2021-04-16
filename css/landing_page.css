@@ -10,3 +10,10 @@
   width: 100vw;
   z-index: -1;
 }
+
+.leftArrow:hover {
+  cursor: pointer;
+}
+.rightArrow:hover {
+  cursor: pointer;
+}

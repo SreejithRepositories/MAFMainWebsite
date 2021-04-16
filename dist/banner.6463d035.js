@@ -29780,6 +29780,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
@@ -29796,6 +29798,10 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
+var mouseOver = {
+  cursor: "pointer"
+};
+
 var Banner =
 /*#__PURE__*/
 function (_React$Component) {
@@ -29810,11 +29816,14 @@ function (_React$Component) {
     _this.state = {
       counter: 1,
       imgArr: [_banner.default, _banner2.default, _banner3.default, _banner4.default],
+      clicked: false,
       imgUrlArr: ['../images/banner1.png', '../images/banner2.png', '../images/banner3.png', '../images/banner4.png'],
       timer: ''
     };
     _this.timeOutMethod = _this.timeOutMethod.bind(_assertThisInitialized(_this));
     _this.click = _this.click.bind(_assertThisInitialized(_this));
+    _this.leftArrow = _this.leftArrow.bind(_assertThisInitialized(_this));
+    _this.rightArrow = _this.rightArrow.bind(_assertThisInitialized(_this));
     return _this;
   }
 
@@ -29841,11 +29850,42 @@ function (_React$Component) {
   }, {
     key: "click",
     value: function click() {
-      alert("hi");
+      clearInterval(this.state.timer);
+      this.setState({
+        clicked: true
+      });
+    }
+  }, {
+    key: "leftArrow",
+    value: function leftArrow() {
+      if (this.state.counter == 1) {
+        this.setState({
+          counter: 4
+        });
+      } else {
+        this.setState({
+          counter: this.state.counter - 1
+        });
+      }
+    }
+  }, {
+    key: "rightArrow",
+    value: function rightArrow() {
+      if (this.state.counter == 4) {
+        this.setState({
+          counter: 1
+        });
+      } else {
+        this.setState({
+          counter: this.state.counter + 1
+        });
+      }
     }
   }, {
     key: "render",
     value: function render() {
+      var _React$createElement;
+
       var arr = [_react.default.createElement("img", {
         style: {
           width: "18px",
@@ -30058,6 +30098,7 @@ function (_React$Component) {
         })];
       }
 
+      var disp = this.state.clicked ? "visible" : "hidden";
       return _react.default.createElement("div", null, _react.default.createElement("img", {
         onClick: this.click,
         style: {
@@ -30068,22 +30109,26 @@ function (_React$Component) {
       }), _react.default.createElement(_carousel.default, {
         counter: arr
       }), _react.default.createElement("img", {
+        onClick: this.leftArrow,
+        className: "leftArrow",
         style: {
+          visibility: disp,
           position: "absolute",
           left: "5px",
           top: "45%",
           height: "50px"
         },
         src: require("../images/arrow_back.png")
-      }), _react.default.createElement("img", {
-        style: {
-          position: "absolute",
-          right: "20px",
-          top: "45%",
-          height: "50px"
-        },
-        src: require("../images/arrow_forward.png")
-      }), _react.default.createElement("img", {
+      }), _react.default.createElement("img", (_React$createElement = {
+        onClick: this.rightArrow,
+        className: "rightArrow"
+      }, _defineProperty(_React$createElement, "onClick", this.rightArrow), _defineProperty(_React$createElement, "style", {
+        visibility: disp,
+        position: "absolute",
+        right: "20px",
+        top: "45%",
+        height: "50px"
+      }), _defineProperty(_React$createElement, "src", require("../images/arrow_forward.png")), _React$createElement)), _react.default.createElement("img", {
         style: {
           position: "absolute",
           left: "50%",
@@ -30127,7 +30172,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49712" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56374" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

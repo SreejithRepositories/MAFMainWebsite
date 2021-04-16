@@ -11,5 +11,12 @@
   z-index: -1;
 }
 
+.leftArrow:hover {
+  cursor: pointer;
+}
+.rightArrow:hover {
+  cursor: pointer;
+}
+
 
 /*# sourceMappingURL=/header.b9083a83.css.map */

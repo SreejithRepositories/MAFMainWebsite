@@ -5,12 +5,16 @@ import ReactDOM from 'react-dom'
 class Hamburger extends React.Component{
     constructor(props){
         super(props);
+        this.clicked = this.clicked.bind(this)
+    }
+    clicked(){
+        this.props.clicked('true')
     }
 
     render(){
         return (
             <React.Fragment>
-            <img className = "hamburgerIcon" src = {require("../images/hamburgerIcon.png")}></img>
+            <img onClick = {this.clicked} className = "hamburgerIcon" src = {require("../images/hamburgerIcon.png")}></img>
             </React.Fragment>
         )
     }

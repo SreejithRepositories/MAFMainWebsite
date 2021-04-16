@@ -29745,7 +29745,7 @@ function (_React$Component) {
   _createClass(Header, [{
     key: "render",
     value: function render() {
-      return _react.default.createElement("div", null, _react.default.createElement("img", {
+      return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement("img", {
         className: "logo",
         src: require("../images/logo.png")
       }), _react.default.createElement(_hamburger.default, null));

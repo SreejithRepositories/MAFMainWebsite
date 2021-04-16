@@ -1,11 +1,68 @@
 // index.js
 import React from "react"
 import ReactDOM from "react-dom"
+import Header from './header'
+import Banner from './banner'
+import '../css/landing_page.css'
+import Test from './test'
+import MainMenuModal from './main_menu_modal'
+import { 
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+ } from 'react-router-dom'
 
-function Welcome() {
-    return <h1>Hello</h1>;
+class App extends React.Component{
+  constructor(props){
+    super(props)
+    this.state = {
+      displayMenuModal: 'none'
+    }
+    this.hamburgerIconClicked = this.hamburgerIconClicked.bind(this)
+    this.menuCloseButtonPressed = this.menuCloseButtonPressed.bind(this)
+  }
+  hamburgerIconClicked(n){
+    if(n){
+      this.setState({displayMenuModal: null})
+    }
+    
   }
 
-// ReactDOM.render(<h1>Hello world!</h1>, document.getElementById("root"))
+  menuCloseButtonPressed(n){
+    if(n){
+      this.setState({displayMenuModal: "none"})
+    }
+  }
 
-ReactDOM.render(<Welcome />, document.getElementById("root"))
+  render(){
+    return (
+      <Router>
+        <div>
+          <div>
+        <Header hamIconClick = {this.hamburgerIconClicked}/>
+        </div>
+        <div style = {{display: this.state.displayMenuModal, borderRadius: "5px"}} className = "MainMenuModal">
+          <MainMenuModal closeButtonPressed = {this.menuCloseButtonPressed}/>
+        </div>
+        <Switch>
+          <Route exact path = "/">
+        <div className = "banner">
+        <Banner />
+        </div>
+        </Route>
+        </Switch>
+        <Switch>
+          <Route exact path = "/test">
+        <Test />
+        </Route>
+        </Switch>
+        </div>    
+        </Router>
+    )
+  }
+}
+
+
+
+ReactDOM.render(<App />, document.getElementById("main"))

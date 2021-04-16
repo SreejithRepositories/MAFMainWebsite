@@ -3,16 +3,16 @@ import ReactDOM from "react-dom"
 import Hamburger from "./hamburger.js"
 import '../css/landing_page.css'
 
-class Header extends React.Component{
+export  default class Header extends React.Component{
     render(){
         return (
-        <div>
+        <React.Fragment>
         <img className = "logo" src = {require("../images/logo.png")}></img>
-        <Hamburger/>
-        </div>
+        <Hamburger clicked = {this.props.hamIconClick}/>
+        </React.Fragment>
         )
     }
 }
 
 
-ReactDOM.render(<Header />, document.getElementById("main"))
+// ReactDOM.render(<Header />, document.getElementById("main"))

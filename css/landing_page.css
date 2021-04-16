@@ -17,3 +17,28 @@
 .rightArrow:hover {
   cursor: pointer;
 }
+.hamburgerIcon {
+  cursor: pointer;
+}
+.banner {
+  position: fixed;
+  top: 0px;
+  z-index: -1;
+  width: 100%;
+}
+.MainMenuModal {
+  width: 50%;
+  height: 450px;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  left: 25%;
+  background-color: white;
+  border: 1px solid black;
+}
+.ITServices:hover {
+  cursor: pointer;
+}
+
+.closeSubMenu {
+  cursor: pointer;
+}

@@ -30099,7 +30099,7 @@ function (_React$Component) {
       }
 
       var disp = this.state.clicked ? "visible" : "hidden";
-      return _react.default.createElement("div", null, _react.default.createElement("img", {
+      return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement("img", {
         onClick: this.click,
         style: {
           width: "100%",
@@ -30141,9 +30141,7 @@ function (_React$Component) {
   }]);
 
   return Banner;
-}(_react.default.Component);
-
-_reactDom.default.render(_react.default.createElement(Banner, null), document.getElementById("banner"));
+}(_react.default.Component); // ReactDOM.render(<Banner/>, document.getElementById("banner"))
 },{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","./carousel":"../js/carousel.js","../css/landing_page.css":"../css/landing_page.css","../images/banner1.png":"../images/banner1.png","../images/banner2.png":"../images/banner2.png","../images/banner3.png":"../images/banner3.png","../images/banner4.png":"../images/banner4.png","../images/carouselDot.png":"../images/carouselDot.png","../images/carouselDot_red.png":"../images/carouselDot_red.png","../images/arrow_back.png":"../images/arrow_back.png","../images/arrow_forward.png":"../images/arrow_forward.png","../images/chevron.png":"../images/chevron.png"}],"../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';

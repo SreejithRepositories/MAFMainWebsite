@@ -8,11 +8,7 @@ import img2 from '../images/banner2.png'
 import img3 from '../images/banner3.png'
 import img4 from '../images/banner4.png'
 
-const mouseOver = {
-  cursor: "pointer"
-}
-
-class Banner extends React.Component{
+export default class Banner extends React.Component{
     constructor(props){
         super(props)
         this.state = {
@@ -43,6 +39,7 @@ class Banner extends React.Component{
   }
 
     click(){
+      alert('clicked')
       clearInterval(this.state.timer);
       this.setState({clicked: true})
     }
@@ -98,16 +95,16 @@ class Banner extends React.Component{
       var disp = this.state.clicked? "visible": "hidden"
 
         return(
-          <div>
+          <React.Fragment>
             <img onClick = {this.click} style={{width:"100%", height:"638px"}} src = {require(this.state.imgUrlArr[this.state.counter - 1])}></img>
             <Carousel counter = {arr}/>
             <img onClick = {this.leftArrow} className = "leftArrow" style = {{visibility: disp, position: "absolute", left: "5px", top: "45%", height: "50px"}} src = {require("../images/arrow_back.png")}></img>
             <img onClick = {this.rightArrow} className = "rightArrow" onClick = {this.rightArrow} style = {{visibility: disp, position: "absolute", right: "20px", top: "45%", height: "50px"}} src = {require("../images/arrow_forward.png")}></img>
             <img style = {{position: "absolute", left: "50%", top: "87%", height: "50px"}} src = {require("../images/chevron.png")}></img>
    
-          </div>
+          </React.Fragment>
         )
     }
 
 }
-ReactDOM.render(<Banner/>, document.getElementById("banner"))
+// ReactDOM.render(<Banner/>, document.getElementById("banner"))

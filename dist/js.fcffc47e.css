@@ -30,10 +30,11 @@
   width: 50%;
   height: 450px;
   position: -webkit-sticky; /* Safari */
-  position: sticky;
+  position: absolute;
   left: 25%;
   background-color: white;
   border: 1px solid black;
+  z-index: 1;
 }
 .ITServices:hover {
   cursor: pointer;

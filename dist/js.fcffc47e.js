@@ -29987,7 +29987,6 @@ function (_React$Component) {
   }, {
     key: "click",
     value: function click() {
-      alert('clicked');
       clearInterval(this.state.timer);
       this.setState({
         clicked: true
@@ -30293,12 +30292,14 @@ exports.default = Test;
 
 var _react = _interopRequireDefault(require("react"));
 
+var _header = _interopRequireDefault(require("./header"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function Test(props) {
-  return _react.default.createElement("h1", null, "This is some heading");
+  return _react.default.createElement("div", null, _react.default.createElement("h1", null, "This is some heading"));
 }
-},{"react":"../node_modules/react/index.js"}],"../node_modules/@babel/runtime/helpers/esm/setPrototypeOf.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","./header":"../js/header.js"}],"../node_modules/@babel/runtime/helpers/esm/setPrototypeOf.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -34468,12 +34469,51 @@ function (_React$Component) {
     _this = _possibleConstructorReturn(this, _getPrototypeOf(Main_Menu_Modal).call(this, props));
     _this.state = {
       displayITServicesSubMenu: 'none',
-      underLineColorHome: null
+      underLineColorHome: null,
+      underLineColorAboutUs: null,
+      underLineColorTechWeUse: null,
+      underLineColorIndWeServe: null,
+      underLineColorAchieve: null,
+      underLineColorSuccess: null,
+      underLineColorBlog: null,
+      underLineColorFAQs: null,
+      underLineColorTerms: null,
+      underLineColorContact: null,
+      underLineColorCloudAutomation: null,
+      underLineColorDataAnalytics: null,
+      underLineColorDigiTran: null,
+      underLineColorMarkTran: null
     };
     _this.ITServices = _this.ITServices.bind(_assertThisInitialized(_this));
     _this.closeSubMenu = _this.closeSubMenu.bind(_assertThisInitialized(_this));
     _this.putUnderLineColorHome = _this.putUnderLineColorHome.bind(_assertThisInitialized(_this));
     _this.unputUnderLineColorHome = _this.unputUnderLineColorHome.bind(_assertThisInitialized(_this));
+    _this.putUnderLineColorAboutUs = _this.putUnderLineColorAboutUs.bind(_assertThisInitialized(_this));
+    _this.unputUnderLineColorAboutUs = _this.unputUnderLineColorAboutUs.bind(_assertThisInitialized(_this));
+    _this.putUnderLineColorTechWeUse = _this.putUnderLineColorTechWeUse.bind(_assertThisInitialized(_this));
+    _this.unputUnderLineColorTechWeUse = _this.unputUnderLineColorTechWeUse.bind(_assertThisInitialized(_this));
+    _this.putUnderLineColorIndWeServe = _this.putUnderLineColorIndWeServe.bind(_assertThisInitialized(_this));
+    _this.unputUnderLineColorIndWeServe = _this.unputUnderLineColorIndWeServe.bind(_assertThisInitialized(_this));
+    _this.putUnderLineColorAchieve = _this.putUnderLineColorAchieve.bind(_assertThisInitialized(_this));
+    _this.unputUnderLineColorAchieve = _this.unputUnderLineColorAchieve.bind(_assertThisInitialized(_this));
+    _this.putUnderLineColorSuccess = _this.putUnderLineColorSuccess.bind(_assertThisInitialized(_this));
+    _this.unputUnderLineColorSuccess = _this.unputUnderLineColorSuccess.bind(_assertThisInitialized(_this));
+    _this.putUnderLineColorBlog = _this.putUnderLineColorBlog.bind(_assertThisInitialized(_this));
+    _this.unputUnderLineColorBlog = _this.unputUnderLineColorBlog.bind(_assertThisInitialized(_this));
+    _this.putUnderLineColorFAQs = _this.putUnderLineColorFAQs.bind(_assertThisInitialized(_this));
+    _this.unputUnderLineColorFAQs = _this.unputUnderLineColorFAQs.bind(_assertThisInitialized(_this));
+    _this.putUnderLineColorTerms = _this.putUnderLineColorTerms.bind(_assertThisInitialized(_this));
+    _this.unputUnderLineColorTerms = _this.unputUnderLineColorTerms.bind(_assertThisInitialized(_this));
+    _this.putUnderLineColorContact = _this.putUnderLineColorContact.bind(_assertThisInitialized(_this));
+    _this.unputUnderLineColorContact = _this.unputUnderLineColorContact.bind(_assertThisInitialized(_this));
+    _this.putUnderLineColorCloudAutomation = _this.putUnderLineColorCloudAutomation.bind(_assertThisInitialized(_this));
+    _this.unputUnderLineColorCloudAutomation = _this.unputUnderLineColorCloudAutomation.bind(_assertThisInitialized(_this));
+    _this.putUnderLineColorDataAnalytics = _this.putUnderLineColorDataAnalytics.bind(_assertThisInitialized(_this));
+    _this.unputUnderLineColorDataAnalytics = _this.unputUnderLineColorDataAnalytics.bind(_assertThisInitialized(_this));
+    _this.putUnderLineColorDigiTran = _this.putUnderLineColorDigiTran.bind(_assertThisInitialized(_this));
+    _this.unputUnderLineColorDigiTran = _this.unputUnderLineColorDigiTran.bind(_assertThisInitialized(_this));
+    _this.putUnderLineColorMarkTran = _this.putUnderLineColorMarkTran.bind(_assertThisInitialized(_this));
+    _this.unputUnderLineColorMarkTran = _this.unputUnderLineColorMarkTran.bind(_assertThisInitialized(_this));
     _this.closeMainMenu = _this.closeMainMenu.bind(_assertThisInitialized(_this));
     return _this;
   }
@@ -34496,10 +34536,231 @@ function (_React$Component) {
       });
     }
   }, {
+    key: "putUnderLineColorAboutUs",
+    value: function putUnderLineColorAboutUs() {
+      this.setState({
+        underLineColorAboutUs: {
+          cursor: "pointer",
+          borderBottom: "3px dashed blue"
+        }
+      });
+    }
+  }, {
+    key: "unputUnderLineColorAboutUs",
+    value: function unputUnderLineColorAboutUs() {
+      this.setState({
+        underLineColorAboutUs: null
+      });
+    }
+  }, {
+    key: "putUnderLineColorTechWeUse",
+    value: function putUnderLineColorTechWeUse() {
+      this.setState({
+        underLineColorTechWeUse: {
+          cursor: "pointer",
+          borderBottom: "3px dashed blue"
+        }
+      });
+    }
+  }, {
+    key: "unputUnderLineColorTechWeUse",
+    value: function unputUnderLineColorTechWeUse() {
+      this.setState({
+        underLineColorTechWeUse: null
+      });
+    }
+  }, {
+    key: "putUnderLineColorIndWeServe",
+    value: function putUnderLineColorIndWeServe() {
+      this.setState({
+        underLineColorIndWeServe: {
+          cursor: "pointer",
+          borderBottom: "3px dashed blue"
+        }
+      });
+    }
+  }, {
+    key: "unputUnderLineColorIndWeServe",
+    value: function unputUnderLineColorIndWeServe() {
+      this.setState({
+        underLineColorIndWeServe: null
+      });
+    }
+  }, {
+    key: "putUnderLineColorAchieve",
+    value: function putUnderLineColorAchieve() {
+      this.setState({
+        underLineColorAchieve: {
+          cursor: "pointer",
+          borderBottom: "3px dashed blue"
+        }
+      });
+    }
+  }, {
+    key: "unputUnderLineColorAchieve",
+    value: function unputUnderLineColorAchieve() {
+      this.setState({
+        underLineColorAchieve: null
+      });
+    }
+  }, {
+    key: "putUnderLineColorSuccess",
+    value: function putUnderLineColorSuccess() {
+      this.setState({
+        underLineColorSuccess: {
+          cursor: "pointer",
+          borderBottom: "3px dashed blue"
+        }
+      });
+    }
+  }, {
+    key: "unputUnderLineColorSuccess",
+    value: function unputUnderLineColorSuccess() {
+      this.setState({
+        underLineColorSuccess: null
+      });
+    }
+  }, {
+    key: "putUnderLineColorBlog",
+    value: function putUnderLineColorBlog() {
+      this.setState({
+        underLineColorBlog: {
+          cursor: "pointer",
+          borderBottom: "3px dashed blue"
+        }
+      });
+    }
+  }, {
+    key: "unputUnderLineColorBlog",
+    value: function unputUnderLineColorBlog() {
+      this.setState({
+        underLineColorBlog: null
+      });
+    }
+  }, {
+    key: "putUnderLineColorFAQs",
+    value: function putUnderLineColorFAQs() {
+      this.setState({
+        underLineColorFAQs: {
+          cursor: "pointer",
+          borderBottom: "3px dashed blue"
+        }
+      });
+    }
+  }, {
+    key: "unputUnderLineColorFAQs",
+    value: function unputUnderLineColorFAQs() {
+      this.setState({
+        underLineColorFAQs: null
+      });
+    }
+  }, {
+    key: "putUnderLineColorTerms",
+    value: function putUnderLineColorTerms() {
+      this.setState({
+        underLineColorTerms: {
+          cursor: "pointer",
+          borderBottom: "3px dashed blue"
+        }
+      });
+    }
+  }, {
+    key: "unputUnderLineColorTerms",
+    value: function unputUnderLineColorTerms() {
+      this.setState({
+        underLineColorTerms: null
+      });
+    }
+  }, {
+    key: "putUnderLineColorContact",
+    value: function putUnderLineColorContact() {
+      this.setState({
+        underLineColorContact: {
+          cursor: "pointer",
+          borderBottom: "3px dashed blue"
+        }
+      });
+    }
+  }, {
+    key: "unputUnderLineColorContact",
+    value: function unputUnderLineColorContact() {
+      this.setState({
+        underLineColorContact: null
+      });
+    }
+  }, {
     key: "ITServices",
     value: function ITServices() {
       this.setState({
         displayITServicesSubMenu: ''
+      });
+    }
+  }, {
+    key: "putUnderLineColorCloudAutomation",
+    value: function putUnderLineColorCloudAutomation() {
+      this.setState({
+        underLineColorCloudAutomation: {
+          cursor: "pointer",
+          borderBottom: "3px dashed blue"
+        }
+      });
+    }
+  }, {
+    key: "unputUnderLineColorCloudAutomation",
+    value: function unputUnderLineColorCloudAutomation() {
+      this.setState({
+        underLineColorCloudAutomation: null
+      });
+    }
+  }, {
+    key: "putUnderLineColorDataAnalytics",
+    value: function putUnderLineColorDataAnalytics() {
+      this.setState({
+        underLineColorDataAnalytics: {
+          cursor: "pointer",
+          borderBottom: "3px dashed blue"
+        }
+      });
+    }
+  }, {
+    key: "unputUnderLineColorDataAnalytics",
+    value: function unputUnderLineColorDataAnalytics() {
+      this.setState({
+        underLineColorDataAnalytics: null
+      });
+    }
+  }, {
+    key: "putUnderLineColorDigiTran",
+    value: function putUnderLineColorDigiTran() {
+      this.setState({
+        underLineColorDigiTran: {
+          cursor: "pointer",
+          borderBottom: "3px dashed blue"
+        }
+      });
+    }
+  }, {
+    key: "unputUnderLineColorDigiTran",
+    value: function unputUnderLineColorDigiTran() {
+      this.setState({
+        underLineColorDigiTran: null
+      });
+    }
+  }, {
+    key: "putUnderLineColorMarkTran",
+    value: function putUnderLineColorMarkTran() {
+      this.setState({
+        underLineColorMarkTran: {
+          cursor: "pointer",
+          borderBottom: "3px dashed blue"
+        }
+      });
+    }
+  }, {
+    key: "unputUnderLineColorMarkTran",
+    value: function unputUnderLineColorMarkTran() {
+      this.setState({
+        underLineColorMarkTran: null
       });
     }
   }, {
@@ -34513,6 +34774,9 @@ function (_React$Component) {
     key: "closeMainMenu",
     value: function closeMainMenu() {
       this.props.closeButtonPressed('true');
+      this.setState({
+        displayITServicesSubMenu: "none"
+      });
     }
   }, {
     key: "render",
@@ -34532,7 +34796,9 @@ function (_React$Component) {
         onMouseOut: this.unputUnderLineColorHome,
         style: this.state.underLineColorHome
       }, "Home")), _react.default.createElement("tr", null, _react.default.createElement("td", {
-        style: this.state.underLineColor
+        onMouseOver: this.putUnderLineColorAboutUs,
+        onMouseOut: this.unputUnderLineColorAboutUs,
+        style: this.state.underLineColorAboutUs
       }, "About Us")), _react.default.createElement("tr", null, _react.default.createElement("td", {
         className: "ITServices",
         onMouseOver: this.ITServices
@@ -34581,47 +34847,67 @@ function (_React$Component) {
       }, _react.default.createElement("td", null), _react.default.createElement("td", null)), _react.default.createElement("tr", {
         style: {
           display: this.state.displayITServicesSubMenu
-        },
-        className: "subMenu"
+        }
       }, _react.default.createElement("td", null), _react.default.createElement("td", {
-        style: this.state.underLineColor
+        onMouseOver: this.putUnderLineColorCloudAutomation,
+        onMouseOut: this.unputUnderLineColorCloudAutomation,
+        style: this.state.underLineColorCloudAutomation
       }, "Cloud Automation")), _react.default.createElement("tr", {
         style: {
           display: this.state.displayITServicesSubMenu
-        },
-        className: "subMenu"
+        }
       }, _react.default.createElement("td", null), _react.default.createElement("td", {
-        style: this.state.underLineColor
+        onMouseOver: this.putUnderLineColorDataAnalytics,
+        onMouseOut: this.unputUnderLineColorDataAnalytics,
+        style: this.state.underLineColorDataAnalytics
       }, "Data Analytics")), _react.default.createElement("tr", {
         style: {
           display: this.state.displayITServicesSubMenu
-        },
-        className: "subMenu"
+        }
       }, _react.default.createElement("td", null), _react.default.createElement("td", {
-        style: this.state.underLineColor
+        onMouseOver: this.putUnderLineColorDigiTran,
+        onMouseOut: this.unputUnderLineColorDigiTran,
+        style: this.state.underLineColorDigiTran
       }, "Digital Transformation")), _react.default.createElement("tr", {
         style: {
           display: this.state.displayITServicesSubMenu
-        },
-        className: "subMenu"
+        }
       }, _react.default.createElement("td", null), _react.default.createElement("td", {
-        style: this.state.underLineColor
+        onMouseOver: this.putUnderLineColorMarkTran,
+        onMouseOut: this.unputUnderLineColorMarkTran,
+        style: this.state.underLineColorMarkTran
       }, "Marketing Transformation")), _react.default.createElement("tr", null, _react.default.createElement("td", {
-        style: this.state.underLineColor
+        onMouseOver: this.putUnderLineColorTechWeUse,
+        onMouseOut: this.unputUnderLineColorTechWeUse,
+        style: this.state.underLineColorTechWeUse
       }, "Technologies We Use")), _react.default.createElement("tr", null, _react.default.createElement("td", {
-        style: this.state.underLineColor
+        onMouseOver: this.putUnderLineColorIndWeServe,
+        onMouseOut: this.unputUnderLineColorIndWeServe,
+        style: this.state.underLineColorIndWeServe
       }, "Industries We Serve")), _react.default.createElement("tr", null, _react.default.createElement("td", {
-        style: this.state.underLineColor
+        onMouseOver: this.putUnderLineColorAchieve,
+        onMouseOut: this.unputUnderLineColorAchieve,
+        style: this.state.underLineColorAchieve
       }, "What we can help you achieve?")), _react.default.createElement("tr", null, _react.default.createElement("td", {
-        style: this.state.underLineColor
+        onMouseOver: this.putUnderLineColorSuccess,
+        onMouseOut: this.unputUnderLineColorSuccess,
+        style: this.state.underLineColorSuccess
       }, "Customer Success Stories")), _react.default.createElement("tr", null, _react.default.createElement("td", {
-        style: this.state.underLineColor
+        onMouseOver: this.putUnderLineColorBlog,
+        onMouseOut: this.unputUnderLineColorBlog,
+        style: this.state.underLineColorBlog
       }, "Blog")), _react.default.createElement("tr", null, _react.default.createElement("td", {
-        style: this.state.underLineColor
+        onMouseOver: this.putUnderLineColorFAQs,
+        onMouseOut: this.unputUnderLineColorFAQs,
+        style: this.state.underLineColorFAQs
       }, "FAQs")), _react.default.createElement("tr", null, _react.default.createElement("td", {
-        style: this.state.underLineColor
+        onMouseOver: this.putUnderLineColorTerms,
+        onMouseOut: this.unputUnderLineColorTerms,
+        style: this.state.underLineColorTerms
       }, "Terms and Conditions")), _react.default.createElement("tr", null, _react.default.createElement("td", {
-        style: this.state.underLineColor
+        onMouseOver: this.putUnderLineColorContact,
+        onMouseOut: this.unputUnderLineColorContact,
+        style: this.state.underLineColorContact
       }, "Contact Us"))));
     }
   }]);
@@ -34763,7 +35049,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61974" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62256" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

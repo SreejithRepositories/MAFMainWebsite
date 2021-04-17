@@ -39,8 +39,7 @@ export default class Banner extends React.Component{
   }
 
     click(){
-      alert('clicked')
-      clearInterval(this.state.timer);
+        clearInterval(this.state.timer);
       this.setState({clicked: true})
     }
     leftArrow(){

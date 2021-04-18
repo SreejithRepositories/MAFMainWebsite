@@ -1,0 +1,48 @@
+.hamburgerIcon {
+  height: 75px;
+  float: right;
+}
+
+#banner {
+  /* border: 1px solid green; */
+  position: absolute;
+  top: 0px;
+  width: 100vw;
+  z-index: -1;
+}
+
+.leftArrow:hover {
+  cursor: pointer;
+}
+.rightArrow:hover {
+  cursor: pointer;
+}
+.hamburgerIcon {
+  cursor: pointer;
+}
+.banner {
+  /* position: fixed;
+  top: 0px; */
+  z-index: -1;
+  width: 100%;
+}
+.MainMenuModal {
+  width: 50%;
+  height: 450px;
+  position: -webkit-sticky; /* Safari */
+  position: absolute;
+  left: 25%;
+  background-color: white;
+  border: 1px solid black;
+  z-index: 1;
+}
+.ITServices:hover {
+  cursor: pointer;
+}
+
+.closeSubMenu {
+  cursor: pointer;
+}
+
+
+/*# sourceMappingURL=/index_copy.80131192.css.map */

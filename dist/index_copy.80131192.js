@@ -29954,8 +29954,8 @@ function (_React$Component) {
       counter: 1,
       imgArr: [_banner.default, _banner2.default, _banner3.default, _banner4.default],
       clicked: false,
-      imgUrlArr: ["../images/banner1.png", "../images/banner2.png", "../images/banner3.png", "../images/banner4.png"],
-      timer: ""
+      imgUrlArr: ['../images/banner1.png', '../images/banner2.png', '../images/banner3.png', '../images/banner4.png'],
+      timer: ''
     };
     _this.timeOutMethod = _this.timeOutMethod.bind(_assertThisInitialized(_this));
     _this.click = _this.click.bind(_assertThisInitialized(_this));
@@ -30021,8 +30021,6 @@ function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
-      var _React$createElement;
-
       var arr = [_react.default.createElement("img", {
         style: {
           width: "18px",
@@ -30236,44 +30234,51 @@ function (_React$Component) {
       }
 
       var disp = this.state.clicked ? "visible" : "hidden";
-      return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement("img", {
-        onClick: this.click,
-        style: {
-          width: "100%",
-          height: "100vh"
-        },
-        src: require(this.state.imgUrlArr[this.state.counter - 1])
-      }), _react.default.createElement(_carousel.default, {
-        counter: arr
-      }), _react.default.createElement("img", {
-        onClick: this.leftArrow,
-        className: "leftArrow",
-        style: {
+
+      if (window.location.pathname == '/test') {
+        return 'banner for test';
+      } else {
+        var _React$createElement;
+
+        return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement("img", {
+          onClick: this.click,
+          style: {
+            width: "100%",
+            height: "100vh"
+          },
+          src: require(this.state.imgUrlArr[this.state.counter - 1])
+        }), _react.default.createElement(_carousel.default, {
+          counter: arr
+        }), _react.default.createElement("img", {
+          onClick: this.leftArrow,
+          className: "leftArrow",
+          style: {
+            visibility: disp,
+            position: "absolute",
+            left: "5px",
+            top: "45%",
+            height: "50px"
+          },
+          src: require("../images/arrow_back.png")
+        }), _react.default.createElement("img", (_React$createElement = {
+          onClick: this.rightArrow,
+          className: "rightArrow"
+        }, _defineProperty(_React$createElement, "onClick", this.rightArrow), _defineProperty(_React$createElement, "style", {
           visibility: disp,
           position: "absolute",
-          left: "5px",
+          right: "20px",
           top: "45%",
           height: "50px"
-        },
-        src: require("../images/arrow_back.png")
-      }), _react.default.createElement("img", (_React$createElement = {
-        onClick: this.rightArrow,
-        className: "rightArrow"
-      }, _defineProperty(_React$createElement, "onClick", this.rightArrow), _defineProperty(_React$createElement, "style", {
-        visibility: disp,
-        position: "absolute",
-        right: "20px",
-        top: "45%",
-        height: "50px"
-      }), _defineProperty(_React$createElement, "src", require("../images/arrow_forward.png")), _React$createElement)), _react.default.createElement("img", {
-        style: {
-          position: "absolute",
-          left: "50%",
-          top: "87%",
-          height: "50px"
-        },
-        src: require("../images/chevron.png")
-      }));
+        }), _defineProperty(_React$createElement, "src", require("../images/arrow_forward.png")), _React$createElement)), _react.default.createElement("img", {
+          style: {
+            position: "absolute",
+            left: "50%",
+            top: "87%",
+            height: "50px"
+          },
+          src: require("../images/chevron.png")
+        }));
+      }
     }
   }]);
 
@@ -30299,7 +30304,7 @@ var _banner = _interopRequireDefault(require("./banner"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function Test(props) {
-  return _react.default.createElement("div", null, _react.default.createElement("h1", null, "This is some heading"), _react.default.createElement(_banner.default, null));
+  return _react.default.createElement("div", null, _react.default.createElement("h1", null, "This is some heading"));
 }
 },{"react":"../node_modules/react/index.js","./header":"../js/header.js","./banner":"../js/banner.js"}],"../node_modules/@babel/runtime/helpers/esm/setPrototypeOf.js":[function(require,module,exports) {
 "use strict";
@@ -34798,9 +34803,6 @@ function (_React$Component) {
         onMouseOut: this.unputUnderLineColorHome,
         style: this.state.underLineColorHome
       }, "Home")), _react.default.createElement("tr", null, _react.default.createElement("td", {
-        onClick: function onClick() {
-          return window.open('/test');
-        },
         onMouseOver: this.putUnderLineColorAboutUs,
         onMouseOut: this.unputUnderLineColorAboutUs,
         style: this.state.underLineColorAboutUs
@@ -34921,72 +34923,7 @@ function (_React$Component) {
 }(_react.default.Component);
 
 exports.default = Main_Menu_Modal;
-},{"react":"../node_modules/react/index.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js","../images/close.png":"../images/close.png"}],"../js/footer.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-
-var _react = _interopRequireDefault(require("react"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-var Footer =
-/*#__PURE__*/
-function (_React$Component) {
-  _inherits(Footer, _React$Component);
-
-  function Footer(props) {
-    _classCallCheck(this, Footer);
-
-    return _possibleConstructorReturn(this, _getPrototypeOf(Footer).call(this, props));
-  }
-
-  _createClass(Footer, [{
-    key: "render",
-    value: function render() {
-      return _react.default.createElement("div", {
-        style: {
-          border: "1px solid black",
-          width: "100%"
-        }
-      }, "This is footer");
-    }
-  }]);
-
-  return Footer;
-}(_react.default.Component);
-
-exports.default = Footer;
-},{"react":"../node_modules/react/index.js"}],"../images/cloud_automation_blurb.png":[function(require,module,exports) {
-module.exports = "/cloud_automation_blurb.82df22ae.png";
-},{}],"../images/data_analytics_blurb.png":[function(require,module,exports) {
-module.exports = "/data_analytics_blurb.2f64593a.png";
-},{}],"../images/digital_transformation_blurb.png":[function(require,module,exports) {
-module.exports = "/digital_transformation_blurb.36949ef2.png";
-},{}],"../images/marketing_automation_blurb.png":[function(require,module,exports) {
-module.exports = "/marketing_automation_blurb.04be6284.png";
-},{}],"../js/landingPageContent.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js","../images/close.png":"../images/close.png"}],"../js/landingPageContent.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -34997,10 +34934,6 @@ exports.default = void 0;
 var _react = _interopRequireDefault(require("react"));
 
 var _test = _interopRequireDefault(require("./test"));
-
-require("../css/landing_page.css");
-
-var _footer = _interopRequireDefault(require("./footer"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -35036,62 +34969,11 @@ function (_React$Component) {
   _createClass(LandingPageContent, [{
     key: "render",
     value: function render() {
-      return _react.default.createElement("div", {
-        style: {
-          border: "1px solid black"
-        }
-      }, _react.default.createElement("h1", null, "Our Services"), _react.default.createElement("div", {
-        className: "one"
-      }, _react.default.createElement("div", {
-        className: "oneDotOne"
-      }, _react.default.createElement("img", {
-        style: {
-          width: "100%"
-        },
-        src: require("../images/cloud_automation_blurb.png")
-      }), _react.default.createElement("p", {
-        style: {
-          textAlign: "center"
-        }
-      }, "Cloud Automation")), _react.default.createElement("div", {
-        className: "oneDotTwo"
-      }, _react.default.createElement("img", {
-        style: {
-          width: "100%"
-        },
-        src: require("../images/data_analytics_blurb.png")
-      }), _react.default.createElement("p", {
-        style: {
-          textAlign: "center"
-        }
-      }, "Data Analytics")), _react.default.createElement("div", {
-        className: "oneDotThree"
-      }, _react.default.createElement("img", {
-        style: {
-          width: "100%"
-        },
-        src: require("../images/digital_transformation_blurb.png")
-      }), _react.default.createElement("p", {
-        style: {
-          textAlign: "center"
-        }
-      }, "Digital Transformation"))), _react.default.createElement("div", {
-        className: "oneDotFour"
-      }, _react.default.createElement("img", {
-        style: {
-          width: "100%"
-        },
-        src: require("../images/marketing_automation_blurb.png")
-      }), _react.default.createElement("p", {
-        style: {
-          textAlign: "center"
-        }
-      }, "Marketing Transformation")), _react.default.createElement("div", {
-        style: {
-          clear: "both",
-          marginTop: "400px"
-        }
-      }, _react.default.createElement(_footer.default, null)));
+      if (window.location.pathname == '/') {
+        return _react.default.createElement("div", null, _react.default.createElement("h1", null, "Our Services"), _react.default.createElement("p", null, "We help you generate high-quality online sales leads by implementing highly structured, persuasive Internet marketing campaigns."));
+      } else {
+        return null;
+      }
     }
   }]);
 
@@ -35099,7 +34981,7 @@ function (_React$Component) {
 }(_react.default.Component);
 
 exports.default = LandingPageContent;
-},{"react":"../node_modules/react/index.js","./test":"../js/test.js","../css/landing_page.css":"../css/landing_page.css","./footer":"../js/footer.js","../images/cloud_automation_blurb.png":"../images/cloud_automation_blurb.png","../images/data_analytics_blurb.png":"../images/data_analytics_blurb.png","../images/digital_transformation_blurb.png":"../images/digital_transformation_blurb.png","../images/marketing_automation_blurb.png":"../images/marketing_automation_blurb.png"}],"../js/index.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","./test":"../js/test.js"}],"../js/index_copy.js":[function(require,module,exports) {
 "use strict";
 
 var _react = _interopRequireDefault(require("react"));
@@ -35152,7 +35034,7 @@ function (_React$Component) {
 
     _this = _possibleConstructorReturn(this, _getPrototypeOf(App).call(this, props));
     _this.state = {
-      displayMenuModal: "none"
+      displayMenuModal: 'none'
     };
     _this.hamburgerIconClicked = _this.hamburgerIconClicked.bind(_assertThisInitialized(_this));
     _this.menuCloseButtonPressed = _this.menuCloseButtonPressed.bind(_assertThisInitialized(_this));
@@ -35180,14 +35062,9 @@ function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
-      var b = document.getElementById("bannerImage"); // console.log(b.getAttribute(src))
+      var b = document.getElementById('bannerImage'); // console.log(b.getAttribute(src))
 
-      return _react.default.createElement(_reactRouterDom.BrowserRouter, null, _react.default.createElement("div", {
-        style: {
-          width: "100%",
-          margin: "0px"
-        }
-      }, _react.default.createElement("div", null, _react.default.createElement(_header.default, {
+      return _react.default.createElement(_reactRouterDom.BrowserRouter, null, _react.default.createElement("div", null, _react.default.createElement("div", null, _react.default.createElement(_header.default, {
         hamIconClick: this.hamburgerIconClicked
       })), _react.default.createElement("div", {
         style: {
@@ -35214,7 +35091,7 @@ function (_React$Component) {
 
 _reactDom.default.render(_react.default.createElement(App, null), document.getElementById("main"));
 
-_reactDom.default.render(_react.default.createElement(_landingPageContent.default, null), document.getElementById("landing_page_content"));
+_reactDom.default.render(_react.default.createElement(_landingPageContent.default, null), document.getElementById('landing_page_content'));
 },{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","./header":"../js/header.js","./banner":"../js/banner.js","../css/landing_page.css":"../css/landing_page.css","./test":"../js/test.js","./main_menu_modal":"../js/main_menu_modal.js","./landingPageContent":"../js/landingPageContent.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js"}],"../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -35243,7 +35120,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57313" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54032" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -35418,5 +35295,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","../js/index.js"], null)
-//# sourceMappingURL=/js.fcffc47e.js.map
+},{}]},{},["../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","../js/index_copy.js"], null)
+//# sourceMappingURL=/index_copy.80131192.js.map

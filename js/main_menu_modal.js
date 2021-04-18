@@ -1,6 +1,5 @@
 import React from 'react'
 
-
 import { 
     Link
    } from 'react-router-dom'
@@ -167,11 +166,11 @@ this.setState({underLineColorHome: null})
   }
     render(){
    return(
-            <div>
+            <React.Fragment>
 <img onClick = {this.closeMainMenu} style={{cursor: "pointer", position: "absolute", right: "10px", width:"25px", height:"25px"}} src = {require('../images/close.png')}></img>
             <table> 
 <tr><td onMouseOver = {this.putUnderLineColorHome} onMouseOut = {this.unputUnderLineColorHome} style  = {this.state.underLineColorHome}>Home</td></tr>
-<tr><td 
+<tr><td onClick = {()=> window.open('/test')}
 onMouseOver = {this.putUnderLineColorAboutUs} onMouseOut = {this.unputUnderLineColorAboutUs} style = {this.state.underLineColorAboutUs}>About Us</td></tr>
 
 <tr><td className = "ITServices" onMouseOver = {this.ITServices}>IT Services</td><td></td></tr>
@@ -193,7 +192,7 @@ onMouseOver = {this.putUnderLineColorAboutUs} onMouseOut = {this.unputUnderLineC
   <tr><td onMouseOver = {this.putUnderLineColorTerms} onMouseOut = {this.unputUnderLineColorTerms} style = {this.state.underLineColorTerms}>Terms and Conditions</td></tr>
 <tr><td onMouseOver = {this.putUnderLineColorContact} onMouseOut = {this.unputUnderLineColorContact} style = {this.state.underLineColorContact}>Contact Us</td></tr>
  </table>
- </div>
+ </React.Fragment>
         )
     }
 }

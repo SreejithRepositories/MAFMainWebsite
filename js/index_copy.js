@@ -36,7 +36,7 @@ class App extends React.Component {
     // console.log(b.getAttribute(src))
     return (
       <Router>
-        <div style={{ width: "100%", margin: "0px" }}>
+        <div>
           <div>
             <Header hamIconClick={this.hamburgerIconClicked} />
           </div>

@@ -9,6 +9,7 @@
   top: 0px;
   width: 100vw;
   z-index: -1;
+  height: 90vh;
 }
 
 .leftArrow:hover {
@@ -21,10 +22,12 @@
   cursor: pointer;
 }
 .banner {
-  position: fixed;
-  top: 0px;
+  /* position: fixed;
+  top: 0px; */
   z-index: -1;
   width: 100%;
+
+  border: 1px solid red;
 }
 .MainMenuModal {
   width: 50%;
@@ -42,4 +45,39 @@
 
 .closeSubMenu {
   cursor: pointer;
+}
+/* .grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  background-color: #2196f3;
+  padding: 10px;
+  width: 90vw;
+  margin: 1px solid red;
+}
+
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+} */
+#landing_page_content {
+  margin: auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+.one {
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 2%;
+}
+.oneDotOne,
+.oneDotTwo,
+.oneDotThree,
+.oneDotFour {
+  float: left;
+  border: 1px solid black;
+  width: 23%;
 }

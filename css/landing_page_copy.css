@@ -26,8 +26,6 @@
   top: 0px; */
   z-index: -1;
   width: 100%;
-
-  border: 1px solid red;
 }
 .MainMenuModal {
   width: 50%;
@@ -81,6 +79,3 @@
   border: 1px solid black;
   width: 23%;
 }
-
-
-/*# sourceMappingURL=/js.fcffc47e.css.map */

@@ -7,6 +7,7 @@ import "../css/landing_page.css";
 import Test from "./test";
 import MainMenuModal from "./main_menu_modal";
 import LandingPageContent from "./landingPageContent";
+import CloudAutomation from "./cloudautomation";
 
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
@@ -36,14 +37,19 @@ class App extends React.Component {
     // console.log(b.getAttribute(src))
     return (
       <Router>
-        <div style={{ width: "100%", margin: "0px" }}>
-          <div>
+        <div
+          className="mainDivInIndexJS"
+          style={{ width: "100%", margin: "0px" }}
+        >
+          <div style={{ width: "100%" }}>
             <Header hamIconClick={this.hamburgerIconClicked} />
           </div>
           <div
             style={{
               display: this.state.displayMenuModal,
               borderRadius: "5px",
+              position: "absolute",
+              top: "5%",
             }}
             className="MainMenuModal"
           >
@@ -58,9 +64,20 @@ class App extends React.Component {
           </Switch>
           <Switch>
             <Route exact path="/test">
-              <Test />
+              <div style={{ position: "absolute", top: "15%" }}>
+                <Test />
+              </div>
             </Route>
           </Switch>
+          <Switch>
+            <Route exact path="/cloudautomation">
+              <div style={{ position: "absolute", top: "15%", zIndex: "-1" }}>
+                <CloudAutomation />
+              </div>
+            </Route>
+          </Switch>
+
+          <LandingPageContent />
         </div>
       </Router>
     );
@@ -69,7 +86,7 @@ class App extends React.Component {
 
 ReactDOM.render(<App />, document.getElementById("main"));
 
-ReactDOM.render(
-  <LandingPageContent />,
-  document.getElementById("landing_page_content")
-);
+// ReactDOM.render(
+//   <LandingPageContent />,
+//   document.getElementById("landing_page_content")
+// );

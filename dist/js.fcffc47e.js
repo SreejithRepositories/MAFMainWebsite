@@ -29618,12 +29618,15 @@ function (_React$Component) {
   _createClass(Hamburger, [{
     key: "clicked",
     value: function clicked() {
-      this.props.clicked('true');
+      this.props.clicked("true");
     }
   }, {
     key: "render",
     value: function render() {
       return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement("img", {
+        style: {
+          marginRight: "15px"
+        },
         onClick: this.clicked,
         className: "hamburgerIcon",
         src: require("../images/hamburgerIcon.png")
@@ -34470,7 +34473,7 @@ function (_React$Component) {
 
     _this = _possibleConstructorReturn(this, _getPrototypeOf(Main_Menu_Modal).call(this, props));
     _this.state = {
-      displayITServicesSubMenu: 'none',
+      displayITServicesSubMenu: "none",
       underLineColorHome: null,
       underLineColorAboutUs: null,
       underLineColorTechWeUse: null,
@@ -34694,7 +34697,7 @@ function (_React$Component) {
     key: "ITServices",
     value: function ITServices() {
       this.setState({
-        displayITServicesSubMenu: ''
+        displayITServicesSubMenu: ""
       });
     }
   }, {
@@ -34769,13 +34772,13 @@ function (_React$Component) {
     key: "closeSubMenu",
     value: function closeSubMenu() {
       this.setState({
-        displayITServicesSubMenu: 'none'
+        displayITServicesSubMenu: "none"
       });
     }
   }, {
     key: "closeMainMenu",
     value: function closeMainMenu() {
-      this.props.closeButtonPressed('true');
+      this.props.closeButtonPressed("true");
       this.setState({
         displayITServicesSubMenu: "none"
       });
@@ -34792,14 +34795,14 @@ function (_React$Component) {
           width: "25px",
           height: "25px"
         },
-        src: require('../images/close.png')
+        src: require("../images/close.png")
       }), _react.default.createElement("table", null, _react.default.createElement("tr", null, _react.default.createElement("td", {
         onMouseOver: this.putUnderLineColorHome,
         onMouseOut: this.unputUnderLineColorHome,
         style: this.state.underLineColorHome
       }, "Home")), _react.default.createElement("tr", null, _react.default.createElement("td", {
         onClick: function onClick() {
-          return window.open('/test');
+          return window.open("/test");
         },
         onMouseOver: this.putUnderLineColorAboutUs,
         onMouseOut: this.unputUnderLineColorAboutUs,
@@ -34854,6 +34857,9 @@ function (_React$Component) {
           display: this.state.displayITServicesSubMenu
         }
       }, _react.default.createElement("td", null), _react.default.createElement("td", {
+        onClick: function onClick() {
+          return window.location.pathname = "/cloudautomation";
+        },
         onMouseOver: this.putUnderLineColorCloudAutomation,
         onMouseOut: this.unputUnderLineColorCloudAutomation,
         style: this.state.underLineColorCloudAutomation
@@ -34921,7 +34927,13 @@ function (_React$Component) {
 }(_react.default.Component);
 
 exports.default = Main_Menu_Modal;
-},{"react":"../node_modules/react/index.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js","../images/close.png":"../images/close.png"}],"../js/footer.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js","../images/close.png":"../images/close.png"}],"../images/twitter.png":[function(require,module,exports) {
+module.exports = "/twitter.d79d9453.png";
+},{}],"../images/facebook.png":[function(require,module,exports) {
+module.exports = "/facebook.4a10cb3f.png";
+},{}],"../images/linkedin.png":[function(require,module,exports) {
+module.exports = "/linkedin.270d2f67.png";
+},{}],"../js/footer.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -34968,9 +34980,53 @@ function (_React$Component) {
       return _react.default.createElement("div", {
         style: {
           border: "1px solid black",
-          width: "100%"
+          width: "100%",
+          backgroundColor: "#879187",
+          height: "100px"
         }
-      }, "This is footer");
+      }, _react.default.createElement("span", null, _react.default.createElement("b", null, "Services")), " ", _react.default.createElement("span", {
+        style: {
+          marginLeft: "10%"
+        }
+      }, _react.default.createElement("b", null, "Use Cases")), " ", _react.default.createElement("span", {
+        style: {
+          marginLeft: "10%"
+        }
+      }, _react.default.createElement("b", null, "Official Partners")), _react.default.createElement("span", {
+        style: {
+          marginLeft: "10%"
+        }
+      }, _react.default.createElement("b", null, "Clients")), _react.default.createElement("span", {
+        style: {
+          marginLeft: "10%"
+        }
+      }, _react.default.createElement("b", null, "Careers")), _react.default.createElement("span", null, _react.default.createElement("img", {
+        style: {
+          width: "30px",
+          height: "30px",
+          marginLeft: "10%",
+          marginTop: "3px"
+        },
+        src: require("../images/twitter.png")
+      })), _react.default.createElement("span", null, _react.default.createElement("img", {
+        style: {
+          width: "30px",
+          height: "30px",
+          marginLeft: "5%"
+        },
+        src: require("../images/facebook.png")
+      })), _react.default.createElement("span", null, _react.default.createElement("img", {
+        style: {
+          width: "30px",
+          height: "30px",
+          marginLeft: "5%"
+        },
+        src: require("../images/linkedin.png")
+      })), _react.default.createElement("p", {
+        style: {
+          marginLeft: "45%"
+        }
+      }, _react.default.createElement("b", null, "Copyright 2018 www.mafgroup.co.uk")));
     }
   }]);
 
@@ -34978,7 +35034,7 @@ function (_React$Component) {
 }(_react.default.Component);
 
 exports.default = Footer;
-},{"react":"../node_modules/react/index.js"}],"../images/cloud_automation_blurb.png":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","../images/twitter.png":"../images/twitter.png","../images/facebook.png":"../images/facebook.png","../images/linkedin.png":"../images/linkedin.png"}],"../images/cloud_automation_blurb.png":[function(require,module,exports) {
 module.exports = "/cloud_automation_blurb.82df22ae.png";
 },{}],"../images/data_analytics_blurb.png":[function(require,module,exports) {
 module.exports = "/data_analytics_blurb.2f64593a.png";
@@ -35036,62 +35092,69 @@ function (_React$Component) {
   _createClass(LandingPageContent, [{
     key: "render",
     value: function render() {
-      return _react.default.createElement("div", {
-        style: {
-          border: "1px solid black"
-        }
-      }, _react.default.createElement("h1", null, "Our Services"), _react.default.createElement("div", {
-        className: "one"
-      }, _react.default.createElement("div", {
-        className: "oneDotOne"
-      }, _react.default.createElement("img", {
-        style: {
-          width: "100%"
-        },
-        src: require("../images/cloud_automation_blurb.png")
-      }), _react.default.createElement("p", {
-        style: {
-          textAlign: "center"
-        }
-      }, "Cloud Automation")), _react.default.createElement("div", {
-        className: "oneDotTwo"
-      }, _react.default.createElement("img", {
-        style: {
-          width: "100%"
-        },
-        src: require("../images/data_analytics_blurb.png")
-      }), _react.default.createElement("p", {
-        style: {
-          textAlign: "center"
-        }
-      }, "Data Analytics")), _react.default.createElement("div", {
-        className: "oneDotThree"
-      }, _react.default.createElement("img", {
-        style: {
-          width: "100%"
-        },
-        src: require("../images/digital_transformation_blurb.png")
-      }), _react.default.createElement("p", {
-        style: {
-          textAlign: "center"
-        }
-      }, "Digital Transformation"))), _react.default.createElement("div", {
-        className: "oneDotFour"
-      }, _react.default.createElement("img", {
-        style: {
-          width: "100%"
-        },
-        src: require("../images/marketing_automation_blurb.png")
-      }), _react.default.createElement("p", {
-        style: {
-          textAlign: "center"
-        }
-      }, "Marketing Transformation")), _react.default.createElement("div", {
-        style: {
-          clear: "both",
-          marginTop: "400px"
-        }
-      }, _react.default.createElement(_footer.default, null)));
+      if (window.location.pathname == "/") {
+        return _react.default.createElement("div", {
+          style: {
+            border: "1px solid black"
+          }
+        }, _react.default.createElement("h1", null, "Our Services"), _react.default.createElement("div", {
+          className: "one"
+        }, _react.default.createElement("div", {
+          className: "oneDotOne"
+        }, _react.default.createElement("img", {
+          style: {
+            width: "100%"
+          },
+          src: require("../images/cloud_automation_blurb.png")
+        }), _react.default.createElement("p", {
+          style: {
+            textAlign: "center"
+          }
+        }, _react.default.createElement("a", {
+          href: "/cloudautomation",
+          target: "_blank"
+        }, "Cloud Automation"))), _react.default.createElement("div", {
+          className: "oneDotTwo"
+        }, _react.default.createElement("img", {
+          style: {
+            width: "100%"
+          },
+          src: require("../images/data_analytics_blurb.png")
+        }), _react.default.createElement("p", {
+          style: {
+            textAlign: "center"
+          }
+        }, "Data Analytics")), _react.default.createElement("div", {
+          className: "oneDotThree"
+        }, _react.default.createElement("img", {
+          style: {
+            width: "100%"
+          },
+          src: require("../images/digital_transformation_blurb.png")
+        }), _react.default.createElement("p", {
+          style: {
+            textAlign: "center"
+          }
+        }, "Digital Transformation"))), _react.default.createElement("div", {
+          className: "oneDotFour"
+        }, _react.default.createElement("img", {
+          style: {
+            width: "100%"
+          },
+          src: require("../images/marketing_automation_blurb.png")
+        }), _react.default.createElement("p", {
+          style: {
+            textAlign: "center"
+          }
+        }, "Marketing Transformation")), _react.default.createElement("div", {
+          style: {
+            clear: "both",
+            marginTop: "400px"
+          }
+        }, _react.default.createElement(_footer.default, null)));
+      } else {
+        return null;
+      }
     }
   }]);
 
@@ -35099,7 +35162,69 @@ function (_React$Component) {
 }(_react.default.Component);
 
 exports.default = LandingPageContent;
-},{"react":"../node_modules/react/index.js","./test":"../js/test.js","../css/landing_page.css":"../css/landing_page.css","./footer":"../js/footer.js","../images/cloud_automation_blurb.png":"../images/cloud_automation_blurb.png","../images/data_analytics_blurb.png":"../images/data_analytics_blurb.png","../images/digital_transformation_blurb.png":"../images/digital_transformation_blurb.png","../images/marketing_automation_blurb.png":"../images/marketing_automation_blurb.png"}],"../js/index.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","./test":"../js/test.js","../css/landing_page.css":"../css/landing_page.css","./footer":"../js/footer.js","../images/cloud_automation_blurb.png":"../images/cloud_automation_blurb.png","../images/data_analytics_blurb.png":"../images/data_analytics_blurb.png","../images/digital_transformation_blurb.png":"../images/digital_transformation_blurb.png","../images/marketing_automation_blurb.png":"../images/marketing_automation_blurb.png"}],"../images/cloudautomationbanner.png":[function(require,module,exports) {
+module.exports = "/cloudautomationbanner.394ff4a5.png";
+},{}],"../js/cloudautomation.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _footer = _interopRequireDefault(require("./footer"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+var CloudAutomation =
+/*#__PURE__*/
+function (_React$Component) {
+  _inherits(CloudAutomation, _React$Component);
+
+  function CloudAutomation() {
+    _classCallCheck(this, CloudAutomation);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(CloudAutomation).apply(this, arguments));
+  }
+
+  _createClass(CloudAutomation, [{
+    key: "render",
+    value: function render() {
+      return _react.default.createElement("div", null, _react.default.createElement("img", {
+        src: require("../images/cloudautomationbanner.png"),
+        style: {
+          width: "100%",
+          height: "250px"
+        }
+      }), _react.default.createElement("h1", null, "Cloud Strategy Development"), _react.default.createElement("p", null, "Trust us for devising the right cloud strategy, deciding the ecosystem, and creating an operating model that works. We use our deep industry knowledge and technological insights for your benefit. The aim is always to boost your businesses' ROI and performance"), _react.default.createElement("h1", null, "Cloud Migration"), _react.default.createElement("p", null, "After a thorough analysis of your businesses' existing infrastructure, we create the right migration strategy, create a migration plan, and ensure its perfect and precise execution."), _react.default.createElement("h1", null, "Cloud Optimization"), _react.default.createElement("p", null, "In case you have a cloud strategy already, and you need to optimize the same, trust us. We select and assign the right resources to the right application or workload while ensuring that cost, compliance, and workload performance are in line. The focus is also on achieving real-time efficiency.", " "), _react.default.createElement("h1", null, "Cloud Engineering and Automation"), _react.default.createElement("p", null, "The cloud engineering services we offer include everything from native cloud application development, cloud testing, and even re-engineering when needed. We also offer Software, Device, and Database as a Service. As a part of cloud automation, we leverage technology tools and resources to eliminate the manual burden involved in managing cloud computing workloads. Sometimes, a software-based solution is offered to automate all cloud tasks, like installation, management, and configuration. It also includes automating repetitive tasks like configuring and provisioning resources such as virtual machines, making deployments, instigating virtual networks, establishing clusters and load balancing, and monitoring and management performance."), _react.default.createElement("h1", null, "Cloud Security"), _react.default.createElement("p", null, "Most businesses have confessed to identifying security and compliance risk as a key barrier for adopting or optimizing cloud in the organization. As the cloud is often complex and multi-layered, expert assistance is often needed to implement cloud security. The cloud security experts at MAF Group allow you to be free of these worries by identifying the security gaps, creating a strategy to fill those gaps, automating native security, and ensuring that your business is proactive with compliance. The experts also help in mitigating risk with cloud service providers. They ensure 100% cloud security monitoring and offer quick responses to threats and ever-changing complex regulatory requirements."), _react.default.createElement("h1", null, "Why Cloud Adoption and Automation is a Smart Idea for Your Business"), _react.default.createElement("ul", null, _react.default.createElement("li", null, "Better Responses &gt ou can create strategies that respond smartly to business changes."), _react.default.createElement("li", null, "Improved Speed &gt The speed of complex applications improves with automation."), _react.default.createElement("li", null, "Simplified Procedures &gt The complex procedures can be simplified with automation with minimal effort from your IT experts."), _react.default.createElement("li", null, "Enhanced Connection &gt Cloud automation enables interconnection among various devices like remote devices."), _react.default.createElement("li", null, "Increased Growth &gt Automation of the cloud can help a business to attain rapid growth and taste success. Need to know more about how cloud automation can benefit your business specifically? Get in touch with one of our experts and let them guide you in the right direction. Call now for a free consult!")), _react.default.createElement(_footer.default, null));
+    }
+  }]);
+
+  return CloudAutomation;
+}(_react.default.Component);
+
+exports.default = CloudAutomation;
+},{"react":"../node_modules/react/index.js","./footer":"../js/footer.js","../images/cloudautomationbanner.png":"../images/cloudautomationbanner.png"}],"../js/index.js":[function(require,module,exports) {
 "use strict";
 
 var _react = _interopRequireDefault(require("react"));
@@ -35117,6 +35242,8 @@ var _test = _interopRequireDefault(require("./test"));
 var _main_menu_modal = _interopRequireDefault(require("./main_menu_modal"));
 
 var _landingPageContent = _interopRequireDefault(require("./landingPageContent"));
+
+var _cloudautomation = _interopRequireDefault(require("./cloudautomation"));
 
 var _reactRouterDom = require("react-router-dom");
 
@@ -35183,16 +35310,23 @@ function (_React$Component) {
       var b = document.getElementById("bannerImage"); // console.log(b.getAttribute(src))
 
       return _react.default.createElement(_reactRouterDom.BrowserRouter, null, _react.default.createElement("div", {
+        className: "mainDivInIndexJS",
         style: {
           width: "100%",
           margin: "0px"
         }
-      }, _react.default.createElement("div", null, _react.default.createElement(_header.default, {
+      }, _react.default.createElement("div", {
+        style: {
+          width: "100%"
+        }
+      }, _react.default.createElement(_header.default, {
         hamIconClick: this.hamburgerIconClicked
       })), _react.default.createElement("div", {
         style: {
           display: this.state.displayMenuModal,
-          borderRadius: "5px"
+          borderRadius: "5px",
+          position: "absolute",
+          top: "5%"
         },
         className: "MainMenuModal"
       }, _react.default.createElement(_main_menu_modal.default, {
@@ -35205,17 +35339,32 @@ function (_React$Component) {
       }, _react.default.createElement(_banner.default, null)))), _react.default.createElement(_reactRouterDom.Switch, null, _react.default.createElement(_reactRouterDom.Route, {
         exact: true,
         path: "/test"
-      }, _react.default.createElement(_test.default, null)))));
+      }, _react.default.createElement("div", {
+        style: {
+          position: "absolute",
+          top: "15%"
+        }
+      }, _react.default.createElement(_test.default, null)))), _react.default.createElement(_reactRouterDom.Switch, null, _react.default.createElement(_reactRouterDom.Route, {
+        exact: true,
+        path: "/cloudautomation"
+      }, _react.default.createElement("div", {
+        style: {
+          position: "absolute",
+          top: "15%",
+          zIndex: "-1"
+        }
+      }, _react.default.createElement(_cloudautomation.default, null)))), _react.default.createElement(_landingPageContent.default, null)));
     }
   }]);
 
   return App;
 }(_react.default.Component);
 
-_reactDom.default.render(_react.default.createElement(App, null), document.getElementById("main"));
-
-_reactDom.default.render(_react.default.createElement(_landingPageContent.default, null), document.getElementById("landing_page_content"));
-},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","./header":"../js/header.js","./banner":"../js/banner.js","../css/landing_page.css":"../css/landing_page.css","./test":"../js/test.js","./main_menu_modal":"../js/main_menu_modal.js","./landingPageContent":"../js/landingPageContent.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js"}],"../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+_reactDom.default.render(_react.default.createElement(App, null), document.getElementById("main")); // ReactDOM.render(
+//   <LandingPageContent />,
+//   document.getElementById("landing_page_content")
+// );
+},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","./header":"../js/header.js","./banner":"../js/banner.js","../css/landing_page.css":"../css/landing_page.css","./test":"../js/test.js","./main_menu_modal":"../js/main_menu_modal.js","./landingPageContent":"../js/landingPageContent.js","./cloudautomation":"../js/cloudautomation.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js"}],"../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -35243,7 +35392,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57313" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50329" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

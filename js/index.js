@@ -8,6 +8,7 @@ import Test from "./test";
 import MainMenuModal from "./main_menu_modal";
 import LandingPageContent from "./landingPageContent";
 import CloudAutomation from "./cloudautomation";
+import MarketingAutomation from "./marketingautomation";
 
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
@@ -73,6 +74,13 @@ class App extends React.Component {
             <Route exact path="/cloudautomation">
               <div style={{ position: "absolute", top: "15%", zIndex: "-1" }}>
                 <CloudAutomation />
+              </div>
+            </Route>
+          </Switch>
+          <Switch>
+            <Route exact path="/marketingautomation">
+              <div style={{ position: "absolute", top: "15%", zIndex: "-1" }}>
+                <MarketingAutomation />
               </div>
             </Route>
           </Switch>

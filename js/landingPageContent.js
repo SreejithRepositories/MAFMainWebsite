@@ -11,6 +11,9 @@ export default class LandingPageContent extends React.Component {
     if (window.location.pathname == "/") {
       return (
         <div style={{ border: "1px solid black" }}>
+          <head>
+            <title>Home</title>
+          </head>
           <h1>Our Services</h1>
           <div className="one">
             <div className="oneDotOne">
@@ -44,7 +47,11 @@ export default class LandingPageContent extends React.Component {
               style={{ width: "100%" }}
               src={require("../images/marketing_automation_blurb.png")}
             ></img>
-            <p style={{ textAlign: "center" }}>Marketing Transformation</p>
+            <p style={{ textAlign: "center" }}>
+              <a href="/marketingautomation" target="_blank">
+                Marketing Automation
+              </a>
+            </p>
           </div>
           <div style={{ clear: "both", marginTop: "400px" }}>
             <Footer />

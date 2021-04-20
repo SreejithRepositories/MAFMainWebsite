@@ -285,6 +285,9 @@ export default class Main_Menu_Modal extends React.Component {
         <table>
           <tr>
             <td
+              onClick={() => {
+                window.location.pathname = "/";
+              }}
               onMouseOver={this.putUnderLineColorHome}
               onMouseOut={this.unputUnderLineColorHome}
               style={this.state.underLineColorHome}
@@ -369,11 +372,14 @@ export default class Main_Menu_Modal extends React.Component {
           <tr style={{ display: this.state.displayITServicesSubMenu }}>
             <td></td>
             <td
+              onClick={() =>
+                (window.location.pathname = "/marketingautomation")
+              }
               onMouseOver={this.putUnderLineColorMarkTran}
               onMouseOut={this.unputUnderLineColorMarkTran}
               style={this.state.underLineColorMarkTran}
             >
-              Marketing Transformation
+              Marketing Automation
             </td>
           </tr>
 

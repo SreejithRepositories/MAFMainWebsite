@@ -5,10 +5,15 @@ export default class CloudAutomation extends React.Component {
   render() {
     return (
       <div>
-        <img
-          src={require("../images/cloudautomationbanner.png")}
-          style={{ width: "100%", height: "250px" }}
-        ></img>
+        <head>
+          <title>Cloud Automation</title>
+        </head>
+        <div style={{ textAlign: "center", backgroundColor: "#131257" }}>
+          <img
+            src={require("../images/cloudautomationbanner.png")}
+            style={{ height: "250px", verticalAlign: "text-bottom" }}
+          ></img>
+        </div>
         <h1>Cloud Strategy Development</h1>
         <p>
           Trust us for devising the right cloud strategy, deciding the

@@ -10,10 +10,9 @@ export default class LandingPageContent extends React.Component {
   render() {
     if (window.location.pathname == "/") {
       return (
-        <div style={{ border: "1px solid black" }}>
-          <head>
-            <title>Home</title>
-          </head>
+        <div>
+          <title>Home</title>
+
           <h1>Our Services</h1>
           <div className="one">
             <div className="oneDotOne">

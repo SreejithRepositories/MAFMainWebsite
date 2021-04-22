@@ -9,8 +9,11 @@ import MainMenuModal from "./main_menu_modal";
 import LandingPageContent from "./landingPageContent";
 import CloudAutomation from "./cloudautomation";
 import MarketingAutomation from "./marketingautomation";
+import ContactUs from "./contactus";
+import NameForm from "./nameform";
 
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import Footer from "./footer";
 
 class App extends React.Component {
   constructor(props) {
@@ -81,6 +84,27 @@ class App extends React.Component {
             <Route exact path="/marketingautomation">
               <div style={{ position: "absolute", top: "15%", zIndex: "-1" }}>
                 <MarketingAutomation />
+              </div>
+            </Route>
+          </Switch>
+          <Switch>
+            <Route exact path="/contactus">
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  width: "100%",
+                }}
+              >
+                <div>
+                  <ContactUs />
+                </div>
+                <div>
+                  <NameForm />
+                </div>
+                <div>
+                  <Footer />
+                </div>
               </div>
             </Route>
           </Switch>

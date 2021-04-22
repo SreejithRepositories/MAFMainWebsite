@@ -305,7 +305,7 @@ export default class Banner extends React.Component {
       <React.Fragment>
         <img
           onClick={this.click}
-          style={{ width: "100%", height: "100vh" }}
+          style={{ width: "100%", height: "90vh" }}
           src={require(this.state.imgUrlArr[this.state.counter - 1])}
         ></img>
         <Carousel counter={arr} />
@@ -317,7 +317,8 @@ export default class Banner extends React.Component {
             position: "absolute",
             left: "5px",
             top: "45%",
-            height: "50px",
+            height: "35px",
+            backgroundColor: "white",
           }}
           src={require("../images/arrow_back.png")}
         ></img>
@@ -331,6 +332,8 @@ export default class Banner extends React.Component {
             right: "20px",
             top: "45%",
             height: "50px",
+            backgroundColor: "white",
+            height: "35px",
           }}
           src={require("../images/arrow_forward.png")}
         ></img>

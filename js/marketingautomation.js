@@ -6,9 +6,8 @@ export default class MarketingAutomation extends React.Component {
   render() {
     return (
       <div>
-        <head>
-          <title>Marketing Automation</title>
-        </head>
+        <title>Marketing Automation</title>
+
         <div
           style={{
             boxSizing: "border-box",

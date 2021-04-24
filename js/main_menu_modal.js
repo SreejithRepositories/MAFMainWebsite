@@ -270,7 +270,16 @@ export default class Main_Menu_Modal extends React.Component {
   }
   render() {
     return (
-      <React.Fragment>
+      <div
+        style={{
+          border: "1px solid red",
+
+          borderRadius: "5px",
+          position: "absolute",
+          top: "5%",
+        }}
+        className="MainMenuModal"
+      >
         <img
           onClick={this.closeMainMenu}
           style={{
@@ -282,7 +291,13 @@ export default class Main_Menu_Modal extends React.Component {
           }}
           src={require("../images/close.png")}
         ></img>
-        <table>
+        <table
+          style={{
+            fontSize: "18px",
+            fontWeight: "bold",
+            
+          }}
+        >
           <tr>
             <td
               onClick={() => {
@@ -448,6 +463,7 @@ export default class Main_Menu_Modal extends React.Component {
           </tr>
           <tr>
             <td
+              onClick={() => (window.location.pathname = "/contactus")}
               onMouseOver={this.putUnderLineColorContact}
               onMouseOut={this.unputUnderLineColorContact}
               style={this.state.underLineColorContact}
@@ -456,7 +472,7 @@ export default class Main_Menu_Modal extends React.Component {
             </td>
           </tr>
         </table>
-      </React.Fragment>
+      </div>
     );
   }
 }

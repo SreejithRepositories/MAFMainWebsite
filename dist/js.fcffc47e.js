@@ -34788,7 +34788,15 @@ function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
-      return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement("img", {
+      return _react.default.createElement("div", {
+        style: {
+          border: "1px solid red",
+          borderRadius: "5px",
+          position: "absolute",
+          top: "5%"
+        },
+        className: "MainMenuModal"
+      }, _react.default.createElement("img", {
         onClick: this.closeMainMenu,
         style: {
           cursor: "pointer",
@@ -34798,7 +34806,12 @@ function (_React$Component) {
           height: "25px"
         },
         src: require("../images/close.png")
-      }), _react.default.createElement("table", null, _react.default.createElement("tr", null, _react.default.createElement("td", {
+      }), _react.default.createElement("table", {
+        style: {
+          fontSize: "18px",
+          fontWeight: "bold"
+        }
+      }, _react.default.createElement("tr", null, _react.default.createElement("td", {
         onClick: function onClick() {
           window.location.pathname = "/";
         },
@@ -34924,6 +34937,9 @@ function (_React$Component) {
         onMouseOut: this.unputUnderLineColorTerms,
         style: this.state.underLineColorTerms
       }, "Terms and Conditions")), _react.default.createElement("tr", null, _react.default.createElement("td", {
+        onClick: function onClick() {
+          return window.location.pathname = "/contactus";
+        },
         onMouseOver: this.putUnderLineColorContact,
         onMouseOut: this.unputUnderLineColorContact,
         style: this.state.underLineColorContact
@@ -35169,7 +35185,9 @@ function (_React$Component) {
 }(_react.default.Component);
 
 exports.default = LandingPageContent;
-},{"react":"../node_modules/react/index.js","./test":"../js/test.js","../css/landing_page.css":"../css/landing_page.css","./footer":"../js/footer.js","../images/cloud_automation_blurb.png":"../images/cloud_automation_blurb.png","../images/data_analytics_blurb.png":"../images/data_analytics_blurb.png","../images/digital_transformation_blurb.png":"../images/digital_transformation_blurb.png","../images/marketing_automation_blurb.png":"../images/marketing_automation_blurb.png"}],"../images/cloudautomationbanner.png":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","./test":"../js/test.js","../css/landing_page.css":"../css/landing_page.css","./footer":"../js/footer.js","../images/cloud_automation_blurb.png":"../images/cloud_automation_blurb.png","../images/data_analytics_blurb.png":"../images/data_analytics_blurb.png","../images/digital_transformation_blurb.png":"../images/digital_transformation_blurb.png","../images/marketing_automation_blurb.png":"../images/marketing_automation_blurb.png"}],"../images/triangle1.jpg":[function(require,module,exports) {
+module.exports = "/triangle1.d158ea14.jpg";
+},{}],"../images/cloudautomationbanner.png":[function(require,module,exports) {
 module.exports = "/cloudautomationbanner.394ff4a5.png";
 },{}],"../js/cloudautomation.js":[function(require,module,exports) {
 "use strict";
@@ -35182,6 +35200,8 @@ exports.default = void 0;
 var _react = _interopRequireDefault(require("react"));
 
 var _footer = _interopRequireDefault(require("./footer"));
+
+var _triangle = _interopRequireDefault(require("../images/triangle1.jpg"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -35228,7 +35248,12 @@ function (_React$Component) {
           height: "250px",
           verticalAlign: "text-bottom"
         }
-      })), _react.default.createElement("h1", null, "Cloud Strategy Development"), _react.default.createElement("p", null, "Trust us for devising the right cloud strategy, deciding the ecosystem, and creating an operating model that works. We use our deep industry knowledge and technological insights for your benefit. The aim is always to boost your businesses' ROI and performance"), _react.default.createElement("h1", null, "Cloud Migration"), _react.default.createElement("p", null, "After a thorough analysis of your businesses' existing infrastructure, we create the right migration strategy, create a migration plan, and ensure its perfect and precise execution."), _react.default.createElement("h1", null, "Cloud Optimization"), _react.default.createElement("p", null, "In case you have a cloud strategy already, and you need to optimize the same, trust us. We select and assign the right resources to the right application or workload while ensuring that cost, compliance, and workload performance are in line. The focus is also on achieving real-time efficiency.", " "), _react.default.createElement("h1", null, "Cloud Engineering and Automation"), _react.default.createElement("p", null, "The cloud engineering services we offer include everything from native cloud application development, cloud testing, and even re-engineering when needed. We also offer Software, Device, and Database as a Service. As a part of cloud automation, we leverage technology tools and resources to eliminate the manual burden involved in managing cloud computing workloads. Sometimes, a software-based solution is offered to automate all cloud tasks, like installation, management, and configuration. It also includes automating repetitive tasks like configuring and provisioning resources such as virtual machines, making deployments, instigating virtual networks, establishing clusters and load balancing, and monitoring and management performance."), _react.default.createElement("h1", null, "Cloud Security"), _react.default.createElement("p", null, "Most businesses have confessed to identifying security and compliance risk as a key barrier for adopting or optimizing cloud in the organization. As the cloud is often complex and multi-layered, expert assistance is often needed to implement cloud security. The cloud security experts at MAF Group allow you to be free of these worries by identifying the security gaps, creating a strategy to fill those gaps, automating native security, and ensuring that your business is proactive with compliance. The experts also help in mitigating risk with cloud service providers. They ensure 100% cloud security monitoring and offer quick responses to threats and ever-changing complex regulatory requirements."), _react.default.createElement("h1", null, "Why Cloud Adoption and Automation is a Smart Idea for Your Business"), _react.default.createElement("ul", null, _react.default.createElement("li", null, "Better Responses &gt ou can create strategies that respond smartly to business changes."), _react.default.createElement("li", null, "Improved Speed &gt The speed of complex applications improves with automation."), _react.default.createElement("li", null, "Simplified Procedures &gt The complex procedures can be simplified with automation with minimal effort from your IT experts."), _react.default.createElement("li", null, "Enhanced Connection &gt Cloud automation enables interconnection among various devices like remote devices."), _react.default.createElement("li", null, "Increased Growth &gt Automation of the cloud can help a business to attain rapid growth and taste success. Need to know more about how cloud automation can benefit your business specifically? Get in touch with one of our experts and let them guide you in the right direction. Call now for a free consult!")), _react.default.createElement(_footer.default, null));
+      })), _react.default.createElement("div", {
+        style: {
+          backgroundImage: "url(".concat(_triangle.default, ")"),
+          border: "1px solid black"
+        }
+      }, _react.default.createElement("h1", null, "Cloud Strategy Development"), _react.default.createElement("p", null, "Trust us for devising the right cloud strategy, deciding the ecosystem, and creating an operating model that works. We use our deep industry knowledge and technological insights for your benefit. The aim is always to boost your businesses' ROI and performance"), _react.default.createElement("h1", null, "Cloud Migration"), _react.default.createElement("p", null, "After a thorough analysis of your businesses' existing infrastructure, we create the right migration strategy, create a migration plan, and ensure its perfect and precise execution."), _react.default.createElement("h1", null, "Cloud Optimization"), _react.default.createElement("p", null, "In case you have a cloud strategy already, and you need to optimize the same, trust us. We select and assign the right resources to the right application or workload while ensuring that cost, compliance, and workload performance are in line. The focus is also on achieving real-time efficiency.", " "), _react.default.createElement("h1", null, "Cloud Engineering and Automation"), _react.default.createElement("p", null, "The cloud engineering services we offer include everything from native cloud application development, cloud testing, and even re-engineering when needed. We also offer Software, Device, and Database as a Service. As a part of cloud automation, we leverage technology tools and resources to eliminate the manual burden involved in managing cloud computing workloads. Sometimes, a software-based solution is offered to automate all cloud tasks, like installation, management, and configuration. It also includes automating repetitive tasks like configuring and provisioning resources such as virtual machines, making deployments, instigating virtual networks, establishing clusters and load balancing, and monitoring and management performance."), _react.default.createElement("h1", null, "Cloud Security"), _react.default.createElement("p", null, "Most businesses have confessed to identifying security and compliance risk as a key barrier for adopting or optimizing cloud in the organization. As the cloud is often complex and multi-layered, expert assistance is often needed to implement cloud security. The cloud security experts at MAF Group allow you to be free of these worries by identifying the security gaps, creating a strategy to fill those gaps, automating native security, and ensuring that your business is proactive with compliance. The experts also help in mitigating risk with cloud service providers. They ensure 100% cloud security monitoring and offer quick responses to threats and ever-changing complex regulatory requirements."), _react.default.createElement("h1", null, "Why Cloud Adoption and Automation is a Smart Idea for Your Business"), _react.default.createElement("ul", null, _react.default.createElement("li", null, "Better Responses &gt ou can create strategies that respond smartly to business changes."), _react.default.createElement("li", null, "Improved Speed &gt The speed of complex applications improves with automation."), _react.default.createElement("li", null, "Simplified Procedures &gt The complex procedures can be simplified with automation with minimal effort from your IT experts."), _react.default.createElement("li", null, "Enhanced Connection &gt Cloud automation enables interconnection among various devices like remote devices."), _react.default.createElement("li", null, "Increased Growth &gt Automation of the cloud can help a business to attain rapid growth and taste success. Need to know more about how cloud automation can benefit your business specifically? Get in touch with one of our experts and let them guide you in the right direction. Call now for a free consult!"))), _react.default.createElement(_footer.default, null));
     }
   }]);
 
@@ -35236,7 +35261,7 @@ function (_React$Component) {
 }(_react.default.Component);
 
 exports.default = CloudAutomation;
-},{"react":"../node_modules/react/index.js","./footer":"../js/footer.js","../images/cloudautomationbanner.png":"../images/cloudautomationbanner.png"}],"../node_modules/React/cjs/react.development.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","./footer":"../js/footer.js","../images/triangle1.jpg":"../images/triangle1.jpg","../images/cloudautomationbanner.png":"../images/cloudautomationbanner.png"}],"../node_modules/React/cjs/react.development.js":[function(require,module,exports) {
 /** @license React v17.0.2
  * react.development.js
  *
@@ -37528,7 +37553,9 @@ if ("development" === 'production') {
 } else {
   module.exports = require('./cjs/react.development.js');
 }
-},{"./cjs/react.development.js":"../node_modules/React/cjs/react.development.js"}],"../images/marketingautomationbanner.png":[function(require,module,exports) {
+},{"./cjs/react.development.js":"../node_modules/React/cjs/react.development.js"}],"../images/marketingautomationbackground.jpg":[function(require,module,exports) {
+module.exports = "/marketingautomationbackground.269adf4b.jpg";
+},{}],"../images/marketingautomationbanner.png":[function(require,module,exports) {
 module.exports = "/marketingautomationbanner.897d4509.png";
 },{}],"../js/marketingautomation.js":[function(require,module,exports) {
 "use strict";
@@ -37541,6 +37568,8 @@ exports.default = void 0;
 var _React = _interopRequireDefault(require("React"));
 
 var _footer = _interopRequireDefault(require("./footer"));
+
+var _marketingautomationbackground = _interopRequireDefault(require("../images/marketingautomationbackground.jpg"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -37576,7 +37605,12 @@ function (_React$Component) {
   _createClass(MarketingAutomation, [{
     key: "render",
     value: function render() {
-      return _React.default.createElement("div", null, _React.default.createElement("title", null, "Marketing Automation"), _React.default.createElement("div", {
+      return _React.default.createElement("div", {
+        style: {
+          display: "flex",
+          flexDirection: "column"
+        }
+      }, _React.default.createElement("title", null, "Marketing Automation"), _React.default.createElement("div", {
         style: {
           boxSizing: "border-box",
           textAlign: "center",
@@ -37588,7 +37622,12 @@ function (_React$Component) {
           height: "252px",
           verticalAlign: "text-bottom"
         }
-      })), _React.default.createElement("h1", null, "Marketing Automation"), _React.default.createElement("p", null, "With time, organizations are learning the importance of using technology to market their business, explore new markets and ensure minimal manual intervention. Marketing automation helps with all of it. More than 55% B2B companies and 49% of companies use marketing automation as per stats. Here iswhy you should adopt it too!"), _React.default.createElement("h1", null, "What is Marketing Automation?"), _React.default.createElement("p", null, "Market\u2022 Create a strategy that works and build an actionable marketing automation planng automation allows a company to build and develop customer relationships using automation tools that reduce manual intervention and employee-dependency. A marketing automation software would include many aspects like landing pages, lead nurturing programs, marketing workflows, list segmentation, social media automation, lead scoring, and CRM integration. With effective marketing automation in place, you just have to drive visitors to your business website, and automation will ensure that those visitors convert into sales-ready leads or even sales at times.", " "), _React.default.createElement("h1", null, "How Marketing Automation Will Help a Business?"), _React.default.createElement("p", null, "Business owners and managers who want to enhance their business progress need to trust marketing automation to lend them a hand and make things smoother. It will help them to:"), _React.default.createElement("ul", null, _React.default.createElement("li", null, "Improve the follow-up process so that they do not miss any leads"), _React.default.createElement("li", null, "Boost the conversion rate so that the business keeps on coming"), _React.default.createElement("li", null, "Reduce the time taken to convert a lead- reduce wait times of customers"), _React.default.createElement("li", null, "Make the salespeople more efficient and productive"), _React.default.createElement("li", null, "Send personalized emails to connect with customers on a large scale"), _React.default.createElement("li", null, "Offer quicker responses to all existing and potential customers"), _React.default.createElement("li", null, "Improve ROI by increasing customer numbers and judging the cost efficiency of campaigns")), _React.default.createElement("h1", null, "What Marketing Automation Services We Offer?"), _React.default.createElement("p", null, "To help you excel at marketing automation, we take care of the following"), _React.default.createElement("ul", null, _React.default.createElement("li", null, "Pick the right automation platform that suits your business needs"), _React.default.createElement("li", null, "Create a strategy that works and build an actionable marketing automation plan"), _React.default.createElement("li", null, "Set up the marketing software and ensure its smooth implementation"), _React.default.createElement("li", null, "Create automated workflows that work for your organization"), _React.default.createElement("li", null, "Implement CRM and train your team on the same")), _React.default.createElement("h1", null, "What Will We Set Up for You?"), _React.default.createElement("p", null, "We automate the following for you:"), _React.default.createElement("ul", null, _React.default.createElement("li", null, "Nurturing of prospects and leads"), _React.default.createElement("li", null, "Upselling"), _React.default.createElement("li", null, "Cross-selling"), _React.default.createElement("li", null, "Follow up of leads or prospects"), _React.default.createElement("li", null, "Reminders for your sales team"), _React.default.createElement("li", null, "Lead scoring"), _React.default.createElement("li", null, "Prioritizing the most valuable prospects"), _React.default.createElement("p", null, "Trust us to create all-inclusive marketing automation plans and implement them smoothly. These can be customized as per your organization needs and ensure your business gets the utmost marketing value in short and long term. Call now to talk to an expert directly!")), _React.default.createElement(_footer.default, null));
+      })), _React.default.createElement("div", {
+        style: {
+          marginTop: "-5px",
+          background: "linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.2)), url(".concat(_marketingautomationbackground.default, ")")
+        }
+      }, _React.default.createElement("h1", null, "Marketing Automation"), _React.default.createElement("p", null, "With time, organizations are learning the importance of using technology to market their business, explore new markets and ensure minimal manual intervention. Marketing automation helps with all of it. More than 55% B2B companies and 49% of companies use marketing automation as per stats. Here iswhy you should adopt it too!"), _React.default.createElement("h1", null, "What is Marketing Automation?"), _React.default.createElement("p", null, "Market\u2022 Create a strategy that works and build an actionable marketing automation planng automation allows a company to build and develop customer relationships using automation tools that reduce manual intervention and employee-dependency. A marketing automation software would include many aspects like landing pages, lead nurturing programs, marketing workflows, list segmentation, social media automation, lead scoring, and CRM integration. With effective marketing automation in place, you just have to drive visitors to your business website, and automation will ensure that those visitors convert into sales-ready leads or even sales at times.", " "), _React.default.createElement("h1", null, "How Marketing Automation Will Help a Business?"), _React.default.createElement("p", null, "Business owners and managers who want to enhance their business progress need to trust marketing automation to lend them a hand and make things smoother. It will help them to:"), _React.default.createElement("ul", null, _React.default.createElement("li", null, "Improve the follow-up process so that they do not miss any leads"), _React.default.createElement("li", null, "Boost the conversion rate so that the business keeps on coming"), _React.default.createElement("li", null, "Reduce the time taken to convert a lead- reduce wait times of customers"), _React.default.createElement("li", null, "Make the salespeople more efficient and productive"), _React.default.createElement("li", null, "Send personalized emails to connect with customers on a large scale"), _React.default.createElement("li", null, "Offer quicker responses to all existing and potential customers"), _React.default.createElement("li", null, "Improve ROI by increasing customer numbers and judging the cost efficiency of campaigns")), _React.default.createElement("h1", null, "What Marketing Automation Services We Offer?"), _React.default.createElement("p", null, "To help you excel at marketing automation, we take care of the following"), _React.default.createElement("ul", null, _React.default.createElement("li", null, "Pick the right automation platform that suits your business needs"), _React.default.createElement("li", null, "Create a strategy that works and build an actionable marketing automation plan"), _React.default.createElement("li", null, "Set up the marketing software and ensure its smooth implementation"), _React.default.createElement("li", null, "Create automated workflows that work for your organization"), _React.default.createElement("li", null, "Implement CRM and train your team on the same")), _React.default.createElement("h1", null, "What Will We Set Up for You?"), _React.default.createElement("p", null, "We automate the following for you:"), _React.default.createElement("ul", null, _React.default.createElement("li", null, "Nurturing of prospects and leads"), _React.default.createElement("li", null, "Upselling"), _React.default.createElement("li", null, "Cross-selling"), _React.default.createElement("li", null, "Follow up of leads or prospects"), _React.default.createElement("li", null, "Reminders for your sales team"), _React.default.createElement("li", null, "Lead scoring"), _React.default.createElement("li", null, "Prioritizing the most valuable prospects"), _React.default.createElement("p", null, "Trust us to create all-inclusive marketing automation plans and implement them smoothly. These can be customized as per your organization needs and ensure your business gets the utmost marketing value in short and long term. Call now to talk to an expert directly!"))), _React.default.createElement("div", null, _React.default.createElement(_footer.default, null)));
     }
   }]);
 
@@ -37596,9 +37635,7 @@ function (_React$Component) {
 }(_React.default.Component);
 
 exports.default = MarketingAutomation;
-},{"React":"../node_modules/React/index.js","./footer":"../js/footer.js","../images/marketingautomationbanner.png":"../images/marketingautomationbanner.png"}],"../images/contactUs.jpg":[function(require,module,exports) {
-module.exports = "/contactUs.2c8c5e63.jpg";
-},{}],"../js/contactus.js":[function(require,module,exports) {
+},{"React":"../node_modules/React/index.js","./footer":"../js/footer.js","../images/marketingautomationbackground.jpg":"../images/marketingautomationbackground.jpg","../images/marketingautomationbanner.png":"../images/marketingautomationbanner.png"}],"../js/nameform.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -37607,94 +37644,12 @@ Object.defineProperty(exports, "__esModule", {
 exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
-
-var _footer = _interopRequireDefault(require("./footer"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-var ContactUs =
-/*#__PURE__*/
-function (_React$Component) {
-  _inherits(ContactUs, _React$Component);
-
-  function ContactUs(props) {
-    var _this;
-
-    _classCallCheck(this, ContactUs);
-
-    _this = _possibleConstructorReturn(this, _getPrototypeOf(ContactUs).call(this, props));
-    _this.state = {
-      value: ""
-    };
-    _this.handleChange = _this.handleChange.bind(_assertThisInitialized(_this));
-    return _this;
-  }
-
-  _createClass(ContactUs, [{
-    key: "handleChange",
-    value: function handleChange(event) {
-      this.setState({
-        value: event.target.value
-      });
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      var _ref;
-
-      return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement("title", null, "Contact Us"), _react.default.createElement("div", {
-        style: {
-          backgroundColor: "#2e2761"
-        }
-      }, _react.default.createElement("img", {
-        style: (_ref = {
-          border: "1px solid blue",
-          width: "50%",
-          height: "50%",
-          display: "block"
-        }, _defineProperty(_ref, "width", "50%"), _defineProperty(_ref, "marginLeft", "25%"), _ref),
-        src: require("../images/contactUs.jpg")
-      })));
-    }
-  }]);
-
-  return ContactUs;
-}(_react.default.Component);
-
-exports.default = ContactUs;
-},{"react":"../node_modules/react/index.js","./footer":"../js/footer.js","../images/contactUs.jpg":"../images/contactUs.jpg"}],"../js/nameform.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-
-var _react = _interopRequireDefault(require("react"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -37766,18 +37721,14 @@ function (_React$Component) {
     key: "render",
     value: function render() {
       return _react.default.createElement("div", {
-        style: {
-          border: "1px solid black",
+        style: _defineProperty({
           width: "100%",
           textAlign: "center"
-        }
+        }, "width", "25%")
       }, _react.default.createElement("h1", null, "Write to us"), _react.default.createElement("form", {
         onSubmit: this.handleSubmit,
         style: {
           border: "1px solid black",
-          width: "50%",
-          marginLeft: "25%",
-          marginBottom: "5%",
           backgroundColor: "#555c58"
         }
       }, _react.default.createElement("label", null, "Name:", _react.default.createElement("input", {
@@ -37806,7 +37757,122 @@ function (_React$Component) {
 }(_react.default.Component);
 
 exports.default = NameForm;
-},{"react":"../node_modules/react/index.js"}],"../js/index.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js"}],"../images/contactUs.jpg":[function(require,module,exports) {
+module.exports = "/contactUs.2c8c5e63.jpg";
+},{}],"../images/call.jpg":[function(require,module,exports) {
+module.exports = "/call.eaba5741.jpg";
+},{}],"../images/letters.png":[function(require,module,exports) {
+module.exports = "/letters.fa63b921.png";
+},{}],"../images/mailbox.jpg":[function(require,module,exports) {
+module.exports = "/mailbox.0795a02c.jpg";
+},{}],"../js/contactus.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _footer = _interopRequireDefault(require("./footer"));
+
+var _nameform = _interopRequireDefault(require("./nameform"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+var ContactUs =
+/*#__PURE__*/
+function (_React$Component) {
+  _inherits(ContactUs, _React$Component);
+
+  function ContactUs(props) {
+    var _this;
+
+    _classCallCheck(this, ContactUs);
+
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(ContactUs).call(this, props));
+    _this.state = {
+      value: ""
+    };
+    _this.handleChange = _this.handleChange.bind(_assertThisInitialized(_this));
+    return _this;
+  }
+
+  _createClass(ContactUs, [{
+    key: "handleChange",
+    value: function handleChange(event) {
+      this.setState({
+        value: event.target.value
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      return _react.default.createElement("div", {
+        style: {
+          display: "flex",
+          flexDirection: "column",
+          width: "100%"
+        }
+      }, _react.default.createElement("title", null, "Contact Us"), _react.default.createElement("div", {
+        style: {
+          backgroundColor: "#2e2761"
+        }
+      }, _react.default.createElement("img", {
+        style: {
+          width: "50%",
+          height: "400px",
+          display: "block",
+          marginLeft: "25%"
+        },
+        src: require("../images/contactUs.jpg")
+      })), _react.default.createElement("div", {
+        style: {
+          display: "flex"
+        }
+      }, _react.default.createElement(_nameform.default, null), _react.default.createElement("img", {
+        style: {
+          width: "25%"
+        },
+        src: require("../images/call.jpg")
+      }), _react.default.createElement("img", {
+        style: {
+          width: "25%"
+        },
+        src: require("../images/letters.png")
+      }), _react.default.createElement("img", {
+        style: {
+          width: "25%"
+        },
+        src: require("../images/mailbox.jpg")
+      })), _react.default.createElement("div", null, _react.default.createElement(_footer.default, null)));
+    }
+  }]);
+
+  return ContactUs;
+}(_react.default.Component);
+
+exports.default = ContactUs;
+},{"react":"../node_modules/react/index.js","./footer":"../js/footer.js","./nameform":"../js/nameform.js","../images/contactUs.jpg":"../images/contactUs.jpg","../images/call.jpg":"../images/call.jpg","../images/letters.png":"../images/letters.png","../images/mailbox.jpg":"../images/mailbox.jpg"}],"../js/index.js":[function(require,module,exports) {
 "use strict";
 
 var _react = _interopRequireDefault(require("react"));
@@ -37913,12 +37979,8 @@ function (_React$Component) {
         hamIconClick: this.hamburgerIconClicked
       })), _react.default.createElement("div", {
         style: {
-          display: this.state.displayMenuModal,
-          borderRadius: "5px",
-          position: "absolute",
-          top: "5%"
-        },
-        className: "MainMenuModal"
+          display: this.state.displayMenuModal
+        }
       }, _react.default.createElement(_main_menu_modal.default, {
         closeButtonPressed: this.menuCloseButtonPressed
       })), _react.default.createElement(_reactRouterDom.Switch, null, _react.default.createElement(_reactRouterDom.Route, {
@@ -37957,11 +38019,9 @@ function (_React$Component) {
         path: "/contactus"
       }, _react.default.createElement("div", {
         style: {
-          display: "flex",
-          flexDirection: "column",
           width: "100%"
         }
-      }, _react.default.createElement("div", null, _react.default.createElement(_contactus.default, null)), _react.default.createElement("div", null, _react.default.createElement(_nameform.default, null)), _react.default.createElement("div", null, _react.default.createElement(_footer.default, null))))), _react.default.createElement(_landingPageContent.default, null)));
+      }, _react.default.createElement(_contactus.default, null)))), _react.default.createElement(_landingPageContent.default, null)));
     }
   }]);
 
@@ -38000,7 +38060,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55420" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65423" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

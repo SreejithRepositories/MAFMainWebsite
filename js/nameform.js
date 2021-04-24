@@ -33,9 +33,9 @@ export default class NameForm extends React.Component {
     return (
       <div
         style={{
-          border: "1px solid black",
           width: "100%",
           textAlign: "center",
+          width: "25%",
         }}
       >
         <h1>Write to us</h1>
@@ -43,9 +43,7 @@ export default class NameForm extends React.Component {
           onSubmit={this.handleSubmit}
           style={{
             border: "1px solid black",
-            width: "50%",
-            marginLeft: "25%",
-            marginBottom: "5%",
+
             backgroundColor: "#555c58",
           }}
         >

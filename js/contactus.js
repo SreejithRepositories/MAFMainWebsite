@@ -1,5 +1,6 @@
 import React from "react";
 import Footer from "./footer";
+import NameForm from "./nameform";
 
 export default class ContactUs extends React.Component {
   constructor(props) {
@@ -14,22 +15,38 @@ export default class ContactUs extends React.Component {
   }
   render() {
     return (
-      <React.Fragment>
+      <div style={{ display: "flex", flexDirection: "column", width: "100%" }}>
         <title>Contact Us</title>
         <div style={{ backgroundColor: "#2e2761" }}>
           <img
             style={{
-              border: "1px solid blue",
               width: "50%",
-              height: "50%",
+              height: "400px",
               display: "block",
-              width: "50%",
               marginLeft: "25%",
             }}
             src={require("../images/contactUs.jpg")}
           ></img>
         </div>
-      </React.Fragment>
+        <div style={{ display: "flex" }}>
+          <NameForm />
+          <img
+            style={{ width: "25%" }}
+            src={require("../images/call.jpg")}
+          ></img>
+          <img
+            style={{ width: "25%" }}
+            src={require("../images/letters.png")}
+          ></img>
+          <img
+            style={{ width: "25%" }}
+            src={require("../images/mailbox.jpg")}
+          ></img>
+        </div>
+        <div>
+          <Footer />
+        </div>
+      </div>
     );
   }
 }

@@ -48,15 +48,7 @@ class App extends React.Component {
           <div style={{ width: "100%" }}>
             <Header hamIconClick={this.hamburgerIconClicked} />
           </div>
-          <div
-            style={{
-              display: this.state.displayMenuModal,
-              borderRadius: "5px",
-              position: "absolute",
-              top: "5%",
-            }}
-            className="MainMenuModal"
-          >
+          <div style={{ display: this.state.displayMenuModal }}>
             <MainMenuModal closeButtonPressed={this.menuCloseButtonPressed} />
           </div>
           <Switch>
@@ -89,22 +81,8 @@ class App extends React.Component {
           </Switch>
           <Switch>
             <Route exact path="/contactus">
-              <div
-                style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  width: "100%",
-                }}
-              >
-                <div>
-                  <ContactUs />
-                </div>
-                <div>
-                  <NameForm />
-                </div>
-                <div>
-                  <Footer />
-                </div>
+              <div style={{ width: "100%" }}>
+                <ContactUs />
               </div>
             </Route>
           </Switch>

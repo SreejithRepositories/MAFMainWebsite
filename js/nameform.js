@@ -1,4 +1,5 @@
 import React from "react";
+const validator = require("email-validator");
 
 export default class NameForm extends React.Component {
   constructor(props) {
@@ -23,9 +24,7 @@ export default class NameForm extends React.Component {
   }
 
   handleSubmit(event) {
-    // alert("A name was submitted: " + this.state.value);
-
-    console.log(this.state);
+    console.log(validator.validate(this.state.Email));
     event.preventDefault();
   }
 
@@ -40,6 +39,7 @@ export default class NameForm extends React.Component {
       >
         <h1>Write to us</h1>
         <form
+          action=""
           onSubmit={this.handleSubmit}
           style={{
             border: "1px solid black",

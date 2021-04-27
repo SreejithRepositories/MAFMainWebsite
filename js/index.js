@@ -11,6 +11,8 @@ import CloudAutomation from "./cloudautomation";
 import MarketingAutomation from "./marketingautomation";
 import ContactUs from "./contactus";
 import NameForm from "./nameform";
+import axios from "axios";
+import qs from "qs";
 
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Footer from "./footer";
@@ -23,7 +25,35 @@ class App extends React.Component {
     };
     this.hamburgerIconClicked = this.hamburgerIconClicked.bind(this);
     this.menuCloseButtonPressed = this.menuCloseButtonPressed.bind(this);
+    this.testClick = this.testClick.bind(this);
   }
+
+  testClick() {
+    const data = { bar: 123 };
+    const options = {
+      method: "POST",
+      headers: { "content-type": "application/x-www-form-urlencoded" },
+      data: qs.stringify(data),
+      url: "/mail",
+    };
+    axios(options);
+    // axios({
+    //   method: "post",
+    //   url: ,
+    //   data: {
+    //     firstName: "Finn",
+    //     lastName: "Williams",
+    //   },
+    // }).then(
+    //   (response) => {
+    //     console.log(response);
+    //   },
+    //   (error) => {
+    //     console.log(error);
+    //   }
+    // );
+  }
+
   hamburgerIconClicked(n) {
     if (n) {
       this.setState({ displayMenuModal: null });
@@ -89,6 +119,12 @@ class App extends React.Component {
 
           <LandingPageContent />
         </div>
+        <button
+          onClick={this.testClick}
+          style={{ position: "absolute", top: "750px" }}
+        >
+          Test
+        </button>
       </Router>
     );
   }

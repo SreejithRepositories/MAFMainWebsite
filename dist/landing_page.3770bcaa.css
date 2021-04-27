@@ -1,0 +1,88 @@
+.hamburgerIcon {
+  height: 75px;
+  float: right;
+}
+
+#banner {
+  /* border: 1px solid green; */
+  position: absolute;
+  top: 0px;
+  width: 100vw;
+  z-index: -1;
+  height: 90vh;
+}
+
+.leftArrow:hover {
+  cursor: pointer;
+}
+.rightArrow:hover {
+  cursor: pointer;
+}
+.hamburgerIcon {
+  cursor: pointer;
+}
+.banner {
+  /* position: fixed;
+  top: 0px; */
+  z-index: -1;
+  width: 100%;
+  /* border: 1px solid red; */
+}
+.MainMenuModal {
+  width: 50%;
+  height: 450px;
+  position: -webkit-sticky; /* Safari */
+  position: absolute;
+  left: 25%;
+  background-color: rgb(245, 241, 241);
+  border: 1px solid black;
+  z-index: 1;
+  background-image: linear-gradient(to Bottom right, white, #5b5c5e, white);
+}
+.ITServices:hover {
+  cursor: pointer;
+}
+
+.closeSubMenu {
+  cursor: pointer;
+}
+/* .grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  background-color: #2196f3;
+  padding: 10px;
+  width: 90vw;
+  margin: 1px solid red;
+}
+
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+} */
+#landing_page_content {
+  margin: auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+.one {
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 2%;
+}
+.oneDotOne,
+.oneDotTwo,
+.oneDotThree,
+.oneDotFour {
+  float: left;
+  border: 1px solid #1c1a38;
+  width: 23%;
+  border-radius: 5px;
+  box-shadow: -5px 2px 0 0 #1c1a38;
+}
+
+
+/*# sourceMappingURL=/landing_page.3770bcaa.css.map */

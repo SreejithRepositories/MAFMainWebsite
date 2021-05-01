@@ -40,17 +40,18 @@ export default class LandingPageContent extends React.Component {
               ></img>
               <p style={{ textAlign: "center" }}>Digital Transformation</p>
             </div>
-          </div>
-          <div className="oneDotFour">
-            <img
-              style={{ width: "100%" }}
-              src={require("../images/marketing_automation_blurb.png")}
-            ></img>
-            <p style={{ textAlign: "center" }}>
-              <a href="/marketingautomation" target="_blank">
-                Marketing Automation
-              </a>
-            </p>
+
+            <div className="oneDotFour">
+              <img
+                style={{ width: "100%" }}
+                src={require("../images/marketing_automation_blurb.png")}
+              ></img>
+              <p style={{ textAlign: "center" }}>
+                <a href="/marketingautomation" target="_blank">
+                  Marketing Automation
+                </a>
+              </p>
+            </div>
           </div>
           <div style={{ clear: "both", marginTop: "400px" }}>
             <Footer />

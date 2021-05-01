@@ -4,7 +4,7 @@ import ReactDOM from "react-dom";
 import Header from "./header";
 import Banner from "./banner";
 import "../css/landing_page.css";
-import Test from "./test";
+// import Test from "./test";
 import MainMenuModal from "./main_menu_modal";
 import LandingPageContent from "./landingPageContent";
 import CloudAutomation from "./cloudautomation";
@@ -89,13 +89,6 @@ class App extends React.Component {
             </Route>
           </Switch>
           <Switch>
-            <Route exact path="/test">
-              <div style={{ position: "absolute", top: "15%" }}>
-                <Test />
-              </div>
-            </Route>
-          </Switch>
-          <Switch>
             <Route exact path="/cloudautomation">
               <div style={{ position: "absolute", top: "15%", zIndex: "-1" }}>
                 <CloudAutomation />
@@ -119,12 +112,12 @@ class App extends React.Component {
 
           <LandingPageContent />
         </div>
-        <button
+        {/* <button
           onClick={this.testClick}
           style={{ position: "absolute", top: "750px" }}
         >
-          Test
-        </button>
+          <Test />
+        </button> */}
       </Router>
     );
   }

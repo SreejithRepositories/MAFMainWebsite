@@ -15,33 +15,19 @@ export default class ContactUs extends React.Component {
   }
   render() {
     return (
-      <div style={{ display: "flex", flexDirection: "column", width: "100%" }}>
+      <div className="contactUsMain">
         <title>Contact Us</title>
-        <div style={{ backgroundColor: "#2e2761" }}>
+        <div className="contactUsBanner">
           <img
-            style={{
-              width: "50%",
-              height: "400px",
-              display: "block",
-              marginLeft: "25%",
-            }}
+            className="contactUsBannerImage"
             src={require("../images/contactUs.jpg")}
           ></img>
         </div>
-        <div style={{ display: "flex" }}>
+        <div className="contactUsAllMethods">
           <NameForm />
-          <img
-            style={{ width: "25%" }}
-            src={require("../images/call.jpg")}
-          ></img>
-          <img
-            style={{ width: "25%" }}
-            src={require("../images/letters.png")}
-          ></img>
-          <img
-            style={{ width: "25%" }}
-            src={require("../images/mailbox.jpg")}
-          ></img>
+          <img className="callImage" src={require("../images/call.jpg")}></img>
+          <img className="letters" src={require("../images/letters.png")}></img>
+          <img className="mailbox" src={require("../images/mailbox.jpg")}></img>
         </div>
         <div>
           <Footer />

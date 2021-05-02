@@ -44,13 +44,7 @@ export default class NameForm extends React.Component {
 
   render() {
     return (
-      <div
-        style={{
-          width: "100%",
-          textAlign: "center",
-          width: "25%",
-        }}
-      >
+      <div className="formDiv">
         <h1>Write to us</h1>
         <form
           action=""

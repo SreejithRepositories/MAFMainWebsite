@@ -41427,8 +41427,6 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
@@ -41523,10 +41521,7 @@ function (_React$Component) {
     key: "render",
     value: function render() {
       return _react.default.createElement("div", {
-        style: _defineProperty({
-          width: "100%",
-          textAlign: "center"
-        }, "width", "25%")
+        className: "formDiv"
       }, _react.default.createElement("h1", null, "Write to us"), _react.default.createElement("form", {
         action: "",
         onSubmit: this.handleSubmit,
@@ -41636,41 +41631,22 @@ function (_React$Component) {
     key: "render",
     value: function render() {
       return _react.default.createElement("div", {
-        style: {
-          display: "flex",
-          flexDirection: "column",
-          width: "100%"
-        }
+        className: "contactUsMain"
       }, _react.default.createElement("title", null, "Contact Us"), _react.default.createElement("div", {
-        style: {
-          backgroundColor: "#2e2761"
-        }
+        className: "contactUsBanner"
       }, _react.default.createElement("img", {
-        style: {
-          width: "50%",
-          height: "400px",
-          display: "block",
-          marginLeft: "25%"
-        },
+        className: "contactUsBannerImage",
         src: require("../images/contactUs.jpg")
       })), _react.default.createElement("div", {
-        style: {
-          display: "flex"
-        }
+        className: "contactUsAllMethods"
       }, _react.default.createElement(_nameform.default, null), _react.default.createElement("img", {
-        style: {
-          width: "25%"
-        },
+        className: "callImage",
         src: require("../images/call.jpg")
       }), _react.default.createElement("img", {
-        style: {
-          width: "25%"
-        },
+        className: "letters",
         src: require("../images/letters.png")
       }), _react.default.createElement("img", {
-        style: {
-          width: "25%"
-        },
+        className: "mailbox",
         src: require("../images/mailbox.jpg")
       })), _react.default.createElement("div", null, _react.default.createElement(_footer.default, null)));
     }
@@ -41893,7 +41869,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62915" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65275" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

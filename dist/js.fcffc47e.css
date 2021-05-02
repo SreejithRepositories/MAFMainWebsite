@@ -119,6 +119,40 @@
   padding-bottom: 5px;
   /* background-color: #879187; */
 }
+
+.contactUsMain {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.contactUsBanner {
+  background-color: #2e2761;
+}
+
+.contactUsBannerImage {
+  width: 50%;
+  height: 400px;
+  display: block;
+  margin-left: 25%;
+}
+.contactUsAllMethods {
+  display: flex;
+}
+.formDiv {
+  text-align: center;
+  width: 25%;
+}
+.callImage {
+  width: 25%;
+}
+.letters {
+  width: 25%;
+}
+.mailbox {
+  width: 25%;
+}
+
 @media (max-width: 500px) {
   .one {
     flex-wrap: wrap;
@@ -129,6 +163,24 @@
   .oneDotFour {
     width: 50%;
   }
+}
+
+@media (max-width: 800px) {
+  .contactUsBannerImage {
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  .contactUsAllMethods {
+    flex-wrap: wrap;
+  }
+  .formDiv,
+  .callImage,
+  .letters,
+  .mailbox {
+    width: 50%;
+  }
+
   .flexContainerFooter {
     flex-direction: column;
   }
@@ -147,6 +199,7 @@
     justify-content: space-around;
   }
 }
+
 .flexOne > div {
   box-sizing: border-box;
   /* border: 1px solid green; */

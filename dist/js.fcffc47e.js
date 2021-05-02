@@ -29890,6 +29890,8 @@ module.exports = "/banner2.9eb60816.png";
 module.exports = "/banner3.c4944b84.png";
 },{}],"../images/banner4.png":[function(require,module,exports) {
 module.exports = "/banner4.5fec0ee6.png";
+},{}],"../images/banner5.png":[function(require,module,exports) {
+module.exports = "/banner5.a08fa9f5.png";
 },{}],"../images/arrow_back.png":[function(require,module,exports) {
 module.exports = "/arrow_back.1435ea1d.png";
 },{}],"../images/arrow_forward.png":[function(require,module,exports) {
@@ -29912,13 +29914,15 @@ var _carousel = _interopRequireDefault(require("./carousel"));
 
 require("../css/landing_page.css");
 
-var _banner = _interopRequireDefault(require("../images/banner1.png"));
+require("../images/banner1.png");
 
-var _banner2 = _interopRequireDefault(require("../images/banner2.png"));
+require("../images/banner2.png");
 
-var _banner3 = _interopRequireDefault(require("../images/banner3.png"));
+require("../images/banner3.png");
 
-var _banner4 = _interopRequireDefault(require("../images/banner4.png"));
+require("../images/banner4.png");
+
+require("../images/banner5.png");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -29955,9 +29959,9 @@ function (_React$Component) {
     _this = _possibleConstructorReturn(this, _getPrototypeOf(Banner).call(this, props));
     _this.state = {
       counter: 1,
-      imgArr: [_banner.default, _banner2.default, _banner3.default, _banner4.default],
+      // imgArr: [img1, img2, img3, img4],
       clicked: false,
-      imgUrlArr: ["../images/banner1.png", "../images/banner2.png", "../images/banner3.png", "../images/banner4.png"],
+      imgUrlArr: ["../images/banner1.png", "../images/banner2.png", "../images/banner3.png", "../images/banner5.png"],
       timer: ""
     };
     _this.timeOutMethod = _this.timeOutMethod.bind(_assertThisInitialized(_this));
@@ -30287,7 +30291,7 @@ function (_React$Component) {
 
 
 exports.default = Banner;
-},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","./carousel":"../js/carousel.js","../css/landing_page.css":"../css/landing_page.css","../images/banner1.png":"../images/banner1.png","../images/banner2.png":"../images/banner2.png","../images/banner3.png":"../images/banner3.png","../images/banner4.png":"../images/banner4.png","../images/carouselDot.png":"../images/carouselDot.png","../images/carouselDot_red.png":"../images/carouselDot_red.png","../images/arrow_back.png":"../images/arrow_back.png","../images/arrow_forward.png":"../images/arrow_forward.png","../images/chevron.png":"../images/chevron.png"}],"../node_modules/@babel/runtime/helpers/esm/setPrototypeOf.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","./carousel":"../js/carousel.js","../css/landing_page.css":"../css/landing_page.css","../images/banner1.png":"../images/banner1.png","../images/banner2.png":"../images/banner2.png","../images/banner3.png":"../images/banner3.png","../images/banner4.png":"../images/banner4.png","../images/banner5.png":"../images/banner5.png","../images/carouselDot.png":"../images/carouselDot.png","../images/carouselDot_red.png":"../images/carouselDot_red.png","../images/arrow_back.png":"../images/arrow_back.png","../images/arrow_forward.png":"../images/arrow_forward.png","../images/chevron.png":"../images/chevron.png"}],"../node_modules/@babel/runtime/helpers/esm/setPrototypeOf.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -41889,7 +41893,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53797" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62915" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

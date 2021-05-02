@@ -3,23 +3,24 @@ import react from "react";
 import ReactDOM from "react-dom";
 import Carousel from "./carousel";
 import "../css/landing_page.css";
-import img1 from "../images/banner1.png";
-import img2 from "../images/banner2.png";
-import img3 from "../images/banner3.png";
-import img4 from "../images/banner4.png";
+import "../images/banner1.png";
+import "../images/banner2.png";
+import "../images/banner3.png";
+import "../images/banner4.png";
+import "../images/banner5.png";
 
 export default class Banner extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       counter: 1,
-      imgArr: [img1, img2, img3, img4],
+      // imgArr: [img1, img2, img3, img4],
       clicked: false,
       imgUrlArr: [
         "../images/banner1.png",
         "../images/banner2.png",
         "../images/banner3.png",
-        "../images/banner4.png",
+        "../images/banner5.png",
       ],
       timer: "",
     };

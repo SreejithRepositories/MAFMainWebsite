@@ -1,6 +1,7 @@
 import React from "react";
 import react from "react";
 import ReactDOM from "react-dom";
+
 import Carousel from "./carousel";
 import "../css/landing_page.css";
 

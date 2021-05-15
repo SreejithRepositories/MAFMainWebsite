@@ -306,7 +306,7 @@ export default class Banner extends React.Component {
       <React.Fragment>
         <img
           onClick={this.click}
-          style={{ width: "100%", height: "90vh" }}
+          style={{ width: "100%" }}
           src={require(this.state.imgUrlArr[this.state.counter - 1])}
         ></img>
         <Carousel counter={arr} />

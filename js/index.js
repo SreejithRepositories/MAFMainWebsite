@@ -2,7 +2,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import Header from "./header";
-import Banner from "./banner";
+import Banner from "./banner_copy";
 import "../css/landing_page.css";
 // import Test from "./test";
 import MainMenuModal from "./main_menu_modal";

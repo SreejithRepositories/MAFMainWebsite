@@ -29777,521 +29777,32 @@ function (_React$Component) {
 
 
 exports.default = Header;
-},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","./hamburger.js":"../js/hamburger.js","../css/landing_page.css":"../css/landing_page.css","../images/logo.png":"../images/logo.png"}],"../images/carouselDot.png":[function(require,module,exports) {
-module.exports = "/carouselDot.21f77997.png";
-},{}],"../images/carouselDot_red.png":[function(require,module,exports) {
-module.exports = "/carouselDot_red.de01ef67.png";
-},{}],"../js/carousel.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","./hamburger.js":"../js/hamburger.js","../css/landing_page.css":"../css/landing_page.css","../images/logo.png":"../images/logo.png"}],"../node_modules/@babel/runtime/helpers/esm/extends.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports.default = _extends;
 
-var _react = _interopRequireDefault(require("react"));
+function _extends() {
+  exports.default = _extends = Object.assign || function (target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i];
 
-var _reactDom = _interopRequireDefault(require("react-dom"));
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-var Carousel =
-/*#__PURE__*/
-function (_React$Component) {
-  _inherits(Carousel, _React$Component);
-
-  function Carousel(props) {
-    var _this;
-
-    _classCallCheck(this, Carousel);
-
-    _this = _possibleConstructorReturn(this, _getPrototypeOf(Carousel).call(this, props));
-    _this.state = {
-      counter: _this.props.counter
-    };
-    return _this;
-  }
-
-  _createClass(Carousel, [{
-    key: "render",
-    value: function render() {
-      var arr = [_react.default.createElement("img", {
-        style: {
-          width: "25px",
-          height: "18px",
-          display: "inline-block",
-          position: "absolute",
-          left: "47%",
-          top: "80%"
-        },
-        src: require("../images/carouselDot.png")
-      }), _react.default.createElement("img", {
-        style: {
-          width: "25px",
-          height: "18px",
-          display: "inline-block",
-          position: "absolute",
-          left: "50%",
-          top: "80%"
-        },
-        src: require("../images/carouselDot_red.png")
-      }), _react.default.createElement("img", {
-        style: {
-          width: "25px",
-          height: "18px",
-          display: "inline-block",
-          position: "absolute",
-          left: "53%",
-          top: "80%"
-        },
-        src: require("../images/carouselDot.png")
-      }), _react.default.createElement("img", {
-        style: {
-          width: "25px",
-          height: "18px",
-          display: "inline-block",
-          position: "absolute",
-          left: "56%",
-          top: "80%"
-        },
-        src: require("../images/carouselDot.png")
-      })];
-      return this.props.counter;
-    }
-  }]);
-
-  return Carousel;
-}(_react.default.Component);
-
-exports.default = Carousel;
-},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","../images/carouselDot.png":"../images/carouselDot.png","../images/carouselDot_red.png":"../images/carouselDot_red.png"}],"../images/banner1.png":[function(require,module,exports) {
-module.exports = "/banner1.b1676357.png";
-},{}],"../images/banner2.png":[function(require,module,exports) {
-module.exports = "/banner2.9eb60816.png";
-},{}],"../images/banner3.png":[function(require,module,exports) {
-module.exports = "/banner3.c4944b84.png";
-},{}],"../images/banner4.png":[function(require,module,exports) {
-module.exports = "/banner4.5fec0ee6.png";
-},{}],"../images/banner5.png":[function(require,module,exports) {
-module.exports = "/banner5.a08fa9f5.png";
-},{}],"../images/arrow_back.png":[function(require,module,exports) {
-module.exports = "/arrow_back.1435ea1d.png";
-},{}],"../images/arrow_forward.png":[function(require,module,exports) {
-module.exports = "/arrow_forward.8ab76bd2.png";
-},{}],"../images/chevron.png":[function(require,module,exports) {
-module.exports = "/chevron.cf94fb59.png";
-},{}],"../js/banner.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-
-var _react = _interopRequireDefault(require("react"));
-
-var _reactDom = _interopRequireDefault(require("react-dom"));
-
-var _carousel = _interopRequireDefault(require("./carousel"));
-
-require("../css/landing_page.css");
-
-require("../images/banner1.png");
-
-require("../images/banner2.png");
-
-require("../images/banner3.png");
-
-require("../images/banner4.png");
-
-require("../images/banner5.png");
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-var Banner =
-/*#__PURE__*/
-function (_React$Component) {
-  _inherits(Banner, _React$Component);
-
-  function Banner(props) {
-    var _this;
-
-    _classCallCheck(this, Banner);
-
-    _this = _possibleConstructorReturn(this, _getPrototypeOf(Banner).call(this, props));
-    _this.state = {
-      counter: 1,
-      // imgArr: [img1, img2, img3, img4],
-      clicked: false,
-      imgUrlArr: ["../images/banner1.png", "../images/banner2.png", "../images/banner3.png", "../images/banner5.png"],
-      timer: ""
-    };
-    _this.timeOutMethod = _this.timeOutMethod.bind(_assertThisInitialized(_this));
-    _this.click = _this.click.bind(_assertThisInitialized(_this));
-    _this.leftArrow = _this.leftArrow.bind(_assertThisInitialized(_this));
-    _this.rightArrow = _this.rightArrow.bind(_assertThisInitialized(_this));
-    return _this;
-  }
-
-  _createClass(Banner, [{
-    key: "timeOutMethod",
-    value: function timeOutMethod() {
-      if (this.state.counter == 4) {
-        // clearInterval(this.state.timer);
-        this.setState({
-          counter: 1
-        });
-        return;
-      }
-
-      this.setState({
-        counter: this.state.counter + 1
-      });
-    }
-  }, {
-    key: "componentDidMount",
-    value: function componentDidMount() {
-      this.state.timer = setInterval(this.timeOutMethod, 3000);
-    }
-  }, {
-    key: "click",
-    value: function click() {
-      clearInterval(this.state.timer);
-      this.setState({
-        clicked: true
-      });
-    }
-  }, {
-    key: "leftArrow",
-    value: function leftArrow() {
-      if (this.state.counter == 1) {
-        this.setState({
-          counter: 4
-        });
-      } else {
-        this.setState({
-          counter: this.state.counter - 1
-        });
+      for (var key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+          target[key] = source[key];
+        }
       }
     }
-  }, {
-    key: "rightArrow",
-    value: function rightArrow() {
-      if (this.state.counter == 4) {
-        this.setState({
-          counter: 1
-        });
-      } else {
-        this.setState({
-          counter: this.state.counter + 1
-        });
-      }
-    }
-  }, {
-    key: "render",
-    value: function render() {
-      var _React$createElement;
 
-      var arr = [_react.default.createElement("img", {
-        style: {
-          width: "18px",
-          height: "15px",
-          display: "inline-block",
-          position: "absolute",
-          left: "47%",
-          top: "80%"
-        },
-        src: require("../images/carouselDot.png")
-      }), _react.default.createElement("img", {
-        style: {
-          width: "18px",
-          height: "18px",
-          display: "inline-block",
-          position: "absolute",
-          left: "50%",
-          top: "80%"
-        },
-        src: require("../images/carouselDot.png")
-      }), _react.default.createElement("img", {
-        style: {
-          width: "18px",
-          height: "18px",
-          display: "inline-block",
-          position: "absolute",
-          left: "53%",
-          top: "80%"
-        },
-        src: require("../images/carouselDot.png")
-      }), _react.default.createElement("img", {
-        style: {
-          width: "18px",
-          height: "18px",
-          display: "inline-block",
-          position: "absolute",
-          left: "56%",
-          top: "80%"
-        },
-        src: require("../images/carouselDot.png")
-      })];
+    return target;
+  };
 
-      if (this.state.counter == 1) {
-        var arr = [_react.default.createElement("img", {
-          style: {
-            width: "20px",
-            height: "20px",
-            display: "inline-block",
-            position: "absolute",
-            left: "47%",
-            top: "80%"
-          },
-          src: require("../images/carouselDot_red.png")
-        }), _react.default.createElement("img", {
-          style: {
-            width: "20px",
-            height: "20px",
-            display: "inline-block",
-            position: "absolute",
-            left: "50%",
-            top: "80%"
-          },
-          src: require("../images/carouselDot.png")
-        }), _react.default.createElement("img", {
-          style: {
-            width: "20px",
-            height: "20px",
-            display: "inline-block",
-            position: "absolute",
-            left: "53%",
-            top: "80%"
-          },
-          src: require("../images/carouselDot.png")
-        }), _react.default.createElement("img", {
-          style: {
-            width: "20px",
-            height: "20px",
-            display: "inline-block",
-            position: "absolute",
-            left: "56%",
-            top: "80%"
-          },
-          src: require("../images/carouselDot.png")
-        })];
-      } else if (this.state.counter == 2) {
-        var arr = [_react.default.createElement("img", {
-          style: {
-            width: "20px",
-            height: "20px",
-            display: "inline-block",
-            position: "absolute",
-            left: "47%",
-            top: "80%"
-          },
-          src: require("../images/carouselDot.png")
-        }), _react.default.createElement("img", {
-          style: {
-            width: "20px",
-            height: "20px",
-            display: "inline-block",
-            position: "absolute",
-            left: "50%",
-            top: "80%"
-          },
-          src: require("../images/carouselDot_red.png")
-        }), _react.default.createElement("img", {
-          style: {
-            width: "20px",
-            height: "20px",
-            display: "inline-block",
-            position: "absolute",
-            left: "53%",
-            top: "80%"
-          },
-          src: require("../images/carouselDot.png")
-        }), _react.default.createElement("img", {
-          style: {
-            width: "20px",
-            height: "20px",
-            display: "inline-block",
-            position: "absolute",
-            left: "56%",
-            top: "80%"
-          },
-          src: require("../images/carouselDot.png")
-        })];
-      } else if (this.state.counter == 3) {
-        var arr = [_react.default.createElement("img", {
-          style: {
-            width: "20px",
-            height: "20px",
-            display: "inline-block",
-            position: "absolute",
-            left: "47%",
-            top: "80%"
-          },
-          src: require("../images/carouselDot.png")
-        }), _react.default.createElement("img", {
-          style: {
-            width: "20px",
-            height: "20px",
-            display: "inline-block",
-            position: "absolute",
-            left: "50%",
-            top: "80%"
-          },
-          src: require("../images/carouselDot.png")
-        }), _react.default.createElement("img", {
-          style: {
-            width: "20px",
-            height: "20px",
-            display: "inline-block",
-            position: "absolute",
-            left: "53%",
-            top: "80%"
-          },
-          src: require("../images/carouselDot_red.png")
-        }), _react.default.createElement("img", {
-          style: {
-            width: "20px",
-            height: "20px",
-            display: "inline-block",
-            position: "absolute",
-            left: "56%",
-            top: "80%"
-          },
-          src: require("../images/carouselDot.png")
-        })];
-      } else if (this.state.counter == 4) {
-        var arr = [_react.default.createElement("img", {
-          style: {
-            width: "20px",
-            height: "20px",
-            display: "inline-block",
-            position: "absolute",
-            left: "47%",
-            top: "80%"
-          },
-          src: require("../images/carouselDot.png")
-        }), _react.default.createElement("img", {
-          style: {
-            width: "20px",
-            height: "20px",
-            display: "inline-block",
-            position: "absolute",
-            left: "50%",
-            top: "80%"
-          },
-          src: require("../images/carouselDot.png")
-        }), _react.default.createElement("img", {
-          style: {
-            width: "20px",
-            height: "20px",
-            display: "inline-block",
-            position: "absolute",
-            left: "53%",
-            top: "80%"
-          },
-          src: require("../images/carouselDot.png")
-        }), _react.default.createElement("img", {
-          style: {
-            width: "20px",
-            height: "20px",
-            display: "inline-block",
-            position: "absolute",
-            left: "56%",
-            top: "80%"
-          },
-          src: require("../images/carouselDot_red.png")
-        })];
-      }
-
-      var disp = this.state.clicked ? "visible" : "hidden";
-      return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement("img", {
-        onClick: this.click,
-        style: {
-          width: "100%",
-          height: "90vh"
-        },
-        src: require(this.state.imgUrlArr[this.state.counter - 1])
-      }), _react.default.createElement(_carousel.default, {
-        counter: arr
-      }), _react.default.createElement("img", {
-        onClick: this.leftArrow,
-        className: "leftArrow",
-        style: {
-          visibility: disp,
-          position: "absolute",
-          left: "5px",
-          top: "45%",
-          height: "35px",
-          backgroundColor: "white"
-        },
-        src: require("../images/arrow_back.png")
-      }), _react.default.createElement("img", (_React$createElement = {
-        onClick: this.rightArrow,
-        className: "rightArrow"
-      }, _defineProperty(_React$createElement, "onClick", this.rightArrow), _defineProperty(_React$createElement, "style", _defineProperty({
-        visibility: disp,
-        position: "absolute",
-        right: "20px",
-        top: "45%",
-        height: "50px",
-        backgroundColor: "white"
-      }, "height", "35px")), _defineProperty(_React$createElement, "src", require("../images/arrow_forward.png")), _React$createElement)), _react.default.createElement("img", {
-        style: {
-          position: "absolute",
-          left: "50%",
-          top: "87%",
-          height: "50px"
-        },
-        src: require("../images/chevron.png")
-      }));
-    }
-  }]);
-
-  return Banner;
-}(_react.default.Component); // ReactDOM.render(<Banner/>, document.getElementById("banner"))
-
-
-exports.default = Banner;
-},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","./carousel":"../js/carousel.js","../css/landing_page.css":"../css/landing_page.css","../images/banner1.png":"../images/banner1.png","../images/banner2.png":"../images/banner2.png","../images/banner3.png":"../images/banner3.png","../images/banner4.png":"../images/banner4.png","../images/banner5.png":"../images/banner5.png","../images/carouselDot.png":"../images/carouselDot.png","../images/carouselDot_red.png":"../images/carouselDot_red.png","../images/arrow_back.png":"../images/arrow_back.png","../images/arrow_forward.png":"../images/arrow_forward.png","../images/chevron.png":"../images/chevron.png"}],"../node_modules/@babel/runtime/helpers/esm/setPrototypeOf.js":[function(require,module,exports) {
+  return _extends.apply(this, arguments);
+}
+},{}],"../node_modules/@babel/runtime/helpers/esm/setPrototypeOf.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -30324,7 +29835,44 @@ function _inheritsLoose(subClass, superClass) {
   subClass.prototype.constructor = subClass;
   (0, _setPrototypeOf.default)(subClass, superClass);
 }
-},{"./setPrototypeOf.js":"../node_modules/@babel/runtime/helpers/esm/setPrototypeOf.js"}],"../node_modules/react-is/cjs/react-is.development.js":[function(require,module,exports) {
+},{"./setPrototypeOf.js":"../node_modules/@babel/runtime/helpers/esm/setPrototypeOf.js"}],"../node_modules/@babel/runtime/helpers/esm/assertThisInitialized.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = _assertThisInitialized;
+
+function _assertThisInitialized(self) {
+  if (self === void 0) {
+    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+  }
+
+  return self;
+}
+},{}],"../node_modules/@babel/runtime/helpers/esm/defineProperty.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = _defineProperty;
+
+function _defineProperty(obj, key, value) {
+  if (key in obj) {
+    Object.defineProperty(obj, key, {
+      value: value,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    });
+  } else {
+    obj[key] = value;
+  }
+
+  return obj;
+}
+},{}],"../node_modules/react-is/cjs/react-is.development.js":[function(require,module,exports) {
 /** @license React v16.13.1
  * react-is.development.js
  *
@@ -31295,32 +30843,1240 @@ if ("development" !== 'production') {
   // http://fb.me/prop-types-in-prod
   module.exports = require('./factoryWithThrowingShims')();
 }
-},{"react-is":"../node_modules/react-is/index.js","./factoryWithTypeCheckers":"../node_modules/prop-types/factoryWithTypeCheckers.js"}],"../node_modules/@babel/runtime/helpers/esm/extends.js":[function(require,module,exports) {
+},{"react-is":"../node_modules/react-is/index.js","./factoryWithTypeCheckers":"../node_modules/prop-types/factoryWithTypeCheckers.js"}],"../node_modules/invariant/browser.js":[function(require,module,exports) {
+/**
+ * Copyright (c) 2013-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+'use strict';
+/**
+ * Use invariant() to assert state which your program assumes to be true.
+ *
+ * Provide sprintf-style format (only %s is supported) and arguments
+ * to provide information about what broke and what you were
+ * expecting.
+ *
+ * The invariant message will be stripped in production, but the invariant
+ * will remain to ensure logic does not differ in production.
+ */
+
+var invariant = function (condition, format, a, b, c, d, e, f) {
+  if ("development" !== 'production') {
+    if (format === undefined) {
+      throw new Error('invariant requires an error message argument');
+    }
+  }
+
+  if (!condition) {
+    var error;
+
+    if (format === undefined) {
+      error = new Error('Minified exception occurred; use the non-minified dev environment ' + 'for the full error message and additional helpful warnings.');
+    } else {
+      var args = [a, b, c, d, e, f];
+      var argIndex = 0;
+      error = new Error(format.replace(/%s/g, function () {
+        return args[argIndex++];
+      }));
+      error.name = 'Invariant Violation';
+    }
+
+    error.framesToPop = 1; // we don't care about invariant's own frame
+
+    throw error;
+  }
+};
+
+module.exports = invariant;
+},{}],"../node_modules/string-convert/camel2hyphen.js":[function(require,module,exports) {
+var camel2hyphen = function (str) {
+  return str
+          .replace(/[A-Z]/g, function (match) {
+            return '-' + match.toLowerCase();
+          })
+          .toLowerCase();
+};
+
+module.exports = camel2hyphen;
+},{}],"../node_modules/json2mq/index.js":[function(require,module,exports) {
+var camel2hyphen = require('string-convert/camel2hyphen');
+
+var isDimension = function (feature) {
+  var re = /[height|width]$/;
+  return re.test(feature);
+};
+
+var obj2mq = function (obj) {
+  var mq = '';
+  var features = Object.keys(obj);
+  features.forEach(function (feature, index) {
+    var value = obj[feature];
+    feature = camel2hyphen(feature);
+    // Add px to dimension features
+    if (isDimension(feature) && typeof value === 'number') {
+      value = value + 'px';
+    }
+    if (value === true) {
+      mq += feature;
+    } else if (value === false) {
+      mq += 'not ' + feature;
+    } else {
+      mq += '(' + feature + ': ' + value + ')';
+    }
+    if (index < features.length-1) {
+      mq += ' and '
+    }
+  });
+  return mq;
+};
+
+var json2mq = function (query) {
+  var mq = '';
+  if (typeof query === 'string') {
+    return query;
+  }
+  // Handling array of media queries
+  if (query instanceof Array) {
+    query.forEach(function (q, index) {
+      mq += obj2mq(q);
+      if (index < query.length-1) {
+        mq += ', '
+      }
+    });
+    return mq;
+  }
+  // Handling single media query
+  return obj2mq(query);
+};
+
+module.exports = json2mq;
+},{"string-convert/camel2hyphen":"../node_modules/string-convert/camel2hyphen.js"}],"../node_modules/react-media/esm/react-media.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = _extends;
+exports.default = void 0;
 
-function _extends() {
-  exports.default = _extends = Object.assign || function (target) {
-    for (var i = 1; i < arguments.length; i++) {
-      var source = arguments[i];
+var _extends4 = _interopRequireDefault(require("@babel/runtime/helpers/esm/extends"));
 
-      for (var key in source) {
-        if (Object.prototype.hasOwnProperty.call(source, key)) {
-          target[key] = source[key];
-        }
+var _inheritsLoose2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/inheritsLoose"));
+
+var _assertThisInitialized2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/assertThisInitialized"));
+
+var _defineProperty2 = _interopRequireDefault(require("@babel/runtime/helpers/esm/defineProperty"));
+
+var _react = _interopRequireDefault(require("react"));
+
+var _propTypes = _interopRequireDefault(require("prop-types"));
+
+var _invariant = _interopRequireDefault(require("invariant"));
+
+var _json2mq = _interopRequireDefault(require("json2mq"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var MediaQueryListener =
+/*#__PURE__*/
+function () {
+  function MediaQueryListener(targetWindow, query, listener) {
+    var _this = this;
+
+    this.nativeMediaQueryList = targetWindow.matchMedia(query);
+    this.active = true; // Safari doesn't clear up listener with removeListener
+    // when the listener is already waiting in the event queue.
+    // Having an active flag to make sure the listener is not called
+    // after we removeListener.
+
+    this.cancellableListener = function () {
+      _this.matches = _this.nativeMediaQueryList.matches;
+
+      if (_this.active) {
+        listener.apply(void 0, arguments);
       }
-    }
+    };
 
-    return target;
+    this.nativeMediaQueryList.addListener(this.cancellableListener);
+    this.matches = this.nativeMediaQueryList.matches;
+  }
+
+  var _proto = MediaQueryListener.prototype;
+
+  _proto.cancel = function cancel() {
+    this.active = false;
+    this.nativeMediaQueryList.removeListener(this.cancellableListener);
   };
 
-  return _extends.apply(this, arguments);
+  return MediaQueryListener;
+}();
+
+var queryType = _propTypes.default.oneOfType([_propTypes.default.string, _propTypes.default.object, _propTypes.default.arrayOf(_propTypes.default.object.isRequired)]);
+/**
+ * Conditionally renders based on whether or not a media query matches.
+ */
+
+
+var Media =
+/*#__PURE__*/
+function (_React$Component) {
+  (0, _inheritsLoose2.default)(Media, _React$Component);
+
+  function Media(props) {
+    var _this;
+
+    _this = _React$Component.call(this, props) || this;
+    (0, _defineProperty2.default)((0, _assertThisInitialized2.default)((0, _assertThisInitialized2.default)(_this)), "queries", []);
+    (0, _defineProperty2.default)((0, _assertThisInitialized2.default)((0, _assertThisInitialized2.default)(_this)), "getMatches", function () {
+      var result = _this.queries.reduce(function (acc, _ref) {
+        var _extends2;
+
+        var name = _ref.name,
+            mqListener = _ref.mqListener;
+        return (0, _extends4.default)({}, acc, (_extends2 = {}, _extends2[name] = mqListener.matches, _extends2));
+      }, {}); // return result;
+
+
+      return unwrapSingleQuery(result);
+    });
+    (0, _defineProperty2.default)((0, _assertThisInitialized2.default)((0, _assertThisInitialized2.default)(_this)), "updateMatches", function () {
+      var newMatches = _this.getMatches();
+
+      _this.setState(function () {
+        return {
+          matches: newMatches
+        };
+      }, _this.onChange);
+    });
+    !(!(!props.query && !props.queries) || props.query && props.queries) ? "development" !== "production" ? (0, _invariant.default)(false, '<Media> must be supplied with either "query" or "queries"') : (0, _invariant.default)(false) : void 0;
+    !(props.defaultMatches === undefined || !props.query || typeof props.defaultMatches === "boolean") ? "development" !== "production" ? (0, _invariant.default)(false, "<Media> when query is set, defaultMatches must be a boolean, received " + typeof props.defaultMatches) : (0, _invariant.default)(false) : void 0;
+    !(props.defaultMatches === undefined || !props.queries || typeof props.defaultMatches === "object") ? "development" !== "production" ? (0, _invariant.default)(false, "<Media> when queries is set, defaultMatches must be a object of booleans, received " + typeof props.defaultMatches) : (0, _invariant.default)(false) : void 0;
+
+    if (typeof window !== "object") {
+      // In case we're rendering on the server, apply the default matches
+      var matches;
+
+      if (props.defaultMatches !== undefined) {
+        matches = props.defaultMatches;
+      } else if (props.query) {
+        matches = true;
+      }
+      /* if (props.queries) */
+      else {
+          matches = Object.keys(_this.props.queries).reduce(function (acc, key) {
+            var _extends3;
+
+            return (0, _extends4.default)({}, acc, (_extends3 = {}, _extends3[key] = true, _extends3));
+          }, {});
+        }
+
+      _this.state = {
+        matches: matches
+      };
+      return (0, _assertThisInitialized2.default)(_this);
+    }
+
+    _this.initialize(); // Instead of calling this.updateMatches, we manually set the initial state to prevent
+    // calling setState, which could trigger an unnecessary second render
+
+
+    _this.state = {
+      matches: _this.props.defaultMatches !== undefined ? _this.props.defaultMatches : _this.getMatches()
+    };
+
+    _this.onChange();
+
+    return _this;
+  }
+
+  var _proto = Media.prototype;
+
+  _proto.initialize = function initialize() {
+    var _this2 = this;
+
+    var targetWindow = this.props.targetWindow || window;
+    !(typeof targetWindow.matchMedia === "function") ? "development" !== "production" ? (0, _invariant.default)(false, "<Media targetWindow> does not support `matchMedia`.") : (0, _invariant.default)(false) : void 0;
+    var queries = this.props.queries || wrapInQueryObject(this.props.query);
+    this.queries = Object.keys(queries).map(function (name) {
+      var query = queries[name];
+      var qs = typeof query !== "string" ? (0, _json2mq.default)(query) : query;
+      var mqListener = new MediaQueryListener(targetWindow, qs, _this2.updateMatches);
+      return {
+        name: name,
+        mqListener: mqListener
+      };
+    });
+  };
+
+  _proto.componentDidMount = function componentDidMount() {
+    this.initialize(); // If props.defaultMatches has been set, ensure we trigger a two-pass render.
+    // This is useful for SSR with mismatching defaultMatches vs actual matches from window.matchMedia
+    // Details: https://github.com/ReactTraining/react-media/issues/81
+
+    if (this.props.defaultMatches !== undefined) {
+      this.updateMatches();
+    }
+  };
+
+  _proto.onChange = function onChange() {
+    var onChange = this.props.onChange;
+
+    if (onChange) {
+      onChange(this.state.matches);
+    }
+  };
+
+  _proto.componentWillUnmount = function componentWillUnmount() {
+    this.queries.forEach(function (_ref2) {
+      var mqListener = _ref2.mqListener;
+      return mqListener.cancel();
+    });
+  };
+
+  _proto.render = function render() {
+    var _this$props = this.props,
+        children = _this$props.children,
+        render = _this$props.render;
+    var matches = this.state.matches;
+    var isAnyMatches = typeof matches === "object" ? Object.keys(matches).some(function (key) {
+      return matches[key];
+    }) : matches;
+    return render ? isAnyMatches ? render(matches) : null : children ? typeof children === "function" ? children(matches) : !Array.isArray(children) || children.length // Preact defaults to empty children array
+    ? isAnyMatches ? // We have to check whether child is a composite component or not to decide should we
+    // provide `matches` as a prop or not
+    _react.default.Children.only(children) && typeof _react.default.Children.only(children).type === "string" ? _react.default.Children.only(children) : _react.default.cloneElement(_react.default.Children.only(children), {
+      matches: matches
+    }) : null : null : null;
+  };
+
+  return Media;
+}(_react.default.Component);
+/**
+ * Wraps a single query in an object. This is used to provide backward compatibility with
+ * the old `query` prop (as opposed to `queries`). If only a single query is passed, the object
+ * will be unpacked down the line, but this allows our internals to assume an object of queries
+ * at all times.
+ */
+
+
+(0, _defineProperty2.default)(Media, "propTypes", {
+  defaultMatches: _propTypes.default.oneOfType([_propTypes.default.bool, _propTypes.default.objectOf(_propTypes.default.bool)]),
+  query: queryType,
+  queries: _propTypes.default.objectOf(queryType),
+  render: _propTypes.default.func,
+  children: _propTypes.default.oneOfType([_propTypes.default.node, _propTypes.default.func]),
+  targetWindow: _propTypes.default.object,
+  onChange: _propTypes.default.func
+});
+
+function wrapInQueryObject(query) {
+  return {
+    __DEFAULT__: query
+  };
 }
-},{}],"../node_modules/resolve-pathname/esm/resolve-pathname.js":[function(require,module,exports) {
+/**
+ * Unwraps an object of queries, if it was originally passed as a single query.
+ */
+
+
+function unwrapSingleQuery(queryObject) {
+  var queryNames = Object.keys(queryObject);
+
+  if (queryNames.length === 1 && queryNames[0] === "__DEFAULT__") {
+    return queryObject.__DEFAULT__;
+  }
+
+  return queryObject;
+}
+
+var _default = Media;
+exports.default = _default;
+},{"@babel/runtime/helpers/esm/extends":"../node_modules/@babel/runtime/helpers/esm/extends.js","@babel/runtime/helpers/esm/inheritsLoose":"../node_modules/@babel/runtime/helpers/esm/inheritsLoose.js","@babel/runtime/helpers/esm/assertThisInitialized":"../node_modules/@babel/runtime/helpers/esm/assertThisInitialized.js","@babel/runtime/helpers/esm/defineProperty":"../node_modules/@babel/runtime/helpers/esm/defineProperty.js","react":"../node_modules/react/index.js","prop-types":"../node_modules/prop-types/index.js","invariant":"../node_modules/invariant/browser.js","json2mq":"../node_modules/json2mq/index.js"}],"../js/carousel copy.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _reactDom = _interopRequireDefault(require("react-dom"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread(); }
+
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance"); }
+
+function _iterableToArray(iter) { if (Symbol.iterator in Object(iter) || Object.prototype.toString.call(iter) === "[object Arguments]") return Array.from(iter); }
+
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+var Carousel =
+/*#__PURE__*/
+function (_React$Component) {
+  _inherits(Carousel, _React$Component);
+
+  function Carousel(props) {
+    var _this;
+
+    _classCallCheck(this, Carousel);
+
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(Carousel).call(this, props));
+    _this.state = {
+      counter: _this.props.counter
+    };
+    return _this;
+  }
+
+  _createClass(Carousel, [{
+    key: "render",
+    value: function render() {
+      //         var arr = [<img style ={{width: "25px", height: "18px", display: "inline-block", position: "absolute", left: "47%", top: "80%"}} src = {require("../images/carouselDot.png")}></img>,
+      //  <img style ={{width: "25px", height: "18px", display: "inline-block", position: "absolute", left: "50%", top: "80%"}} src = {require("../images/carouselDot_red.png")}></img>,
+      //  <img style ={{width: "25px", height: "18px", display: "inline-block", position: "absolute", left: "53%",top: "80%"}} src = {require("../images/carouselDot.png")}></img>,
+      //  <img style ={{width: "25px", height: "18px", display: "inline-block", position: "absolute", left: "56%",top: "80%"}} src = {require("../images/carouselDot.png")}></img>]
+      var carouselDiv = _react.default.createElement("div", {
+        style: {
+          border: "1px solid green",
+          width: "100%"
+        }
+      }, _toConsumableArray(this.props.counter));
+
+      return carouselDiv;
+    }
+  }]);
+
+  return Carousel;
+}(_react.default.Component);
+
+exports.default = Carousel;
+},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js"}],"../images/banner1.png":[function(require,module,exports) {
+module.exports = "/banner1.b1676357.png";
+},{}],"../images/banner2.png":[function(require,module,exports) {
+module.exports = "/banner2.9eb60816.png";
+},{}],"../images/banner3.png":[function(require,module,exports) {
+module.exports = "/banner3.c4944b84.png";
+},{}],"../images/banner4.png":[function(require,module,exports) {
+module.exports = "/banner4.5fec0ee6.png";
+},{}],"../images/banner5.png":[function(require,module,exports) {
+module.exports = "/banner5.a08fa9f5.png";
+},{}],"../images/banner1_683_319.png":[function(require,module,exports) {
+module.exports = "/banner1_683_319.26c5c505.png";
+},{}],"../images/banner1_424_198.png":[function(require,module,exports) {
+module.exports = "/banner1_424_198.58af902f.png";
+},{}],"../images/banner1_250_116.png":[function(require,module,exports) {
+module.exports = "/banner1_250_116.9092c184.png";
+},{}],"../images/banner2_250_133.png":[function(require,module,exports) {
+module.exports = "/banner2_250_133.524a8843.png";
+},{}],"../images/banner2_424_226.png":[function(require,module,exports) {
+module.exports = "/banner2_424_226.6cf99e18.png";
+},{}],"../images/banner2_683_365.png":[function(require,module,exports) {
+module.exports = "/banner2_683_365.50a19733.png";
+},{}],"../images/banner3_424_282.jpg":[function(require,module,exports) {
+module.exports = "/banner3_424_282.36255f7c.jpg";
+},{}],"../images/banner3_683_455.jpg":[function(require,module,exports) {
+module.exports = "/banner3_683_455.d2d6d90e.jpg";
+},{}],"../images/banner3_250_166.jpg":[function(require,module,exports) {
+module.exports = "/banner3_250_166.4fcbdc3c.jpg";
+},{}],"../images/banner5_683_408.png":[function(require,module,exports) {
+module.exports = "/banner5_683_408.b0140437.png";
+},{}],"../images/banner5_424_253.png":[function(require,module,exports) {
+module.exports = "/banner5_424_253.cadaf9c6.png";
+},{}],"../images/banner5_250_149.png":[function(require,module,exports) {
+module.exports = "/banner5_250_149.68a9e61f.png";
+},{}],"../images/carouselDot.png":[function(require,module,exports) {
+module.exports = "/carouselDot.21f77997.png";
+},{}],"../images/carouselDot_red.png":[function(require,module,exports) {
+module.exports = "/carouselDot_red.de01ef67.png";
+},{}],"../images/arrow_back.png":[function(require,module,exports) {
+module.exports = "/arrow_back.1435ea1d.png";
+},{}],"../images/arrow_forward.png":[function(require,module,exports) {
+module.exports = "/arrow_forward.8ab76bd2.png";
+},{}],"../images/chevron.png":[function(require,module,exports) {
+module.exports = "/chevron.cf94fb59.png";
+},{}],"../js/banner_copy.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _reactDom = _interopRequireDefault(require("react-dom"));
+
+var _reactMedia = _interopRequireDefault(require("react-media"));
+
+var _carouselCopy = _interopRequireDefault(require("./carousel copy"));
+
+require("../css/landing_page.css");
+
+require("../images/banner1.png");
+
+require("../images/banner2.png");
+
+require("../images/banner3.png");
+
+require("../images/banner4.png");
+
+require("../images/banner5.png");
+
+require("../images/banner1_683_319.png");
+
+require("../images/banner1_424_198.png");
+
+require("../images/banner1_250_116.png");
+
+require("../images/banner2_250_133.png");
+
+require("../images/banner2_424_226.png");
+
+require("../images/banner2_683_365.png");
+
+require("../images/banner3_424_282.jpg");
+
+require("../images/banner3_683_455.jpg");
+
+require("../images/banner3_250_166.jpg");
+
+require("../images/banner5_683_408.png");
+
+require("../images/banner5_424_253.png");
+
+require("../images/banner5_250_149.png");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+var Banner =
+/*#__PURE__*/
+function (_React$Component) {
+  _inherits(Banner, _React$Component);
+
+  function Banner(props) {
+    var _this;
+
+    _classCallCheck(this, Banner);
+
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(Banner).call(this, props));
+    _this.state = {
+      counter: 1,
+      // imgArr: [img1, img2, img3, img4],
+      clicked: false,
+      imgUrlArr: ["../images/banner1.png", "../images/banner2.png", "../images/banner3.png", "../images/banner5.png"],
+      carouselDotArr: [_react.default.createElement("img", {
+        style: {
+          width: "18px",
+          height: "15px",
+          display: "inline-block"
+        },
+        src: require("../images/carouselDot.png")
+      }), _react.default.createElement("img", {
+        style: {
+          width: "18px",
+          height: "18px",
+          display: "inline-block"
+        },
+        src: require("../images/carouselDot.png")
+      }), _react.default.createElement("img", {
+        style: {
+          width: "18px",
+          height: "18px",
+          display: "inline-block"
+        },
+        src: require("../images/carouselDot.png")
+      }), _react.default.createElement("img", {
+        style: {
+          width: "18px",
+          height: "18px",
+          display: "inline-block"
+        },
+        src: require("../images/carouselDot.png")
+      })],
+      timer: "",
+      imgUrlArrMaxWidth800: ["../images/banner1_683_319.png", "../images/banner2_683_365.png", "../images/banner3_683_455.jpg", "../images/banner5_683_408.png"],
+      imgUrlArrMaxWidth650: ["../images/banner1_424_198.png", "../images/banner2_424_226.png", "../images/banner3_424_282.jpg", "../images/banner5_424_253.png"],
+      imgUrlArrMaxWidth450: ["../images/banner1_250_116.png", "../images/banner2_250_133.png", "../images/banner3_250_166.jpg", "../images/banner5_250_149.png"]
+    };
+    _this.timeOutMethod = _this.timeOutMethod.bind(_assertThisInitialized(_this));
+    _this.click = _this.click.bind(_assertThisInitialized(_this));
+    _this.leftArrow = _this.leftArrow.bind(_assertThisInitialized(_this));
+    _this.rightArrow = _this.rightArrow.bind(_assertThisInitialized(_this));
+    return _this;
+  }
+
+  _createClass(Banner, [{
+    key: "timeOutMethod",
+    value: function timeOutMethod() {
+      if (this.state.counter == 4) {
+        // clearInterval(this.state.timer);
+        this.setState({
+          counter: 1
+        });
+        return;
+      }
+
+      this.setState({
+        counter: this.state.counter + 1
+      });
+    }
+  }, {
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      this.state.timer = setInterval(this.timeOutMethod, 3000);
+    }
+  }, {
+    key: "click",
+    value: function click() {
+      clearInterval(this.state.timer);
+      this.setState({
+        clicked: true
+      });
+    }
+  }, {
+    key: "leftArrow",
+    value: function leftArrow() {
+      if (this.state.counter == 1) {
+        this.setState({
+          counter: 4
+        });
+      } else {
+        this.setState({
+          counter: this.state.counter - 1
+        });
+      }
+    }
+  }, {
+    key: "rightArrow",
+    value: function rightArrow() {
+      if (this.state.counter == 4) {
+        this.setState({
+          counter: 1
+        });
+      } else {
+        this.setState({
+          counter: this.state.counter + 1
+        });
+      }
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this2 = this;
+
+      // var arr = [
+      //   <img
+      //     style={{
+      //       width: "18px",
+      //       height: "15px",
+      //       display: "inline-block",
+      //       position: "absolute",
+      //       left: "47%",
+      //       top: "80%",
+      //     }}
+      //     src={require("../images/carouselDot.png")}
+      //   ></img>,
+      //   <img
+      //     style={{
+      //       width: "18px",
+      //       height: "18px",
+      //       display: "inline-block",
+      //       position: "absolute",
+      //       left: "50%",
+      //       top: "80%",
+      //     }}
+      //     src={require("../images/carouselDot.png")}
+      //   ></img>,
+      //   <img
+      //     style={{
+      //       width: "18px",
+      //       height: "18px",
+      //       display: "inline-block",
+      //       position: "absolute",
+      //       left: "53%",
+      //       top: "80%",
+      //     }}
+      //     src={require("../images/carouselDot.png")}
+      //   ></img>,
+      //   <img
+      //     style={{
+      //       width: "18px",
+      //       height: "18px",
+      //       display: "inline-block",
+      //       position: "absolute",
+      //       left: "56%",
+      //       top: "80%",
+      //     }}
+      //     src={require("../images/carouselDot.png")}
+      //   ></img>,
+      // ];
+      // if (this.state.counter == 1) {
+      //   var arr = [
+      //     <img
+      //       style={{
+      //         width: "20px",
+      //         height: "20px",
+      //         display: "inline-block",
+      //         position: "absolute",
+      //         left: "47%",
+      //         top: "80%",
+      //       }}
+      //       src={require("../images/carouselDot_red.png")}
+      //     ></img>,
+      //     <img
+      //       style={{
+      //         width: "20px",
+      //         height: "20px",
+      //         display: "inline-block",
+      //         position: "absolute",
+      //         left: "50%",
+      //         top: "80%",
+      //       }}
+      //       src={require("../images/carouselDot.png")}
+      //     ></img>,
+      //     <img
+      //       style={{
+      //         width: "20px",
+      //         height: "20px",
+      //         display: "inline-block",
+      //         position: "absolute",
+      //         left: "53%",
+      //         top: "80%",
+      //       }}
+      //       src={require("../images/carouselDot.png")}
+      //     ></img>,
+      //     <img
+      //       style={{
+      //         width: "20px",
+      //         height: "20px",
+      //         display: "inline-block",
+      //         position: "absolute",
+      //         left: "56%",
+      //         top: "80%",
+      //       }}
+      //       src={require("../images/carouselDot.png")}
+      //     ></img>,
+      //   ];
+      // } else if (this.state.counter == 2) {
+      //   var arr = [
+      //     <img
+      //       style={{
+      //         width: "20px",
+      //         height: "20px",
+      //         display: "inline-block",
+      //         position: "absolute",
+      //         left: "47%",
+      //         top: "80%",
+      //       }}
+      //       src={require("../images/carouselDot.png")}
+      //     ></img>,
+      //     <img
+      //       style={{
+      //         width: "20px",
+      //         height: "20px",
+      //         display: "inline-block",
+      //         position: "absolute",
+      //         left: "50%",
+      //         top: "80%",
+      //       }}
+      //       src={require("../images/carouselDot_red.png")}
+      //     ></img>,
+      //     <img
+      //       style={{
+      //         width: "20px",
+      //         height: "20px",
+      //         display: "inline-block",
+      //         position: "absolute",
+      //         left: "53%",
+      //         top: "80%",
+      //       }}
+      //       src={require("../images/carouselDot.png")}
+      //     ></img>,
+      //     <img
+      //       style={{
+      //         width: "20px",
+      //         height: "20px",
+      //         display: "inline-block",
+      //         position: "absolute",
+      //         left: "56%",
+      //         top: "80%",
+      //       }}
+      //       src={require("../images/carouselDot.png")}
+      //     ></img>,
+      //   ];
+      // } else if (this.state.counter == 3) {
+      //   var arr = [
+      //     <img
+      //       style={{
+      //         width: "20px",
+      //         height: "20px",
+      //         display: "inline-block",
+      //         position: "absolute",
+      //         left: "47%",
+      //         top: "80%",
+      //       }}
+      //       src={require("../images/carouselDot.png")}
+      //     ></img>,
+      //     <img
+      //       style={{
+      //         width: "20px",
+      //         height: "20px",
+      //         display: "inline-block",
+      //         position: "absolute",
+      //         left: "50%",
+      //         top: "80%",
+      //       }}
+      //       src={require("../images/carouselDot.png")}
+      //     ></img>,
+      //     <img
+      //       style={{
+      //         width: "20px",
+      //         height: "20px",
+      //         display: "inline-block",
+      //         position: "absolute",
+      //         left: "53%",
+      //         top: "80%",
+      //       }}
+      //       src={require("../images/carouselDot_red.png")}
+      //     ></img>,
+      //     <img
+      //       style={{
+      //         width: "20px",
+      //         height: "20px",
+      //         display: "inline-block",
+      //         position: "absolute",
+      //         left: "56%",
+      //         top: "80%",
+      //       }}
+      //       src={require("../images/carouselDot.png")}
+      //     ></img>,
+      //   ];
+      // } else if (this.state.counter == 4) {
+      //   var arr = [
+      //     <img
+      //       style={{
+      //         width: "20px",
+      //         height: "20px",
+      //         display: "inline-block",
+      //         position: "absolute",
+      //         left: "47%",
+      //         top: "80%",
+      //       }}
+      //       src={require("../images/carouselDot.png")}
+      //     ></img>,
+      //     <img
+      //       style={{
+      //         width: "20px",
+      //         height: "20px",
+      //         display: "inline-block",
+      //         position: "absolute",
+      //         left: "50%",
+      //         top: "80%",
+      //       }}
+      //       src={require("../images/carouselDot.png")}
+      //     ></img>,
+      //     <img
+      //       style={{
+      //         width: "20px",
+      //         height: "20px",
+      //         display: "inline-block",
+      //         position: "absolute",
+      //         left: "53%",
+      //         top: "80%",
+      //       }}
+      //       src={require("../images/carouselDot.png")}
+      //     ></img>,
+      //     <img
+      //       style={{
+      //         width: "20px",
+      //         height: "20px",
+      //         display: "inline-block",
+      //         position: "absolute",
+      //         left: "56%",
+      //         top: "80%",
+      //       }}
+      //       src={require("../images/carouselDot_red.png")}
+      //     ></img>,
+      //   ];
+      // }
+      if (this.state.counter == 1) {
+        var arr = [_react.default.createElement("img", {
+          style: {
+            width: "20px",
+            height: "20px",
+            display: "inline-block"
+          },
+          src: require("../images/carouselDot_red.png")
+        }), _react.default.createElement("img", {
+          style: {
+            width: "20px",
+            height: "20px",
+            display: "inline-block"
+          },
+          src: require("../images/carouselDot.png")
+        }), _react.default.createElement("img", {
+          style: {
+            width: "20px",
+            height: "20px",
+            display: "inline-block"
+          },
+          src: require("../images/carouselDot.png")
+        }), _react.default.createElement("img", {
+          style: {
+            width: "20px",
+            height: "20px",
+            display: "inline-block"
+          },
+          src: require("../images/carouselDot.png")
+        })];
+      } else if (this.state.counter == 2) {
+        var arr = [_react.default.createElement("img", {
+          style: {
+            width: "20px",
+            height: "20px",
+            display: "inline-block",
+            position: "absolute",
+            left: "47%",
+            top: "80%"
+          },
+          src: require("../images/carouselDot.png")
+        }), _react.default.createElement("img", {
+          style: {
+            width: "20px",
+            height: "20px",
+            display: "inline-block",
+            position: "absolute",
+            left: "50%",
+            top: "80%"
+          },
+          src: require("../images/carouselDot_red.png")
+        }), _react.default.createElement("img", {
+          style: {
+            width: "20px",
+            height: "20px",
+            display: "inline-block",
+            position: "absolute",
+            left: "53%",
+            top: "80%"
+          },
+          src: require("../images/carouselDot.png")
+        }), _react.default.createElement("img", {
+          style: {
+            width: "20px",
+            height: "20px",
+            display: "inline-block",
+            position: "absolute",
+            left: "56%",
+            top: "80%"
+          },
+          src: require("../images/carouselDot.png")
+        })];
+      } else if (this.state.counter == 3) {
+        var arr = [_react.default.createElement("img", {
+          style: {
+            width: "20px",
+            height: "20px",
+            display: "inline-block",
+            position: "absolute",
+            left: "47%",
+            top: "80%"
+          },
+          src: require("../images/carouselDot.png")
+        }), _react.default.createElement("img", {
+          style: {
+            width: "20px",
+            height: "20px",
+            display: "inline-block",
+            position: "absolute",
+            left: "50%",
+            top: "80%"
+          },
+          src: require("../images/carouselDot.png")
+        }), _react.default.createElement("img", {
+          style: {
+            width: "20px",
+            height: "20px",
+            display: "inline-block",
+            position: "absolute",
+            left: "53%",
+            top: "80%"
+          },
+          src: require("../images/carouselDot_red.png")
+        }), _react.default.createElement("img", {
+          style: {
+            width: "20px",
+            height: "20px",
+            display: "inline-block",
+            position: "absolute",
+            left: "56%",
+            top: "80%"
+          },
+          src: require("../images/carouselDot.png")
+        })];
+      } else if (this.state.counter == 4) {
+        var arr = [_react.default.createElement("img", {
+          style: {
+            width: "20px",
+            height: "20px",
+            display: "inline-block",
+            position: "absolute",
+            left: "47%",
+            top: "80%"
+          },
+          src: require("../images/carouselDot.png")
+        }), _react.default.createElement("img", {
+          style: {
+            width: "20px",
+            height: "20px",
+            display: "inline-block",
+            position: "absolute",
+            left: "50%",
+            top: "80%"
+          },
+          src: require("../images/carouselDot.png")
+        }), _react.default.createElement("img", {
+          style: {
+            width: "20px",
+            height: "20px",
+            display: "inline-block",
+            position: "absolute",
+            left: "53%",
+            top: "80%"
+          },
+          src: require("../images/carouselDot.png")
+        }), _react.default.createElement("img", {
+          style: {
+            width: "20px",
+            height: "20px",
+            display: "inline-block",
+            position: "absolute",
+            left: "56%",
+            top: "80%"
+          },
+          src: require("../images/carouselDot_red.png")
+        })];
+      }
+
+      var disp = this.state.clicked ? "visible" : "hidden";
+      return _react.default.createElement("div", null, _react.default.createElement(_reactMedia.default, {
+        queries: {
+          small: "(max-width: 450px)",
+          medium: "(min-width: 450px) and (max-width: 600px)",
+          semimedium: "(min-width: 600px) and (max-width: 900px)",
+          large: "(min-width: 900px)"
+        }
+      }, function (matches) {
+        var _React$createElement, _React$createElement2, _React$createElement3, _React$createElement4;
+
+        return _react.default.createElement(_react.default.Fragment, null, matches.small && _react.default.createElement("div", null, _react.default.createElement("img", {
+          onClick: _this2.click,
+          style: {
+            width: "100%"
+          },
+          src: require(_this2.state.imgUrlArrMaxWidth450[_this2.state.counter - 1])
+        }), _react.default.createElement(_carouselCopy.default, {
+          counter: arr
+        }), _react.default.createElement("img", {
+          onClick: _this2.leftArrow,
+          className: "leftArrow",
+          style: {
+            visibility: disp,
+            position: "absolute",
+            left: "5px",
+            top: "45%",
+            height: "35px",
+            backgroundColor: "white"
+          },
+          src: require("../images/arrow_back.png")
+        }), _react.default.createElement("img", (_React$createElement = {
+          onClick: _this2.rightArrow,
+          className: "rightArrow"
+        }, _defineProperty(_React$createElement, "onClick", _this2.rightArrow), _defineProperty(_React$createElement, "style", _defineProperty({
+          visibility: disp,
+          position: "absolute",
+          right: "20px",
+          top: "45%",
+          height: "50px",
+          backgroundColor: "white"
+        }, "height", "35px")), _defineProperty(_React$createElement, "src", require("../images/arrow_forward.png")), _React$createElement)), _react.default.createElement("img", {
+          style: {
+            position: "absolute",
+            left: "50%",
+            top: "87%",
+            height: "50px"
+          },
+          src: require("../images/chevron.png")
+        })), matches.medium && _react.default.createElement("div", null, _react.default.createElement("img", {
+          onClick: _this2.click,
+          style: {
+            width: "100%"
+          },
+          src: require(_this2.state.imgUrlArrMaxWidth650[_this2.state.counter - 1])
+        }), _react.default.createElement(_carouselCopy.default, {
+          counter: arr
+        }), _react.default.createElement("img", {
+          onClick: _this2.leftArrow,
+          className: "leftArrow",
+          style: {
+            visibility: disp,
+            position: "absolute",
+            left: "5px",
+            top: "45%",
+            height: "35px",
+            backgroundColor: "white"
+          },
+          src: require("../images/arrow_back.png")
+        }), _react.default.createElement("img", (_React$createElement2 = {
+          onClick: _this2.rightArrow,
+          className: "rightArrow"
+        }, _defineProperty(_React$createElement2, "onClick", _this2.rightArrow), _defineProperty(_React$createElement2, "style", _defineProperty({
+          visibility: disp,
+          position: "absolute",
+          right: "20px",
+          top: "45%",
+          height: "50px",
+          backgroundColor: "white"
+        }, "height", "35px")), _defineProperty(_React$createElement2, "src", require("../images/arrow_forward.png")), _React$createElement2)), _react.default.createElement("img", {
+          style: {
+            position: "absolute",
+            left: "50%",
+            top: "87%",
+            height: "50px"
+          },
+          src: require("../images/chevron.png")
+        })), matches.semimedium && _react.default.createElement("div", null, _react.default.createElement("img", {
+          onClick: _this2.click,
+          style: {
+            width: "100%"
+          },
+          src: require(_this2.state.imgUrlArrMaxWidth800[_this2.state.counter - 1])
+        }), _react.default.createElement("div", {
+          style: {
+            border: "1px solid red",
+            width: "15%"
+          }
+        }, _react.default.createElement(_carouselCopy.default, {
+          counter: arr
+        })), _react.default.createElement("img", {
+          onClick: _this2.leftArrow,
+          className: "leftArrow",
+          style: {
+            visibility: disp,
+            position: "absolute",
+            left: "5px",
+            top: "45%",
+            height: "35px",
+            backgroundColor: "white"
+          },
+          src: require("../images/arrow_back.png")
+        }), _react.default.createElement("img", (_React$createElement3 = {
+          onClick: _this2.rightArrow,
+          className: "rightArrow"
+        }, _defineProperty(_React$createElement3, "onClick", _this2.rightArrow), _defineProperty(_React$createElement3, "style", _defineProperty({
+          visibility: disp,
+          position: "absolute",
+          right: "20px",
+          top: "45%",
+          height: "50px",
+          backgroundColor: "white"
+        }, "height", "35px")), _defineProperty(_React$createElement3, "src", require("../images/arrow_forward.png")), _React$createElement3)), _react.default.createElement("img", {
+          style: {
+            position: "absolute",
+            left: "50%",
+            top: "75%",
+            height: "50px"
+          },
+          src: require("../images/chevron.png")
+        })), matches.large && _react.default.createElement("div", null, _react.default.createElement("img", {
+          onClick: _this2.click,
+          style: {
+            width: "100%"
+          },
+          src: require(_this2.state.imgUrlArr[_this2.state.counter - 1])
+        }), _react.default.createElement(_carouselCopy.default, {
+          counter: arr
+        }), _react.default.createElement("img", {
+          onClick: _this2.leftArrow,
+          className: "leftArrow",
+          style: {
+            visibility: disp,
+            position: "absolute",
+            left: "5px",
+            top: "45%",
+            height: "35px",
+            backgroundColor: "white"
+          },
+          src: require("../images/arrow_back.png")
+        }), _react.default.createElement("img", (_React$createElement4 = {
+          onClick: _this2.rightArrow,
+          className: "rightArrow"
+        }, _defineProperty(_React$createElement4, "onClick", _this2.rightArrow), _defineProperty(_React$createElement4, "style", _defineProperty({
+          visibility: disp,
+          position: "absolute",
+          right: "20px",
+          top: "45%",
+          height: "50px",
+          backgroundColor: "white"
+        }, "height", "35px")), _defineProperty(_React$createElement4, "src", require("../images/arrow_forward.png")), _React$createElement4)), _react.default.createElement("img", {
+          style: {
+            position: "absolute",
+            left: "50%",
+            top: "87%",
+            height: "50px"
+          },
+          src: require("../images/chevron.png")
+        })));
+      }));
+    }
+  }]);
+
+  return Banner;
+}(_react.default.Component); // ReactDOM.render(<Banner/>, document.getElementById("banner"))
+
+
+exports.default = Banner;
+},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","react-media":"../node_modules/react-media/esm/react-media.js","./carousel copy":"../js/carousel copy.js","../css/landing_page.css":"../css/landing_page.css","../images/banner1.png":"../images/banner1.png","../images/banner2.png":"../images/banner2.png","../images/banner3.png":"../images/banner3.png","../images/banner4.png":"../images/banner4.png","../images/banner5.png":"../images/banner5.png","../images/banner1_683_319.png":"../images/banner1_683_319.png","../images/banner1_424_198.png":"../images/banner1_424_198.png","../images/banner1_250_116.png":"../images/banner1_250_116.png","../images/banner2_250_133.png":"../images/banner2_250_133.png","../images/banner2_424_226.png":"../images/banner2_424_226.png","../images/banner2_683_365.png":"../images/banner2_683_365.png","../images/banner3_424_282.jpg":"../images/banner3_424_282.jpg","../images/banner3_683_455.jpg":"../images/banner3_683_455.jpg","../images/banner3_250_166.jpg":"../images/banner3_250_166.jpg","../images/banner5_683_408.png":"../images/banner5_683_408.png","../images/banner5_424_253.png":"../images/banner5_424_253.png","../images/banner5_250_149.png":"../images/banner5_250_149.png","../images/carouselDot.png":"../images/carouselDot.png","../images/carouselDot_red.png":"../images/carouselDot_red.png","../images/arrow_back.png":"../images/arrow_back.png","../images/arrow_forward.png":"../images/arrow_forward.png","../images/chevron.png":"../images/chevron.png"}],"../node_modules/resolve-pathname/esm/resolve-pathname.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -34936,7 +35692,500 @@ function (_React$Component) {
 }(_react.default.Component);
 
 exports.default = Main_Menu_Modal;
-},{"react":"../node_modules/react/index.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js","../images/close.png":"../images/close.png"}],"../js/test.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js","../images/close.png":"../images/close.png"}],"../js/carousel.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _reactDom = _interopRequireDefault(require("react-dom"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+var Carousel =
+/*#__PURE__*/
+function (_React$Component) {
+  _inherits(Carousel, _React$Component);
+
+  function Carousel(props) {
+    var _this;
+
+    _classCallCheck(this, Carousel);
+
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(Carousel).call(this, props));
+    _this.state = {
+      counter: _this.props.counter
+    };
+    return _this;
+  }
+
+  _createClass(Carousel, [{
+    key: "render",
+    value: function render() {
+      var arr = [_react.default.createElement("img", {
+        style: {
+          width: "25px",
+          height: "18px",
+          display: "inline-block",
+          position: "absolute",
+          left: "47%",
+          top: "80%"
+        },
+        src: require("../images/carouselDot.png")
+      }), _react.default.createElement("img", {
+        style: {
+          width: "25px",
+          height: "18px",
+          display: "inline-block",
+          position: "absolute",
+          left: "50%",
+          top: "80%"
+        },
+        src: require("../images/carouselDot_red.png")
+      }), _react.default.createElement("img", {
+        style: {
+          width: "25px",
+          height: "18px",
+          display: "inline-block",
+          position: "absolute",
+          left: "53%",
+          top: "80%"
+        },
+        src: require("../images/carouselDot.png")
+      }), _react.default.createElement("img", {
+        style: {
+          width: "25px",
+          height: "18px",
+          display: "inline-block",
+          position: "absolute",
+          left: "56%",
+          top: "80%"
+        },
+        src: require("../images/carouselDot.png")
+      })];
+      return this.props.counter;
+    }
+  }]);
+
+  return Carousel;
+}(_react.default.Component);
+
+exports.default = Carousel;
+},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","../images/carouselDot.png":"../images/carouselDot.png","../images/carouselDot_red.png":"../images/carouselDot_red.png"}],"../js/banner.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _reactDom = _interopRequireDefault(require("react-dom"));
+
+var _carousel = _interopRequireDefault(require("./carousel"));
+
+require("../css/landing_page.css");
+
+require("../images/banner1.png");
+
+require("../images/banner2.png");
+
+require("../images/banner3.png");
+
+require("../images/banner4.png");
+
+require("../images/banner5.png");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+var Banner =
+/*#__PURE__*/
+function (_React$Component) {
+  _inherits(Banner, _React$Component);
+
+  function Banner(props) {
+    var _this;
+
+    _classCallCheck(this, Banner);
+
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(Banner).call(this, props));
+    _this.state = {
+      counter: 1,
+      // imgArr: [img1, img2, img3, img4],
+      clicked: false,
+      imgUrlArr: ["../images/banner1.png", "../images/banner2.png", "../images/banner3.png", "../images/banner5.png"],
+      timer: ""
+    };
+    _this.timeOutMethod = _this.timeOutMethod.bind(_assertThisInitialized(_this));
+    _this.click = _this.click.bind(_assertThisInitialized(_this));
+    _this.leftArrow = _this.leftArrow.bind(_assertThisInitialized(_this));
+    _this.rightArrow = _this.rightArrow.bind(_assertThisInitialized(_this));
+    return _this;
+  }
+
+  _createClass(Banner, [{
+    key: "timeOutMethod",
+    value: function timeOutMethod() {
+      if (this.state.counter == 4) {
+        // clearInterval(this.state.timer);
+        this.setState({
+          counter: 1
+        });
+        return;
+      }
+
+      this.setState({
+        counter: this.state.counter + 1
+      });
+    }
+  }, {
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      this.state.timer = setInterval(this.timeOutMethod, 3000);
+    }
+  }, {
+    key: "click",
+    value: function click() {
+      clearInterval(this.state.timer);
+      this.setState({
+        clicked: true
+      });
+    }
+  }, {
+    key: "leftArrow",
+    value: function leftArrow() {
+      if (this.state.counter == 1) {
+        this.setState({
+          counter: 4
+        });
+      } else {
+        this.setState({
+          counter: this.state.counter - 1
+        });
+      }
+    }
+  }, {
+    key: "rightArrow",
+    value: function rightArrow() {
+      if (this.state.counter == 4) {
+        this.setState({
+          counter: 1
+        });
+      } else {
+        this.setState({
+          counter: this.state.counter + 1
+        });
+      }
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _React$createElement;
+
+      var arr = [_react.default.createElement("img", {
+        style: {
+          width: "18px",
+          height: "15px",
+          display: "inline-block",
+          position: "absolute",
+          left: "47%",
+          top: "80%"
+        },
+        src: require("../images/carouselDot.png")
+      }), _react.default.createElement("img", {
+        style: {
+          width: "18px",
+          height: "18px",
+          display: "inline-block",
+          position: "absolute",
+          left: "50%",
+          top: "80%"
+        },
+        src: require("../images/carouselDot.png")
+      }), _react.default.createElement("img", {
+        style: {
+          width: "18px",
+          height: "18px",
+          display: "inline-block",
+          position: "absolute",
+          left: "53%",
+          top: "80%"
+        },
+        src: require("../images/carouselDot.png")
+      }), _react.default.createElement("img", {
+        style: {
+          width: "18px",
+          height: "18px",
+          display: "inline-block",
+          position: "absolute",
+          left: "56%",
+          top: "80%"
+        },
+        src: require("../images/carouselDot.png")
+      })];
+
+      if (this.state.counter == 1) {
+        var arr = [_react.default.createElement("img", {
+          style: {
+            width: "20px",
+            height: "20px",
+            display: "inline-block",
+            position: "absolute",
+            left: "47%",
+            top: "80%"
+          },
+          src: require("../images/carouselDot_red.png")
+        }), _react.default.createElement("img", {
+          style: {
+            width: "20px",
+            height: "20px",
+            display: "inline-block",
+            position: "absolute",
+            left: "50%",
+            top: "80%"
+          },
+          src: require("../images/carouselDot.png")
+        }), _react.default.createElement("img", {
+          style: {
+            width: "20px",
+            height: "20px",
+            display: "inline-block",
+            position: "absolute",
+            left: "53%",
+            top: "80%"
+          },
+          src: require("../images/carouselDot.png")
+        }), _react.default.createElement("img", {
+          style: {
+            width: "20px",
+            height: "20px",
+            display: "inline-block",
+            position: "absolute",
+            left: "56%",
+            top: "80%"
+          },
+          src: require("../images/carouselDot.png")
+        })];
+      } else if (this.state.counter == 2) {
+        var arr = [_react.default.createElement("img", {
+          style: {
+            width: "20px",
+            height: "20px",
+            display: "inline-block",
+            position: "absolute",
+            left: "47%",
+            top: "80%"
+          },
+          src: require("../images/carouselDot.png")
+        }), _react.default.createElement("img", {
+          style: {
+            width: "20px",
+            height: "20px",
+            display: "inline-block",
+            position: "absolute",
+            left: "50%",
+            top: "80%"
+          },
+          src: require("../images/carouselDot_red.png")
+        }), _react.default.createElement("img", {
+          style: {
+            width: "20px",
+            height: "20px",
+            display: "inline-block",
+            position: "absolute",
+            left: "53%",
+            top: "80%"
+          },
+          src: require("../images/carouselDot.png")
+        }), _react.default.createElement("img", {
+          style: {
+            width: "20px",
+            height: "20px",
+            display: "inline-block",
+            position: "absolute",
+            left: "56%",
+            top: "80%"
+          },
+          src: require("../images/carouselDot.png")
+        })];
+      } else if (this.state.counter == 3) {
+        var arr = [_react.default.createElement("img", {
+          style: {
+            width: "20px",
+            height: "20px",
+            display: "inline-block",
+            position: "absolute",
+            left: "47%",
+            top: "80%"
+          },
+          src: require("../images/carouselDot.png")
+        }), _react.default.createElement("img", {
+          style: {
+            width: "20px",
+            height: "20px",
+            display: "inline-block",
+            position: "absolute",
+            left: "50%",
+            top: "80%"
+          },
+          src: require("../images/carouselDot.png")
+        }), _react.default.createElement("img", {
+          style: {
+            width: "20px",
+            height: "20px",
+            display: "inline-block",
+            position: "absolute",
+            left: "53%",
+            top: "80%"
+          },
+          src: require("../images/carouselDot_red.png")
+        }), _react.default.createElement("img", {
+          style: {
+            width: "20px",
+            height: "20px",
+            display: "inline-block",
+            position: "absolute",
+            left: "56%",
+            top: "80%"
+          },
+          src: require("../images/carouselDot.png")
+        })];
+      } else if (this.state.counter == 4) {
+        var arr = [_react.default.createElement("img", {
+          style: {
+            width: "20px",
+            height: "20px",
+            display: "inline-block",
+            position: "absolute",
+            left: "47%",
+            top: "80%"
+          },
+          src: require("../images/carouselDot.png")
+        }), _react.default.createElement("img", {
+          style: {
+            width: "20px",
+            height: "20px",
+            display: "inline-block",
+            position: "absolute",
+            left: "50%",
+            top: "80%"
+          },
+          src: require("../images/carouselDot.png")
+        }), _react.default.createElement("img", {
+          style: {
+            width: "20px",
+            height: "20px",
+            display: "inline-block",
+            position: "absolute",
+            left: "53%",
+            top: "80%"
+          },
+          src: require("../images/carouselDot.png")
+        }), _react.default.createElement("img", {
+          style: {
+            width: "20px",
+            height: "20px",
+            display: "inline-block",
+            position: "absolute",
+            left: "56%",
+            top: "80%"
+          },
+          src: require("../images/carouselDot_red.png")
+        })];
+      }
+
+      var disp = this.state.clicked ? "visible" : "hidden";
+      return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement("img", {
+        onClick: this.click,
+        style: {
+          width: "100%"
+        },
+        src: require(this.state.imgUrlArr[this.state.counter - 1])
+      }), _react.default.createElement(_carousel.default, {
+        counter: arr
+      }), _react.default.createElement("img", {
+        onClick: this.leftArrow,
+        className: "leftArrow",
+        style: {
+          visibility: disp,
+          position: "absolute",
+          left: "5px",
+          top: "45%",
+          height: "35px",
+          backgroundColor: "white"
+        },
+        src: require("../images/arrow_back.png")
+      }), _react.default.createElement("img", (_React$createElement = {
+        onClick: this.rightArrow,
+        className: "rightArrow"
+      }, _defineProperty(_React$createElement, "onClick", this.rightArrow), _defineProperty(_React$createElement, "style", _defineProperty({
+        visibility: disp,
+        position: "absolute",
+        right: "20px",
+        top: "45%",
+        height: "50px",
+        backgroundColor: "white"
+      }, "height", "35px")), _defineProperty(_React$createElement, "src", require("../images/arrow_forward.png")), _React$createElement)), _react.default.createElement("img", {
+        style: {
+          position: "absolute",
+          left: "50%",
+          top: "87%",
+          height: "50px"
+        },
+        src: require("../images/chevron.png")
+      }));
+    }
+  }]);
+
+  return Banner;
+}(_react.default.Component); // ReactDOM.render(<Banner/>, document.getElementById("banner"))
+
+
+exports.default = Banner;
+},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","./carousel":"../js/carousel.js","../css/landing_page.css":"../css/landing_page.css","../images/banner1.png":"../images/banner1.png","../images/banner2.png":"../images/banner2.png","../images/banner3.png":"../images/banner3.png","../images/banner4.png":"../images/banner4.png","../images/banner5.png":"../images/banner5.png","../images/carouselDot.png":"../images/carouselDot.png","../images/carouselDot_red.png":"../images/carouselDot_red.png","../images/arrow_back.png":"../images/arrow_back.png","../images/arrow_forward.png":"../images/arrow_forward.png","../images/chevron.png":"../images/chevron.png"}],"../js/test.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -41665,7 +42914,7 @@ var _reactDom = _interopRequireDefault(require("react-dom"));
 
 var _header = _interopRequireDefault(require("./header"));
 
-var _banner = _interopRequireDefault(require("./banner"));
+var _banner_copy = _interopRequireDefault(require("./banner_copy"));
 
 require("../css/landing_page.css");
 
@@ -41805,7 +43054,7 @@ function (_React$Component) {
         path: "/"
       }, _react.default.createElement("div", {
         className: "banner"
-      }, _react.default.createElement(_banner.default, null)))), _react.default.createElement(_reactRouterDom.Switch, null, _react.default.createElement(_reactRouterDom.Route, {
+      }, _react.default.createElement(_banner_copy.default, null)))), _react.default.createElement(_reactRouterDom.Switch, null, _react.default.createElement(_reactRouterDom.Route, {
         exact: true,
         path: "/cloudautomation"
       }, _react.default.createElement("div", {
@@ -41841,7 +43090,7 @@ _reactDom.default.render(_react.default.createElement(App, null), document.getEl
 //   <LandingPageContent />,
 //   document.getElementById("landing_page_content")
 // );
-},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","./header":"../js/header.js","./banner":"../js/banner.js","../css/landing_page.css":"../css/landing_page.css","./main_menu_modal":"../js/main_menu_modal.js","./landingPageContent":"../js/landingPageContent.js","./cloudautomation":"../js/cloudautomation.js","./marketingautomation":"../js/marketingautomation.js","./contactus":"../js/contactus.js","./nameform":"../js/nameform.js","axios":"../node_modules/axios/index.js","qs":"../node_modules/qs/lib/index.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js","./footer":"../js/footer.js"}],"../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","./header":"../js/header.js","./banner_copy":"../js/banner_copy.js","../css/landing_page.css":"../css/landing_page.css","./main_menu_modal":"../js/main_menu_modal.js","./landingPageContent":"../js/landingPageContent.js","./cloudautomation":"../js/cloudautomation.js","./marketingautomation":"../js/marketingautomation.js","./contactus":"../js/contactus.js","./nameform":"../js/nameform.js","axios":"../node_modules/axios/index.js","qs":"../node_modules/qs/lib/index.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js","./footer":"../js/footer.js"}],"../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -41869,7 +43118,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55283" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58850" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

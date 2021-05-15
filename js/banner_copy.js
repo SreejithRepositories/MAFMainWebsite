@@ -11,28 +11,28 @@ import Carousel from "./carousel copy";
 import "../css/landing_page.css";
 
 //importing original banner images
-import "../images/banner1.png";
-import "../images/banner2.png";
-import "../images/banner3.png";
-import "../images/banner4.png";
-import "../images/banner5.png";
+import "../images/banner1.jpg";
+import "../images/banner2.jpg";
+import "../images/banner3.jpg";
+// import "../images/banner4.jpg";
+import "../images/banner5.jpg";
 
 //importing responsive banner images
-import "../images/banner1_683_319.png";
-import "../images/banner1_424_198.png";
-import "../images/banner1_250_116.png";
+import "../images/banner1_683_319.jpg";
+import "../images/banner1_424_198.jpg";
+import "../images/banner1_250_116.jpg";
 
-import "../images/banner2_250_133.png";
-import "../images/banner2_424_226.png";
-import "../images/banner2_683_365.png";
+import "../images/banner2_250_133.jpg";
+import "../images/banner2_424_226.jpg";
+import "../images/banner2_683_365.jpg";
 
 import "../images/banner3_424_282.jpg";
 import "../images/banner3_683_455.jpg";
 import "../images/banner3_250_166.jpg";
 
-import "../images/banner5_683_408.png";
-import "../images/banner5_424_253.png";
-import "../images/banner5_250_149.png";
+import "../images/banner5_683_408.jpg";
+import "../images/banner5_424_253.jpg";
+import "../images/banner5_250_149.jpg";
 
 export default class Banner extends React.Component {
   constructor(props) {
@@ -42,10 +42,10 @@ export default class Banner extends React.Component {
       // imgArr: [img1, img2, img3, img4],
       clicked: false,
       imgUrlArr: [
-        "../images/banner1.png",
-        "../images/banner2.png",
-        "../images/banner3.png",
-        "../images/banner5.png",
+        "../images/banner1.jpg",
+        "../images/banner2.jpg",
+        "../images/banner3.jpg",
+        "../images/banner5.jpg",
       ],
       carouselDotArr: [
         <img
@@ -83,22 +83,22 @@ export default class Banner extends React.Component {
       ],
       timer: "",
       imgUrlArrMaxWidth800: [
-        "../images/banner1_683_319.png",
-        "../images/banner2_683_365.png",
+        "../images/banner1_683_319.jpg",
+        "../images/banner2_683_365.jpg",
         "../images/banner3_683_455.jpg",
-        "../images/banner5_683_408.png",
+        "../images/banner5_683_408.jpg",
       ],
       imgUrlArrMaxWidth650: [
-        "../images/banner1_424_198.png",
-        "../images/banner2_424_226.png",
+        "../images/banner1_424_198.jpg",
+        "../images/banner2_424_226.jpg",
         "../images/banner3_424_282.jpg",
-        "../images/banner5_424_253.png",
+        "../images/banner5_424_253.jpg",
       ],
       imgUrlArrMaxWidth450: [
-        "../images/banner1_250_116.png",
-        "../images/banner2_250_133.png",
+        "../images/banner1_250_116.jpg",
+        "../images/banner2_250_133.jpg",
         "../images/banner3_250_166.jpg",
-        "../images/banner5_250_149.png",
+        "../images/banner5_250_149.jpg",
       ],
     };
     this.timeOutMethod = this.timeOutMethod.bind(this);
@@ -544,7 +544,6 @@ export default class Banner extends React.Component {
                   ></img>
                   <div
                     style={{
-                      border: "1px solid yellow",
                       height: "50px",
                       width: "50%",
                       marginLeft: "25%",

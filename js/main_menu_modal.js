@@ -27,29 +27,22 @@ export default class Main_Menu_Modal extends React.Component {
     this.putUnderLineColorHome = this.putUnderLineColorHome.bind(this);
     this.unputUnderLineColorHome = this.unputUnderLineColorHome.bind(this);
     this.putUnderLineColorAboutUs = this.putUnderLineColorAboutUs.bind(this);
-    this.unputUnderLineColorAboutUs = this.unputUnderLineColorAboutUs.bind(
-      this
-    );
-    this.putUnderLineColorTechWeUse = this.putUnderLineColorTechWeUse.bind(
-      this
-    );
-    this.unputUnderLineColorTechWeUse = this.unputUnderLineColorTechWeUse.bind(
-      this
-    );
-    this.putUnderLineColorIndWeServe = this.putUnderLineColorIndWeServe.bind(
-      this
-    );
-    this.unputUnderLineColorIndWeServe = this.unputUnderLineColorIndWeServe.bind(
-      this
-    );
+    this.unputUnderLineColorAboutUs =
+      this.unputUnderLineColorAboutUs.bind(this);
+    this.putUnderLineColorTechWeUse =
+      this.putUnderLineColorTechWeUse.bind(this);
+    this.unputUnderLineColorTechWeUse =
+      this.unputUnderLineColorTechWeUse.bind(this);
+    this.putUnderLineColorIndWeServe =
+      this.putUnderLineColorIndWeServe.bind(this);
+    this.unputUnderLineColorIndWeServe =
+      this.unputUnderLineColorIndWeServe.bind(this);
     this.putUnderLineColorAchieve = this.putUnderLineColorAchieve.bind(this);
-    this.unputUnderLineColorAchieve = this.unputUnderLineColorAchieve.bind(
-      this
-    );
+    this.unputUnderLineColorAchieve =
+      this.unputUnderLineColorAchieve.bind(this);
     this.putUnderLineColorSuccess = this.putUnderLineColorSuccess.bind(this);
-    this.unputUnderLineColorSuccess = this.unputUnderLineColorSuccess.bind(
-      this
-    );
+    this.unputUnderLineColorSuccess =
+      this.unputUnderLineColorSuccess.bind(this);
     this.putUnderLineColorBlog = this.putUnderLineColorBlog.bind(this);
     this.unputUnderLineColorBlog = this.unputUnderLineColorBlog.bind(this);
     this.putUnderLineColorFAQs = this.putUnderLineColorFAQs.bind(this);
@@ -57,30 +50,23 @@ export default class Main_Menu_Modal extends React.Component {
     this.putUnderLineColorTerms = this.putUnderLineColorTerms.bind(this);
     this.unputUnderLineColorTerms = this.unputUnderLineColorTerms.bind(this);
     this.putUnderLineColorContact = this.putUnderLineColorContact.bind(this);
-    this.unputUnderLineColorContact = this.unputUnderLineColorContact.bind(
-      this
-    );
+    this.unputUnderLineColorContact =
+      this.unputUnderLineColorContact.bind(this);
 
-    this.putUnderLineColorCloudAutomation = this.putUnderLineColorCloudAutomation.bind(
-      this
-    );
-    this.unputUnderLineColorCloudAutomation = this.unputUnderLineColorCloudAutomation.bind(
-      this
-    );
-    this.putUnderLineColorDataAnalytics = this.putUnderLineColorDataAnalytics.bind(
-      this
-    );
-    this.unputUnderLineColorDataAnalytics = this.unputUnderLineColorDataAnalytics.bind(
-      this
-    );
+    this.putUnderLineColorCloudAutomation =
+      this.putUnderLineColorCloudAutomation.bind(this);
+    this.unputUnderLineColorCloudAutomation =
+      this.unputUnderLineColorCloudAutomation.bind(this);
+    this.putUnderLineColorDataAnalytics =
+      this.putUnderLineColorDataAnalytics.bind(this);
+    this.unputUnderLineColorDataAnalytics =
+      this.unputUnderLineColorDataAnalytics.bind(this);
     this.putUnderLineColorDigiTran = this.putUnderLineColorDigiTran.bind(this);
-    this.unputUnderLineColorDigiTran = this.unputUnderLineColorDigiTran.bind(
-      this
-    );
+    this.unputUnderLineColorDigiTran =
+      this.unputUnderLineColorDigiTran.bind(this);
     this.putUnderLineColorMarkTran = this.putUnderLineColorMarkTran.bind(this);
-    this.unputUnderLineColorMarkTran = this.unputUnderLineColorMarkTran.bind(
-      this
-    );
+    this.unputUnderLineColorMarkTran =
+      this.unputUnderLineColorMarkTran.bind(this);
 
     this.closeMainMenu = this.closeMainMenu.bind(this);
   }
@@ -273,7 +259,6 @@ export default class Main_Menu_Modal extends React.Component {
       <div
         style={{
           border: "1px solid red",
-
           borderRadius: "5px",
           position: "absolute",
           top: "5%",
@@ -295,7 +280,6 @@ export default class Main_Menu_Modal extends React.Component {
           style={{
             fontSize: "18px",
             fontWeight: "bold",
-            
           }}
         >
           <tr>

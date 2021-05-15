@@ -31258,7 +31258,6 @@ function (_React$Component) {
       //  <img style ={{width: "25px", height: "18px", display: "inline-block", position: "absolute", left: "56%",top: "80%"}} src = {require("../images/carouselDot.png")}></img>]
       var carouselDiv = _react.default.createElement("div", {
         style: {
-          border: "1px solid green",
           width: "100%"
         }
       }, _toConsumableArray(this.props.counter));
@@ -31309,12 +31308,12 @@ module.exports = "/banner5_250_149.68a9e61f.png";
 module.exports = "/carouselDot.21f77997.png";
 },{}],"../images/carouselDot_red.png":[function(require,module,exports) {
 module.exports = "/carouselDot_red.de01ef67.png";
+},{}],"../images/chevron.png":[function(require,module,exports) {
+module.exports = "/chevron.cf94fb59.png";
 },{}],"../images/arrow_back.png":[function(require,module,exports) {
 module.exports = "/arrow_back.1435ea1d.png";
 },{}],"../images/arrow_forward.png":[function(require,module,exports) {
 module.exports = "/arrow_forward.8ab76bd2.png";
-},{}],"../images/chevron.png":[function(require,module,exports) {
-module.exports = "/chevron.cf94fb59.png";
 },{}],"../js/banner_copy.js":[function(require,module,exports) {
 "use strict";
 
@@ -31775,40 +31774,28 @@ function (_React$Component) {
           style: {
             width: "20px",
             height: "20px",
-            display: "inline-block",
-            position: "absolute",
-            left: "47%",
-            top: "80%"
+            display: "inline-block"
           },
           src: require("../images/carouselDot.png")
         }), _react.default.createElement("img", {
           style: {
             width: "20px",
             height: "20px",
-            display: "inline-block",
-            position: "absolute",
-            left: "50%",
-            top: "80%"
+            display: "inline-block"
           },
           src: require("../images/carouselDot_red.png")
         }), _react.default.createElement("img", {
           style: {
             width: "20px",
             height: "20px",
-            display: "inline-block",
-            position: "absolute",
-            left: "53%",
-            top: "80%"
+            display: "inline-block"
           },
           src: require("../images/carouselDot.png")
         }), _react.default.createElement("img", {
           style: {
             width: "20px",
             height: "20px",
-            display: "inline-block",
-            position: "absolute",
-            left: "56%",
-            top: "80%"
+            display: "inline-block"
           },
           src: require("../images/carouselDot.png")
         })];
@@ -31817,40 +31804,28 @@ function (_React$Component) {
           style: {
             width: "20px",
             height: "20px",
-            display: "inline-block",
-            position: "absolute",
-            left: "47%",
-            top: "80%"
+            display: "inline-block"
           },
           src: require("../images/carouselDot.png")
         }), _react.default.createElement("img", {
           style: {
             width: "20px",
             height: "20px",
-            display: "inline-block",
-            position: "absolute",
-            left: "50%",
-            top: "80%"
+            display: "inline-block"
           },
           src: require("../images/carouselDot.png")
         }), _react.default.createElement("img", {
           style: {
             width: "20px",
             height: "20px",
-            display: "inline-block",
-            position: "absolute",
-            left: "53%",
-            top: "80%"
+            display: "inline-block"
           },
           src: require("../images/carouselDot_red.png")
         }), _react.default.createElement("img", {
           style: {
             width: "20px",
             height: "20px",
-            display: "inline-block",
-            position: "absolute",
-            left: "56%",
-            top: "80%"
+            display: "inline-block"
           },
           src: require("../images/carouselDot.png")
         })];
@@ -31859,40 +31834,28 @@ function (_React$Component) {
           style: {
             width: "20px",
             height: "20px",
-            display: "inline-block",
-            position: "absolute",
-            left: "47%",
-            top: "80%"
+            display: "inline-block"
           },
           src: require("../images/carouselDot.png")
         }), _react.default.createElement("img", {
           style: {
             width: "20px",
             height: "20px",
-            display: "inline-block",
-            position: "absolute",
-            left: "50%",
-            top: "80%"
+            display: "inline-block"
           },
           src: require("../images/carouselDot.png")
         }), _react.default.createElement("img", {
           style: {
             width: "20px",
             height: "20px",
-            display: "inline-block",
-            position: "absolute",
-            left: "53%",
-            top: "80%"
+            display: "inline-block"
           },
           src: require("../images/carouselDot.png")
         }), _react.default.createElement("img", {
           style: {
             width: "20px",
             height: "20px",
-            display: "inline-block",
-            position: "absolute",
-            left: "56%",
-            top: "80%"
+            display: "inline-block"
           },
           src: require("../images/carouselDot_red.png")
         })];
@@ -31915,9 +31878,22 @@ function (_React$Component) {
             width: "100%"
           },
           src: require(_this2.state.imgUrlArrMaxWidth450[_this2.state.counter - 1])
-        }), _react.default.createElement(_carouselCopy.default, {
+        }), _react.default.createElement("div", {
+          style: {
+            border: "1px solid yellow",
+            height: "50px",
+            width: "50%",
+            marginLeft: "25%"
+          }
+        }, _react.default.createElement(_carouselCopy.default, {
           counter: arr
         }), _react.default.createElement("img", {
+          style: {
+            height: "25px",
+            marginLeft: "25px"
+          },
+          src: require("../images/chevron.png")
+        })), _react.default.createElement("img", {
           onClick: _this2.leftArrow,
           className: "leftArrow",
           style: {
@@ -31939,23 +31915,29 @@ function (_React$Component) {
           top: "45%",
           height: "50px",
           backgroundColor: "white"
-        }, "height", "35px")), _defineProperty(_React$createElement, "src", require("../images/arrow_forward.png")), _React$createElement)), _react.default.createElement("img", {
-          style: {
-            position: "absolute",
-            left: "50%",
-            top: "87%",
-            height: "50px"
-          },
-          src: require("../images/chevron.png")
-        })), matches.medium && _react.default.createElement("div", null, _react.default.createElement("img", {
+        }, "height", "35px")), _defineProperty(_React$createElement, "src", require("../images/arrow_forward.png")), _React$createElement))), matches.medium && _react.default.createElement("div", null, _react.default.createElement("img", {
           onClick: _this2.click,
           style: {
             width: "100%"
           },
           src: require(_this2.state.imgUrlArrMaxWidth650[_this2.state.counter - 1])
-        }), _react.default.createElement(_carouselCopy.default, {
+        }), _react.default.createElement("div", {
+          style: {
+            height: "100px",
+            width: "50%",
+            position: "absolute",
+            left: "45%",
+            top: "45%"
+          }
+        }, _react.default.createElement(_carouselCopy.default, {
           counter: arr
         }), _react.default.createElement("img", {
+          style: {
+            height: "35px",
+            marginLeft: "12px"
+          },
+          src: require("../images/chevron.png")
+        })), _react.default.createElement("img", {
           onClick: _this2.leftArrow,
           className: "leftArrow",
           style: {
@@ -31977,15 +31959,7 @@ function (_React$Component) {
           top: "45%",
           height: "50px",
           backgroundColor: "white"
-        }, "height", "35px")), _defineProperty(_React$createElement2, "src", require("../images/arrow_forward.png")), _React$createElement2)), _react.default.createElement("img", {
-          style: {
-            position: "absolute",
-            left: "50%",
-            top: "87%",
-            height: "50px"
-          },
-          src: require("../images/chevron.png")
-        })), matches.semimedium && _react.default.createElement("div", null, _react.default.createElement("img", {
+        }, "height", "35px")), _defineProperty(_React$createElement2, "src", require("../images/arrow_forward.png")), _React$createElement2))), matches.semimedium && _react.default.createElement("div", null, _react.default.createElement("img", {
           onClick: _this2.click,
           style: {
             width: "100%"
@@ -31993,11 +31967,20 @@ function (_React$Component) {
           src: require(_this2.state.imgUrlArrMaxWidth800[_this2.state.counter - 1])
         }), _react.default.createElement("div", {
           style: {
-            border: "1px solid red",
-            width: "15%"
+            height: "100px",
+            width: "50%",
+            position: "absolute",
+            left: "45%",
+            top: "80%"
           }
         }, _react.default.createElement(_carouselCopy.default, {
           counter: arr
+        }), _react.default.createElement("img", {
+          style: {
+            height: "35px",
+            marginLeft: "12px"
+          },
+          src: require("../images/chevron.png")
         })), _react.default.createElement("img", {
           onClick: _this2.leftArrow,
           className: "leftArrow",
@@ -32020,23 +32003,29 @@ function (_React$Component) {
           top: "45%",
           height: "50px",
           backgroundColor: "white"
-        }, "height", "35px")), _defineProperty(_React$createElement3, "src", require("../images/arrow_forward.png")), _React$createElement3)), _react.default.createElement("img", {
-          style: {
-            position: "absolute",
-            left: "50%",
-            top: "75%",
-            height: "50px"
-          },
-          src: require("../images/chevron.png")
-        })), matches.large && _react.default.createElement("div", null, _react.default.createElement("img", {
+        }, "height", "35px")), _defineProperty(_React$createElement3, "src", require("../images/arrow_forward.png")), _React$createElement3))), matches.large && _react.default.createElement("div", null, _react.default.createElement("img", {
           onClick: _this2.click,
           style: {
             width: "100%"
           },
           src: require(_this2.state.imgUrlArr[_this2.state.counter - 1])
-        }), _react.default.createElement(_carouselCopy.default, {
+        }), _react.default.createElement("div", {
+          style: {
+            height: "100px",
+            width: "50%",
+            position: "absolute",
+            left: "45%",
+            top: "85%"
+          }
+        }, _react.default.createElement(_carouselCopy.default, {
           counter: arr
         }), _react.default.createElement("img", {
+          style: {
+            height: "50px",
+            marginLeft: "12px"
+          },
+          src: require("../images/chevron.png")
+        })), _react.default.createElement("img", {
           onClick: _this2.leftArrow,
           className: "leftArrow",
           style: {
@@ -32058,15 +32047,7 @@ function (_React$Component) {
           top: "45%",
           height: "50px",
           backgroundColor: "white"
-        }, "height", "35px")), _defineProperty(_React$createElement4, "src", require("../images/arrow_forward.png")), _React$createElement4)), _react.default.createElement("img", {
-          style: {
-            position: "absolute",
-            left: "50%",
-            top: "87%",
-            height: "50px"
-          },
-          src: require("../images/chevron.png")
-        })));
+        }, "height", "35px")), _defineProperty(_React$createElement4, "src", require("../images/arrow_forward.png")), _React$createElement4))));
       }));
     }
   }]);
@@ -32076,7 +32057,7 @@ function (_React$Component) {
 
 
 exports.default = Banner;
-},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","react-media":"../node_modules/react-media/esm/react-media.js","./carousel copy":"../js/carousel copy.js","../css/landing_page.css":"../css/landing_page.css","../images/banner1.png":"../images/banner1.png","../images/banner2.png":"../images/banner2.png","../images/banner3.png":"../images/banner3.png","../images/banner4.png":"../images/banner4.png","../images/banner5.png":"../images/banner5.png","../images/banner1_683_319.png":"../images/banner1_683_319.png","../images/banner1_424_198.png":"../images/banner1_424_198.png","../images/banner1_250_116.png":"../images/banner1_250_116.png","../images/banner2_250_133.png":"../images/banner2_250_133.png","../images/banner2_424_226.png":"../images/banner2_424_226.png","../images/banner2_683_365.png":"../images/banner2_683_365.png","../images/banner3_424_282.jpg":"../images/banner3_424_282.jpg","../images/banner3_683_455.jpg":"../images/banner3_683_455.jpg","../images/banner3_250_166.jpg":"../images/banner3_250_166.jpg","../images/banner5_683_408.png":"../images/banner5_683_408.png","../images/banner5_424_253.png":"../images/banner5_424_253.png","../images/banner5_250_149.png":"../images/banner5_250_149.png","../images/carouselDot.png":"../images/carouselDot.png","../images/carouselDot_red.png":"../images/carouselDot_red.png","../images/arrow_back.png":"../images/arrow_back.png","../images/arrow_forward.png":"../images/arrow_forward.png","../images/chevron.png":"../images/chevron.png"}],"../node_modules/resolve-pathname/esm/resolve-pathname.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","react-media":"../node_modules/react-media/esm/react-media.js","./carousel copy":"../js/carousel copy.js","../css/landing_page.css":"../css/landing_page.css","../images/banner1.png":"../images/banner1.png","../images/banner2.png":"../images/banner2.png","../images/banner3.png":"../images/banner3.png","../images/banner4.png":"../images/banner4.png","../images/banner5.png":"../images/banner5.png","../images/banner1_683_319.png":"../images/banner1_683_319.png","../images/banner1_424_198.png":"../images/banner1_424_198.png","../images/banner1_250_116.png":"../images/banner1_250_116.png","../images/banner2_250_133.png":"../images/banner2_250_133.png","../images/banner2_424_226.png":"../images/banner2_424_226.png","../images/banner2_683_365.png":"../images/banner2_683_365.png","../images/banner3_424_282.jpg":"../images/banner3_424_282.jpg","../images/banner3_683_455.jpg":"../images/banner3_683_455.jpg","../images/banner3_250_166.jpg":"../images/banner3_250_166.jpg","../images/banner5_683_408.png":"../images/banner5_683_408.png","../images/banner5_424_253.png":"../images/banner5_424_253.png","../images/banner5_250_149.png":"../images/banner5_250_149.png","../images/carouselDot.png":"../images/carouselDot.png","../images/carouselDot_red.png":"../images/carouselDot_red.png","../images/chevron.png":"../images/chevron.png","../images/arrow_back.png":"../images/arrow_back.png","../images/arrow_forward.png":"../images/arrow_forward.png"}],"../node_modules/resolve-pathname/esm/resolve-pathname.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -43118,7 +43099,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58850" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49916" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

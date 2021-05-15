@@ -420,9 +420,6 @@ export default class Banner extends React.Component {
             width: "20px",
             height: "20px",
             display: "inline-block",
-            position: "absolute",
-            left: "47%",
-            top: "80%",
           }}
           src={require("../images/carouselDot.png")}
         ></img>,
@@ -431,9 +428,6 @@ export default class Banner extends React.Component {
             width: "20px",
             height: "20px",
             display: "inline-block",
-            position: "absolute",
-            left: "50%",
-            top: "80%",
           }}
           src={require("../images/carouselDot_red.png")}
         ></img>,
@@ -442,9 +436,6 @@ export default class Banner extends React.Component {
             width: "20px",
             height: "20px",
             display: "inline-block",
-            position: "absolute",
-            left: "53%",
-            top: "80%",
           }}
           src={require("../images/carouselDot.png")}
         ></img>,
@@ -453,9 +444,6 @@ export default class Banner extends React.Component {
             width: "20px",
             height: "20px",
             display: "inline-block",
-            position: "absolute",
-            left: "56%",
-            top: "80%",
           }}
           src={require("../images/carouselDot.png")}
         ></img>,
@@ -467,9 +455,6 @@ export default class Banner extends React.Component {
             width: "20px",
             height: "20px",
             display: "inline-block",
-            position: "absolute",
-            left: "47%",
-            top: "80%",
           }}
           src={require("../images/carouselDot.png")}
         ></img>,
@@ -478,9 +463,6 @@ export default class Banner extends React.Component {
             width: "20px",
             height: "20px",
             display: "inline-block",
-            position: "absolute",
-            left: "50%",
-            top: "80%",
           }}
           src={require("../images/carouselDot.png")}
         ></img>,
@@ -489,9 +471,6 @@ export default class Banner extends React.Component {
             width: "20px",
             height: "20px",
             display: "inline-block",
-            position: "absolute",
-            left: "53%",
-            top: "80%",
           }}
           src={require("../images/carouselDot_red.png")}
         ></img>,
@@ -500,9 +479,6 @@ export default class Banner extends React.Component {
             width: "20px",
             height: "20px",
             display: "inline-block",
-            position: "absolute",
-            left: "56%",
-            top: "80%",
           }}
           src={require("../images/carouselDot.png")}
         ></img>,
@@ -514,9 +490,6 @@ export default class Banner extends React.Component {
             width: "20px",
             height: "20px",
             display: "inline-block",
-            position: "absolute",
-            left: "47%",
-            top: "80%",
           }}
           src={require("../images/carouselDot.png")}
         ></img>,
@@ -525,9 +498,6 @@ export default class Banner extends React.Component {
             width: "20px",
             height: "20px",
             display: "inline-block",
-            position: "absolute",
-            left: "50%",
-            top: "80%",
           }}
           src={require("../images/carouselDot.png")}
         ></img>,
@@ -536,9 +506,6 @@ export default class Banner extends React.Component {
             width: "20px",
             height: "20px",
             display: "inline-block",
-            position: "absolute",
-            left: "53%",
-            top: "80%",
           }}
           src={require("../images/carouselDot.png")}
         ></img>,
@@ -547,9 +514,6 @@ export default class Banner extends React.Component {
             width: "20px",
             height: "20px",
             display: "inline-block",
-            position: "absolute",
-            left: "56%",
-            top: "80%",
           }}
           src={require("../images/carouselDot_red.png")}
         ></img>,
@@ -578,106 +542,22 @@ export default class Banner extends React.Component {
                       this.state.counter - 1
                     ])}
                   ></img>
-                  <Carousel counter={arr} />
-                  <img
-                    onClick={this.leftArrow}
-                    className="leftArrow"
+                  <div
                     style={{
-                      visibility: disp,
-                      position: "absolute",
-                      left: "5px",
-                      top: "45%",
-                      height: "35px",
-                      backgroundColor: "white",
-                    }}
-                    src={require("../images/arrow_back.png")}
-                  ></img>
-                  <img
-                    onClick={this.rightArrow}
-                    className="rightArrow"
-                    onClick={this.rightArrow}
-                    style={{
-                      visibility: disp,
-                      position: "absolute",
-                      right: "20px",
-                      top: "45%",
+                      border: "1px solid yellow",
                       height: "50px",
-                      backgroundColor: "white",
-                      height: "35px",
+                      width: "50%",
+                      marginLeft: "25%",
                     }}
-                    src={require("../images/arrow_forward.png")}
-                  ></img>
-                  <img
-                    style={{
-                      position: "absolute",
-                      left: "50%",
-                      top: "87%",
-                      height: "50px",
-                    }}
-                    src={require("../images/chevron.png")}
-                  ></img>
-                </div>
-              )}
-              {matches.medium && (
-                <div>
-                  <img
-                    onClick={this.click}
-                    style={{ width: "100%" }}
-                    src={require(this.state.imgUrlArrMaxWidth650[
-                      this.state.counter - 1
-                    ])}
-                  ></img>
-                  <Carousel counter={arr} />
-                  <img
-                    onClick={this.leftArrow}
-                    className="leftArrow"
-                    style={{
-                      visibility: disp,
-                      position: "absolute",
-                      left: "5px",
-                      top: "45%",
-                      height: "35px",
-                      backgroundColor: "white",
-                    }}
-                    src={require("../images/arrow_back.png")}
-                  ></img>
-                  <img
-                    onClick={this.rightArrow}
-                    className="rightArrow"
-                    onClick={this.rightArrow}
-                    style={{
-                      visibility: disp,
-                      position: "absolute",
-                      right: "20px",
-                      top: "45%",
-                      height: "50px",
-                      backgroundColor: "white",
-                      height: "35px",
-                    }}
-                    src={require("../images/arrow_forward.png")}
-                  ></img>
-                  <img
-                    style={{
-                      position: "absolute",
-                      left: "50%",
-                      top: "87%",
-                      height: "50px",
-                    }}
-                    src={require("../images/chevron.png")}
-                  ></img>
-                </div>
-              )}
-              {matches.semimedium && (
-                <div>
-                  <img
-                    onClick={this.click}
-                    style={{ width: "100%" }}
-                    src={require(this.state.imgUrlArrMaxWidth800[
-                      this.state.counter - 1
-                    ])}
-                  ></img>
-                  <div style={{ border: "1px solid red", width: "15%" }}>
+                  >
                     <Carousel counter={arr} />
+                    <img
+                      style={{
+                        height: "25px",
+                        marginLeft: "25px",
+                      }}
+                      src={require("../images/chevron.png")}
+                    ></img>
                   </div>
                   <img
                     onClick={this.leftArrow}
@@ -707,25 +587,35 @@ export default class Banner extends React.Component {
                     }}
                     src={require("../images/arrow_forward.png")}
                   ></img>
-                  <img
-                    style={{
-                      position: "absolute",
-                      left: "50%",
-                      top: "75%",
-                      height: "50px",
-                    }}
-                    src={require("../images/chevron.png")}
-                  ></img>
                 </div>
               )}
-              {matches.large && (
+              {matches.medium && (
                 <div>
                   <img
                     onClick={this.click}
                     style={{ width: "100%" }}
-                    src={require(this.state.imgUrlArr[this.state.counter - 1])}
+                    src={require(this.state.imgUrlArrMaxWidth650[
+                      this.state.counter - 1
+                    ])}
                   ></img>
-                  <Carousel counter={arr} />
+                  <div
+                    style={{
+                      height: "100px",
+                      width: "50%",
+                      position: "absolute",
+                      left: "45%",
+                      top: "45%",
+                    }}
+                  >
+                    <Carousel counter={arr} />
+                    <img
+                      style={{
+                        height: "35px",
+                        marginLeft: "12px",
+                      }}
+                      src={require("../images/chevron.png")}
+                    ></img>
+                  </div>
                   <img
                     onClick={this.leftArrow}
                     className="leftArrow"
@@ -754,14 +644,117 @@ export default class Banner extends React.Component {
                     }}
                     src={require("../images/arrow_forward.png")}
                   ></img>
+                </div>
+              )}
+              {matches.semimedium && (
+                <div>
                   <img
+                    onClick={this.click}
+                    style={{ width: "100%" }}
+                    src={require(this.state.imgUrlArrMaxWidth800[
+                      this.state.counter - 1
+                    ])}
+                  ></img>
+                  <div
                     style={{
+                      height: "100px",
+                      width: "50%",
                       position: "absolute",
-                      left: "50%",
-                      top: "87%",
-                      height: "50px",
+                      left: "45%",
+                      top: "80%",
                     }}
-                    src={require("../images/chevron.png")}
+                  >
+                    <Carousel counter={arr} />
+                    <img
+                      style={{
+                        height: "35px",
+                        marginLeft: "12px",
+                      }}
+                      src={require("../images/chevron.png")}
+                    ></img>
+                  </div>
+                  <img
+                    onClick={this.leftArrow}
+                    className="leftArrow"
+                    style={{
+                      visibility: disp,
+                      position: "absolute",
+                      left: "5px",
+                      top: "45%",
+                      height: "35px",
+                      backgroundColor: "white",
+                    }}
+                    src={require("../images/arrow_back.png")}
+                  ></img>
+                  <img
+                    onClick={this.rightArrow}
+                    className="rightArrow"
+                    onClick={this.rightArrow}
+                    style={{
+                      visibility: disp,
+                      position: "absolute",
+                      right: "20px",
+                      top: "45%",
+                      height: "50px",
+                      backgroundColor: "white",
+                      height: "35px",
+                    }}
+                    src={require("../images/arrow_forward.png")}
+                  ></img>
+                </div>
+              )}
+              {matches.large && (
+                <div>
+                  <img
+                    onClick={this.click}
+                    style={{ width: "100%" }}
+                    src={require(this.state.imgUrlArr[this.state.counter - 1])}
+                  ></img>
+                  <div
+                    style={{
+                      height: "100px",
+                      width: "50%",
+                      position: "absolute",
+                      left: "45%",
+                      top: "85%",
+                    }}
+                  >
+                    <Carousel counter={arr} />
+                    <img
+                      style={{
+                        height: "50px",
+                        marginLeft: "12px",
+                      }}
+                      src={require("../images/chevron.png")}
+                    ></img>
+                  </div>
+                  <img
+                    onClick={this.leftArrow}
+                    className="leftArrow"
+                    style={{
+                      visibility: disp,
+                      position: "absolute",
+                      left: "5px",
+                      top: "45%",
+                      height: "35px",
+                      backgroundColor: "white",
+                    }}
+                    src={require("../images/arrow_back.png")}
+                  ></img>
+                  <img
+                    onClick={this.rightArrow}
+                    className="rightArrow"
+                    onClick={this.rightArrow}
+                    style={{
+                      visibility: disp,
+                      position: "absolute",
+                      right: "20px",
+                      top: "45%",
+                      height: "50px",
+                      backgroundColor: "white",
+                      height: "35px",
+                    }}
+                    src={require("../images/arrow_forward.png")}
                   ></img>
                 </div>
               )}

@@ -17,9 +17,7 @@ export default class Carousel extends React.Component {
     //  <img style ={{width: "25px", height: "18px", display: "inline-block", position: "absolute", left: "56%",top: "80%"}} src = {require("../images/carouselDot.png")}></img>]
 
     var carouselDiv = (
-      <div style={{ border: "1px solid green", width: "100%" }}>
-        {[...this.props.counter]}
-      </div>
+      <div style={{ width: "100%" }}>{[...this.props.counter]}</div>
     );
 
     return carouselDiv;

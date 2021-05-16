@@ -31312,7 +31312,7 @@ module.exports = "/chevron.cf94fb59.png";
 module.exports = "/arrow_back.1435ea1d.png";
 },{}],"../images/arrow_forward.png":[function(require,module,exports) {
 module.exports = "/arrow_forward.8ab76bd2.png";
-},{}],"../js/banner_copy.js":[function(require,module,exports) {
+},{}],"../js/banner_copy copy.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -31858,7 +31858,7 @@ function (_React$Component) {
       }
 
       var disp = this.state.clicked ? "visible" : "hidden";
-      return _react.default.createElement("div", null, _react.default.createElement(_reactMedia.default, {
+      return _react.default.createElement(_reactMedia.default, {
         queries: {
           small: "(max-width: 450px)",
           medium: "(min-width: 450px) and (max-width: 600px)",
@@ -31868,7 +31868,12 @@ function (_React$Component) {
       }, function (matches) {
         var _React$createElement, _React$createElement2, _React$createElement3, _React$createElement4;
 
-        return _react.default.createElement(_react.default.Fragment, null, matches.small && _react.default.createElement("div", null, _react.default.createElement("img", {
+        return _react.default.createElement(_react.default.Fragment, null, matches.small && _react.default.createElement("div", {
+          style: {
+            position: "relative",
+            width: "100%"
+          }
+        }, _react.default.createElement("img", {
           onClick: _this2.click,
           style: {
             width: "100%"
@@ -31876,9 +31881,11 @@ function (_React$Component) {
           src: require(_this2.state.imgUrlArrMaxWidth450[_this2.state.counter - 1])
         }), _react.default.createElement("div", {
           style: {
+            position: "absolute",
             height: "50px",
             width: "50%",
-            marginLeft: "25%"
+            bottom: "0",
+            left: "40%"
           }
         }, _react.default.createElement(_carouselCopy.default, {
           counter: arr
@@ -31895,22 +31902,27 @@ function (_React$Component) {
             visibility: disp,
             position: "absolute",
             left: "5px",
-            top: "45%",
-            height: "35px",
+            top: "50%",
+            height: "20px",
             backgroundColor: "white"
           },
           src: require("../images/arrow_back.png")
         }), _react.default.createElement("img", (_React$createElement = {
           onClick: _this2.rightArrow,
           className: "rightArrow"
-        }, _defineProperty(_React$createElement, "onClick", _this2.rightArrow), _defineProperty(_React$createElement, "style", _defineProperty({
+        }, _defineProperty(_React$createElement, "onClick", _this2.rightArrow), _defineProperty(_React$createElement, "style", {
           visibility: disp,
           position: "absolute",
-          right: "20px",
-          top: "45%",
-          height: "50px",
+          right: "5px",
+          top: "50%",
+          height: "20px",
           backgroundColor: "white"
-        }, "height", "35px")), _defineProperty(_React$createElement, "src", require("../images/arrow_forward.png")), _React$createElement))), matches.medium && _react.default.createElement("div", null, _react.default.createElement("img", {
+        }), _defineProperty(_React$createElement, "src", require("../images/arrow_forward.png")), _React$createElement))), matches.medium && _react.default.createElement("div", {
+          style: {
+            position: "relative",
+            width: "100%"
+          }
+        }, _react.default.createElement("img", {
           onClick: _this2.click,
           style: {
             width: "100%"
@@ -31918,11 +31930,11 @@ function (_React$Component) {
           src: require(_this2.state.imgUrlArrMaxWidth650[_this2.state.counter - 1])
         }), _react.default.createElement("div", {
           style: {
-            height: "100px",
-            width: "50%",
             position: "absolute",
-            left: "45%",
-            top: "45%"
+            height: "50px",
+            width: "50%",
+            bottom: "0",
+            left: "40%"
           }
         }, _react.default.createElement(_carouselCopy.default, {
           counter: arr
@@ -31954,7 +31966,12 @@ function (_React$Component) {
           top: "45%",
           height: "50px",
           backgroundColor: "white"
-        }, "height", "35px")), _defineProperty(_React$createElement2, "src", require("../images/arrow_forward.png")), _React$createElement2))), matches.semimedium && _react.default.createElement("div", null, _react.default.createElement("img", {
+        }, "height", "35px")), _defineProperty(_React$createElement2, "src", require("../images/arrow_forward.png")), _React$createElement2))), matches.semimedium && _react.default.createElement("div", {
+          style: {
+            position: "relative",
+            width: "100%"
+          }
+        }, _react.default.createElement("img", {
           onClick: _this2.click,
           style: {
             width: "100%"
@@ -31962,11 +31979,11 @@ function (_React$Component) {
           src: require(_this2.state.imgUrlArrMaxWidth800[_this2.state.counter - 1])
         }), _react.default.createElement("div", {
           style: {
-            height: "100px",
-            width: "50%",
             position: "absolute",
-            left: "45%",
-            top: "80%"
+            height: "50px",
+            width: "50%",
+            bottom: "0",
+            left: "40%"
           }
         }, _react.default.createElement(_carouselCopy.default, {
           counter: arr
@@ -31998,7 +32015,12 @@ function (_React$Component) {
           top: "45%",
           height: "50px",
           backgroundColor: "white"
-        }, "height", "35px")), _defineProperty(_React$createElement3, "src", require("../images/arrow_forward.png")), _React$createElement3))), matches.large && _react.default.createElement("div", null, _react.default.createElement("img", {
+        }, "height", "35px")), _defineProperty(_React$createElement3, "src", require("../images/arrow_forward.png")), _React$createElement3))), matches.large && _react.default.createElement("div", {
+          style: {
+            position: "relative",
+            width: "100%"
+          }
+        }, _react.default.createElement("img", {
           onClick: _this2.click,
           style: {
             width: "100%"
@@ -32006,11 +32028,11 @@ function (_React$Component) {
           src: require(_this2.state.imgUrlArr[_this2.state.counter - 1])
         }), _react.default.createElement("div", {
           style: {
-            height: "100px",
-            width: "50%",
             position: "absolute",
-            left: "45%",
-            top: "85%"
+            height: "50px",
+            width: "50%",
+            bottom: "0",
+            left: "40%"
           }
         }, _react.default.createElement(_carouselCopy.default, {
           counter: arr
@@ -32043,7 +32065,7 @@ function (_React$Component) {
           height: "50px",
           backgroundColor: "white"
         }, "height", "35px")), _defineProperty(_React$createElement4, "src", require("../images/arrow_forward.png")), _React$createElement4))));
-      }));
+      });
     }
   }]);
 
@@ -42900,7 +42922,7 @@ var _reactDom = _interopRequireDefault(require("react-dom"));
 
 var _header = _interopRequireDefault(require("./header"));
 
-var _banner_copy = _interopRequireDefault(require("./banner_copy"));
+var _banner_copyCopy = _interopRequireDefault(require("./banner_copy copy"));
 
 require("../css/landing_page.css");
 
@@ -43040,7 +43062,7 @@ function (_React$Component) {
         path: "/"
       }, _react.default.createElement("div", {
         className: "banner"
-      }, _react.default.createElement(_banner_copy.default, null)))), _react.default.createElement(_reactRouterDom.Switch, null, _react.default.createElement(_reactRouterDom.Route, {
+      }, _react.default.createElement(_banner_copyCopy.default, null)))), _react.default.createElement(_reactRouterDom.Switch, null, _react.default.createElement(_reactRouterDom.Route, {
         exact: true,
         path: "/cloudautomation"
       }, _react.default.createElement("div", {
@@ -43076,7 +43098,7 @@ _reactDom.default.render(_react.default.createElement(App, null), document.getEl
 //   <LandingPageContent />,
 //   document.getElementById("landing_page_content")
 // );
-},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","./header":"../js/header.js","./banner_copy":"../js/banner_copy.js","../css/landing_page.css":"../css/landing_page.css","./main_menu_modal":"../js/main_menu_modal.js","./landingPageContent":"../js/landingPageContent.js","./cloudautomation":"../js/cloudautomation.js","./marketingautomation":"../js/marketingautomation.js","./contactus":"../js/contactus.js","./nameform":"../js/nameform.js","axios":"../node_modules/axios/index.js","qs":"../node_modules/qs/lib/index.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js","./footer":"../js/footer.js"}],"../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","./header":"../js/header.js","./banner_copy copy":"../js/banner_copy copy.js","../css/landing_page.css":"../css/landing_page.css","./main_menu_modal":"../js/main_menu_modal.js","./landingPageContent":"../js/landingPageContent.js","./cloudautomation":"../js/cloudautomation.js","./marketingautomation":"../js/marketingautomation.js","./contactus":"../js/contactus.js","./nameform":"../js/nameform.js","axios":"../node_modules/axios/index.js","qs":"../node_modules/qs/lib/index.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js","./footer":"../js/footer.js"}],"../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -43104,7 +43126,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54374" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57802" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -136,13 +136,17 @@
 
 .contactUsBanner {
   background-color: #2e2761;
+  text-align: center;
 }
 
 .contactUsBannerImage {
-  width: 50%;
+  /* width: 50%;
   height: 400px;
   display: block;
-  margin-left: 25%;
+  margin-left: 25%; */
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
 }
 .contactUsAllMethods {
   display: flex;
@@ -173,11 +177,12 @@
   }
 }
 
+/* media queries for contact us page components */
 @media (max-width: 800px) {
-  .contactUsBannerImage {
+  /* .contactUsBannerImage {
     width: 100%;
     margin-left: 0px;
-  }
+  } */
 
   .contactUsAllMethods {
     flex-wrap: wrap;
@@ -208,16 +213,27 @@
   }
 }
 
-.flexOne > div {
-  box-sizing: border-box;
-  /* border: 1px solid green; */
-  vertical-align: middle;
-  text-align: center;
-  line-height: 50px;
+@media (max-width: 450px) {
+  .formDiv,
+  .callImage,
+  .letters,
+  .mailbox {
+    width: 100%;
+  }
 }
 
-.flexTwo > img {
-  box-sizing: border-box;
+@media (max-width: 800px) {
+  .flexOne > div {
+    box-sizing: border-box;
+    /* border: 1px solid green; */
+    vertical-align: middle;
+    text-align: center;
+    line-height: 50px;
+  }
+
+  .flexTwo > img {
+    box-sizing: border-box;
+  }
 }
 
 

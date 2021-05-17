@@ -35633,6 +35633,9 @@ function (_React$Component) {
           display: this.state.displayITServicesSubMenu
         }
       }, _react.default.createElement("td", null), _react.default.createElement("td", {
+        onClick: function onClick() {
+          return window.location.pathname = "/digitaltransformation";
+        },
         onMouseOver: this.putUnderLineColorDigiTran,
         onMouseOut: this.unputUnderLineColorDigiTran,
         style: this.state.underLineColorDigiTran
@@ -38897,7 +38900,95 @@ function (_React$Component) {
 }(_React.default.Component);
 
 exports.default = MarketingAutomation;
-},{"React":"../node_modules/React/index.js","./footer":"../js/footer.js","../images/marketingautomationbackground.jpg":"../images/marketingautomationbackground.jpg","../images/marketingautomationbanner.png":"../images/marketingautomationbanner.png"}],"../node_modules/email-validator/index.js":[function(require,module,exports) {
+},{"React":"../node_modules/React/index.js","./footer":"../js/footer.js","../images/marketingautomationbackground.jpg":"../images/marketingautomationbackground.jpg","../images/marketingautomationbanner.png":"../images/marketingautomationbanner.png"}],"../images/ball-63527.jpg":[function(require,module,exports) {
+module.exports = "/ball-63527.45375642.jpg";
+},{}],"../images/digital_transformation_banner.jpg":[function(require,module,exports) {
+module.exports = "/digital_transformation_banner.cfeb1d56.jpg";
+},{}],"../js/digitaltransformation.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _footer = _interopRequireDefault(require("./footer"));
+
+var _ball = _interopRequireDefault(require("../images/ball-63527.jpg"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+var DigitalTransformation =
+/*#__PURE__*/
+function (_React$Component) {
+  _inherits(DigitalTransformation, _React$Component);
+
+  function DigitalTransformation() {
+    _classCallCheck(this, DigitalTransformation);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(DigitalTransformation).apply(this, arguments));
+  }
+
+  _createClass(DigitalTransformation, [{
+    key: "render",
+    value: function render() {
+      return _react.default.createElement("div", null, _react.default.createElement("title", null, "Digital Transformation"), _react.default.createElement("div", {
+        style: {
+          textAlign: "center",
+          backgroundColor: "#131257"
+        }
+      }, _react.default.createElement("img", {
+        src: require("../images/digital_transformation_banner.jpg"),
+        style: {
+          height: "250px",
+          verticalAlign: "text-bottom",
+          marginTop: "2px"
+        }
+      })), _react.default.createElement("div", {
+        style: {
+          // backgroundImage: `url(${BackgroundImage})`,
+          border: "1px solid black",
+          position: "relative"
+        }
+      }, _react.default.createElement("img", {
+        src: _ball.default,
+        style: {
+          top: "0",
+          left: "0",
+          width: "100%",
+          height: "100%",
+          opacity: "0.2",
+          position: "absolute"
+        }
+      }), _react.default.createElement("h1", null, "Digital Transformation"), _react.default.createElement("p", null, "CEOs and CIOs need to change their organization's processes and systems in line with customer expectations. We can help with the digital transformation journey by lending a hand in everything from strategy development to ensuring on-time deliveries. You can trust our experts to help you master digital transformation, get maximum value from digital investments, and reach out to new customers/markets via the power of digital."), _react.default.createElement("h1", null, "Why Digital Transformation is Essential"), _react.default.createElement("p", null, "Digital transformation is the need of the hour in COVID-19 times as people are restricted to their homes and prefer to purchase everything online. Businesses that stick to offline/store models will lose the benefits they can reap from the digital boom."), _react.default.createElement("h1", null, "Digital Transformation Services"), _react.default.createElement("ul", null, _react.default.createElement("li", null, "Web"), _react.default.createElement("p", null, "The web services we provide are not limited to redesigning a website or building a plug-in. We take things forward by designing and delivering bold and innovative solutions that boost business growth. Our web solutions keep up with the trends like mobile shopping and ensure an enjoyable and engaging end-user experience."), _react.default.createElement("li", null, "Social"), _react.default.createElement("p", null, "You can trust our experts to make social media work for you. We leverage social media's power to initiate interactions, create creative campaigns, engage end-users, and simplify the social strategy. Brands also depend on us to embrace social media's power and use social networks to achieve growth goals."), _react.default.createElement("li", null, "Mobile"), _react.default.createElement("p", null, "Social media on mobile is not limited to creating shiny apps. It is also about ensuring that the mobile solutions become useful to the decision-makers and the apps stay relevant to the end-users. As we do not undermine the power of design and user-experience, we focus on creating innovative interfaces and unique UX."), _react.default.createElement("li", null, "Cyber Security"), _react.default.createElement("p", null, "Identity theft is a serious concern in the world of digital. We help preserve your business identity, retain competitive advantage, and keep the clients happy for long. Our team creates the best and highly customized cybersecurity solutions that help you stay vigilant against digital risks and get better protection."), _react.default.createElement("li", null, "Optimization"), _react.default.createElement("p", null, "Data is everywhere, from your social media chatter to the influencer impact. We help you get more value out of the data by offering digital insights that are usually useful. With us, you can filter relevant data, understand it, and utilize it to deliver an enhanced customer experience. As a part of optimization, you can trust us to optimize your website or landing page experience by tracking the behaviour of visitors to encourage visitors to take desired actions. We can also make your website more appealing by making it more user-focused and change it based on end-user feedback. Whether it is a change in website design, adding/deleting/changing basic functionalities, or migrating websites from one platform to another, our competent team can handle it all skilfully."))), _react.default.createElement(_footer.default, null));
+    }
+  }]);
+
+  return DigitalTransformation;
+}(_react.default.Component);
+
+exports.default = DigitalTransformation;
+},{"react":"../node_modules/react/index.js","./footer":"../js/footer.js","../images/ball-63527.jpg":"../images/ball-63527.jpg","../images/digital_transformation_banner.jpg":"../images/digital_transformation_banner.jpg"}],"../node_modules/email-validator/index.js":[function(require,module,exports) {
 "use strict";
 
 var tester = /^[-!#$%&'*+\/0-9=?A-Z^_a-z{|}~](\.?[-!#$%&'*+\/0-9=?A-Z^_a-z`{|}~])*@[a-zA-Z0-9](-*\.?[a-zA-Z0-9])*\.[a-zA-Z](-?[a-zA-Z0-9])+$/; // Thanks to:
@@ -42934,6 +43025,8 @@ var _cloudautomation = _interopRequireDefault(require("./cloudautomation"));
 
 var _marketingautomation = _interopRequireDefault(require("./marketingautomation"));
 
+var _digitaltransformation = _interopRequireDefault(require("./digitaltransformation"));
+
 var _contactus = _interopRequireDefault(require("./contactus"));
 
 var _nameform = _interopRequireDefault(require("./nameform"));
@@ -43082,6 +43175,15 @@ function (_React$Component) {
         }
       }, _react.default.createElement(_marketingautomation.default, null)))), _react.default.createElement(_reactRouterDom.Switch, null, _react.default.createElement(_reactRouterDom.Route, {
         exact: true,
+        path: "/digitaltransformation"
+      }, _react.default.createElement("div", {
+        style: {
+          position: "absolute",
+          top: "15%",
+          zIndex: "-1"
+        }
+      }, _react.default.createElement(_digitaltransformation.default, null)))), _react.default.createElement(_reactRouterDom.Switch, null, _react.default.createElement(_reactRouterDom.Route, {
+        exact: true,
         path: "/contactus"
       }, _react.default.createElement("div", {
         style: {
@@ -43098,7 +43200,7 @@ _reactDom.default.render(_react.default.createElement(App, null), document.getEl
 //   <LandingPageContent />,
 //   document.getElementById("landing_page_content")
 // );
-},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","./header":"../js/header.js","./banner_copy copy":"../js/banner_copy copy.js","../css/landing_page.css":"../css/landing_page.css","./main_menu_modal":"../js/main_menu_modal.js","./landingPageContent":"../js/landingPageContent.js","./cloudautomation":"../js/cloudautomation.js","./marketingautomation":"../js/marketingautomation.js","./contactus":"../js/contactus.js","./nameform":"../js/nameform.js","axios":"../node_modules/axios/index.js","qs":"../node_modules/qs/lib/index.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js","./footer":"../js/footer.js"}],"../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","./header":"../js/header.js","./banner_copy copy":"../js/banner_copy copy.js","../css/landing_page.css":"../css/landing_page.css","./main_menu_modal":"../js/main_menu_modal.js","./landingPageContent":"../js/landingPageContent.js","./cloudautomation":"../js/cloudautomation.js","./marketingautomation":"../js/marketingautomation.js","./digitaltransformation":"../js/digitaltransformation.js","./contactus":"../js/contactus.js","./nameform":"../js/nameform.js","axios":"../node_modules/axios/index.js","qs":"../node_modules/qs/lib/index.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js","./footer":"../js/footer.js"}],"../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -43126,7 +43228,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61341" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64133" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

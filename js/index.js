@@ -9,6 +9,7 @@ import MainMenuModal from "./main_menu_modal";
 import LandingPageContent from "./landingPageContent";
 import CloudAutomation from "./cloudautomation";
 import MarketingAutomation from "./marketingautomation";
+import DigitalTransformation from "./digitaltransformation";
 import ContactUs from "./contactus";
 import NameForm from "./nameform";
 import axios from "axios";
@@ -99,6 +100,13 @@ class App extends React.Component {
             <Route exact path="/marketingautomation">
               <div style={{ position: "absolute", top: "15%", zIndex: "-1" }}>
                 <MarketingAutomation />
+              </div>
+            </Route>
+          </Switch>
+          <Switch>
+            <Route exact path="/digitaltransformation">
+              <div style={{ position: "absolute", top: "15%", zIndex: "-1" }}>
+                <DigitalTransformation />
               </div>
             </Route>
           </Switch>

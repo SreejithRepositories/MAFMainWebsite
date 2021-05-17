@@ -361,6 +361,9 @@ export default class Main_Menu_Modal extends React.Component {
           <tr style={{ display: this.state.displayITServicesSubMenu }}>
             <td></td>
             <td
+              onClick={() =>
+                (window.location.pathname = "/digitaltransformation")
+              }
               onMouseOver={this.putUnderLineColorDigiTran}
               onMouseOut={this.unputUnderLineColorDigiTran}
               style={this.state.underLineColorDigiTran}

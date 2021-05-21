@@ -36434,12 +36434,7 @@ function (_React$Component) {
         }, _react.default.createElement("a", {
           href: "/marketingautomation",
           target: "_blank"
-        }, "Marketing Automation")))), _react.default.createElement("div", {
-          style: {
-            clear: "both",
-            marginTop: "400px"
-          }
-        }, _react.default.createElement(_footer.default, null)));
+        }, "Marketing Automation")))), _react.default.createElement(_footer.default, null));
       } else {
         return null;
       }
@@ -43158,38 +43153,16 @@ function (_React$Component) {
       }, _react.default.createElement(_banner_copyCopy.default, null)))), _react.default.createElement(_reactRouterDom.Switch, null, _react.default.createElement(_reactRouterDom.Route, {
         exact: true,
         path: "/cloudautomation"
-      }, _react.default.createElement("div", {
-        style: {
-          position: "absolute",
-          top: "15%",
-          zIndex: "-1"
-        }
-      }, _react.default.createElement(_cloudautomation.default, null)))), _react.default.createElement(_reactRouterDom.Switch, null, _react.default.createElement(_reactRouterDom.Route, {
+      }, _react.default.createElement(_cloudautomation.default, null))), _react.default.createElement(_reactRouterDom.Switch, null, _react.default.createElement(_reactRouterDom.Route, {
         exact: true,
         path: "/marketingautomation"
-      }, _react.default.createElement("div", {
-        style: {
-          position: "absolute",
-          top: "15%",
-          zIndex: "-1"
-        }
-      }, _react.default.createElement(_marketingautomation.default, null)))), _react.default.createElement(_reactRouterDom.Switch, null, _react.default.createElement(_reactRouterDom.Route, {
+      }, _react.default.createElement(_marketingautomation.default, null))), _react.default.createElement(_reactRouterDom.Switch, null, _react.default.createElement(_reactRouterDom.Route, {
         exact: true,
         path: "/digitaltransformation"
-      }, _react.default.createElement("div", {
-        style: {
-          position: "absolute",
-          top: "15%",
-          zIndex: "-1"
-        }
-      }, _react.default.createElement(_digitaltransformation.default, null)))), _react.default.createElement(_reactRouterDom.Switch, null, _react.default.createElement(_reactRouterDom.Route, {
+      }, _react.default.createElement(_digitaltransformation.default, null))), _react.default.createElement(_reactRouterDom.Switch, null, _react.default.createElement(_reactRouterDom.Route, {
         exact: true,
         path: "/contactus"
-      }, _react.default.createElement("div", {
-        style: {
-          width: "100%"
-        }
-      }, _react.default.createElement(_contactus.default, null)))), _react.default.createElement(_landingPageContent.default, null)));
+      }, _react.default.createElement(_contactus.default, null))), _react.default.createElement(_landingPageContent.default, null)));
     }
   }]);
 
@@ -43228,7 +43201,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64133" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52736" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

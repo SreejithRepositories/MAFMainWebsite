@@ -703,10 +703,17 @@ export default class Banner extends React.Component {
               </div>
             )}
             {matches.large && (
-              <div style={{ position: "relative", width: "100%" }}>
+              <div
+                style={{
+                  position: "relative",
+                  width: "100%",
+                }}
+              >
                 <img
                   onClick={this.click}
-                  style={{ width: "100%" }}
+                  style={{
+                    width: "100%",
+                  }}
                   src={require(this.state.imgUrlArr[this.state.counter - 1])}
                 ></img>
                 <div

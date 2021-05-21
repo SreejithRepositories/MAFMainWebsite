@@ -91,30 +91,22 @@ class App extends React.Component {
           </Switch>
           <Switch>
             <Route exact path="/cloudautomation">
-              <div style={{ position: "absolute", top: "15%", zIndex: "-1" }}>
-                <CloudAutomation />
-              </div>
+              <CloudAutomation />
             </Route>
           </Switch>
           <Switch>
             <Route exact path="/marketingautomation">
-              <div style={{ position: "absolute", top: "15%", zIndex: "-1" }}>
-                <MarketingAutomation />
-              </div>
+              <MarketingAutomation />
             </Route>
           </Switch>
           <Switch>
             <Route exact path="/digitaltransformation">
-              <div style={{ position: "absolute", top: "15%", zIndex: "-1" }}>
-                <DigitalTransformation />
-              </div>
+              <DigitalTransformation />
             </Route>
           </Switch>
           <Switch>
             <Route exact path="/contactus">
-              <div style={{ width: "100%" }}>
-                <ContactUs />
-              </div>
+              <ContactUs />
             </Route>
           </Switch>
 

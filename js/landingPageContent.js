@@ -53,9 +53,8 @@ export default class LandingPageContent extends React.Component {
               </p>
             </div>
           </div>
-          <div style={{ clear: "both", marginTop: "400px" }}>
-            <Footer />
-          </div>
+
+          <Footer />
         </div>
       );
     } else {

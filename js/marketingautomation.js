@@ -6,12 +6,11 @@ import BackgroundImage from "../images/marketingautomationbackground.jpg";
 export default class MarketingAutomation extends React.Component {
   render() {
     return (
-      <div style={{ display: "flex", flexDirection: "column" }}>
+      <div>
         <title>Marketing Automation</title>
 
         <div
           style={{
-            boxSizing: "border-box",
             textAlign: "center",
             backgroundColor: "#0b9cb5",
           }}
@@ -26,10 +25,22 @@ export default class MarketingAutomation extends React.Component {
         </div>
         <div
           style={{
-            marginTop: "-5px",
-            background: `linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.2)), url(${BackgroundImage})`,
+            // backgroundImage: `url(${BackgroundImage})`,
+            border: "1px solid black",
+            position: "relative",
           }}
         >
+          <img
+            src={BackgroundImage}
+            style={{
+              top: "0",
+              left: "0",
+              width: "100%",
+              height: "100%",
+              opacity: "0.6",
+              position: "absolute",
+            }}
+          />
           <h1>Marketing Automation</h1>
           <p>
             With time, organizations are learning the importance of using
@@ -119,9 +130,8 @@ export default class MarketingAutomation extends React.Component {
             </p>
           </ul>
         </div>
-        <div>
-          <Footer />
-        </div>
+
+        <Footer />
       </div>
     );
   }

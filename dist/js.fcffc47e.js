@@ -29711,8 +29711,8 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../images/logo.png":[function(require,module,exports) {
-module.exports = "/logo.b9b960d1.png";
+},{"_css_loader":"../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../images/logo_white_background.png":[function(require,module,exports) {
+module.exports = "/logo_white_background.39ea4b47.png";
 },{}],"../js/header.js":[function(require,module,exports) {
 "use strict";
 
@@ -29765,7 +29765,7 @@ function (_React$Component) {
     value: function render() {
       return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement("img", {
         className: "logo",
-        src: require("../images/logo.png")
+        src: require("../images/logo_white_background.png")
       }), _react.default.createElement(_hamburger.default, {
         clicked: this.props.hamIconClick
       }));
@@ -29777,7 +29777,7 @@ function (_React$Component) {
 
 
 exports.default = Header;
-},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","./hamburger.js":"../js/hamburger.js","../css/landing_page.css":"../css/landing_page.css","../images/logo.png":"../images/logo.png"}],"../node_modules/@babel/runtime/helpers/esm/extends.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","./hamburger.js":"../js/hamburger.js","../css/landing_page.css":"../css/landing_page.css","../images/logo_white_background.png":"../images/logo_white_background.png"}],"../node_modules/@babel/runtime/helpers/esm/extends.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -43206,7 +43206,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53621" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60631" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

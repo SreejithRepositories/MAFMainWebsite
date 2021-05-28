@@ -713,6 +713,8 @@ export default class Banner extends React.Component {
                   onClick={this.click}
                   style={{
                     width: "100%",
+                    height: "100%",
+                    objectFit: "contain",
                   }}
                   src={require(this.state.imgUrlArr[this.state.counter - 1])}
                 ></img>
@@ -721,7 +723,7 @@ export default class Banner extends React.Component {
                     position: "absolute",
                     height: "50px",
                     width: "50%",
-                    bottom: "0",
+                    bottom: "100px",
                     left: "40%",
                   }}
                 >

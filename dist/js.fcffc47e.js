@@ -32023,7 +32023,9 @@ function (_React$Component) {
         }, _react.default.createElement("img", {
           onClick: _this2.click,
           style: {
-            width: "100%"
+            width: "100%",
+            height: "100%",
+            objectFit: "contain"
           },
           src: require(_this2.state.imgUrlArr[_this2.state.counter - 1])
         }), _react.default.createElement("div", {
@@ -32031,7 +32033,7 @@ function (_React$Component) {
             position: "absolute",
             height: "50px",
             width: "50%",
-            bottom: "0",
+            bottom: "100px",
             left: "40%"
           }
         }, _react.default.createElement(_carouselCopy.default, {
@@ -35170,7 +35172,7 @@ if ("development" !== "production") {
 }
 },{"react-router":"../node_modules/react-router/esm/react-router.js","@babel/runtime/helpers/esm/inheritsLoose":"../node_modules/@babel/runtime/helpers/esm/inheritsLoose.js","react":"../node_modules/react/index.js","history":"../node_modules/history/esm/history.js","prop-types":"../node_modules/prop-types/index.js","tiny-warning":"../node_modules/tiny-warning/dist/tiny-warning.esm.js","@babel/runtime/helpers/esm/extends":"../node_modules/@babel/runtime/helpers/esm/extends.js","@babel/runtime/helpers/esm/objectWithoutPropertiesLoose":"../node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js","tiny-invariant":"../node_modules/tiny-invariant/dist/tiny-invariant.esm.js"}],"../images/close.png":[function(require,module,exports) {
 module.exports = "/close.91cbcecb.png";
-},{}],"../js/main_menu_modal.js":[function(require,module,exports) {
+},{}],"../js/main_menu_modal copy.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -35437,6 +35439,7 @@ function (_React$Component) {
   }, {
     key: "ITServices",
     value: function ITServices() {
+      console.log(this.state.displayITServicesSubMenu);
       this.setState({
         displayITServicesSubMenu: ""
       });
@@ -35515,6 +35518,8 @@ function (_React$Component) {
       this.setState({
         displayITServicesSubMenu: "none"
       });
+      console.log("close SubMenu called");
+      console.log(this.state.displayITServicesSubMenu);
     }
   }, {
     key: "closeMainMenu",
@@ -35529,10 +35534,12 @@ function (_React$Component) {
     value: function render() {
       return _react.default.createElement("div", {
         style: {
-          border: "1px solid red",
+          border: "1px solid grey",
           borderRadius: "5px",
-          position: "absolute",
-          top: "5%"
+          width: "100%",
+          height: "100%",
+          position: "relative",
+          backgroundColor: "white"
         },
         className: "MainMenuModal"
       }, _react.default.createElement("img", {
@@ -35545,10 +35552,22 @@ function (_React$Component) {
           height: "25px"
         },
         src: require("../images/close.png")
+      }), _react.default.createElement("img", {
+        onClick: this.closeMainMenu,
+        style: {
+          position: "absolute",
+          left: "10px"
+        },
+        src: require("../images/logo_white_background.png")
       }), _react.default.createElement("table", {
         style: {
           fontSize: "18px",
-          fontWeight: "bold"
+          fontWeight: "bold",
+          width: "90%",
+          height: "80%",
+          position: "absolute",
+          top: "10%",
+          left: "2%"
         }
       }, _react.default.createElement("tr", null, _react.default.createElement("td", {
         onClick: function onClick() {
@@ -35566,7 +35585,7 @@ function (_React$Component) {
         style: this.state.underLineColorAboutUs
       }, "About Us")), _react.default.createElement("tr", null, _react.default.createElement("td", {
         className: "ITServices",
-        onMouseOver: this.ITServices
+        onClick: this.ITServices
       }, "IT Services"), _react.default.createElement("td", null)), _react.default.createElement("tr", {
         style: {
           display: this.state.displayITServicesSubMenu
@@ -35693,7 +35712,7 @@ function (_React$Component) {
 }(_react.default.Component);
 
 exports.default = Main_Menu_Modal;
-},{"react":"../node_modules/react/index.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js","../images/close.png":"../images/close.png"}],"../js/carousel.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js","../images/close.png":"../images/close.png","../images/logo_white_background.png":"../images/logo_white_background.png"}],"../js/carousel.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -43017,7 +43036,7 @@ var _banner_copyCopy = _interopRequireDefault(require("./banner_copy copy"));
 
 require("../css/landing_page.css");
 
-var _main_menu_modal = _interopRequireDefault(require("./main_menu_modal"));
+var _main_menu_modalCopy = _interopRequireDefault(require("./main_menu_modal copy"));
 
 var _landingPageContent = _interopRequireDefault(require("./landingPageContent"));
 
@@ -43071,7 +43090,8 @@ function (_React$Component) {
 
     _this = _possibleConstructorReturn(this, _getPrototypeOf(App).call(this, props));
     _this.state = {
-      displayMenuModal: "none"
+      displayMenuModal: "none",
+      deactivateScrollBar: false
     };
     _this.hamburgerIconClicked = _this.hamburgerIconClicked.bind(_assertThisInitialized(_this));
     _this.menuCloseButtonPressed = _this.menuCloseButtonPressed.bind(_assertThisInitialized(_this));
@@ -43114,8 +43134,10 @@ function (_React$Component) {
     value: function hamburgerIconClicked(n) {
       if (n) {
         this.setState({
-          displayMenuModal: null
+          displayMenuModal: null,
+          deactivateScrollBar: true
         });
+        document.querySelector("body").style.overflow = "hidden";
       }
     }
   }, {
@@ -43123,8 +43145,10 @@ function (_React$Component) {
     value: function menuCloseButtonPressed(n) {
       if (n) {
         this.setState({
-          displayMenuModal: "none"
+          displayMenuModal: "none",
+          deactivateScrollBar: false
         });
+        document.querySelector("body").style.overflow = "visible";
       }
     }
   }, {
@@ -43146,9 +43170,15 @@ function (_React$Component) {
         hamIconClick: this.hamburgerIconClicked
       })), _react.default.createElement("div", {
         style: {
-          display: this.state.displayMenuModal
+          display: this.state.displayMenuModal,
+          top: "0",
+          width: "99%",
+          bottom: "0",
+          position: "fixed",
+          zIndex: "1",
+          height: "100vh"
         }
-      }, _react.default.createElement(_main_menu_modal.default, {
+      }, _react.default.createElement(_main_menu_modalCopy.default, {
         closeButtonPressed: this.menuCloseButtonPressed
       })), _react.default.createElement(_reactRouterDom.Switch, null, _react.default.createElement(_reactRouterDom.Route, {
         exact: true,
@@ -43178,7 +43208,7 @@ _reactDom.default.render(_react.default.createElement(App, null), document.getEl
 //   <LandingPageContent />,
 //   document.getElementById("landing_page_content")
 // );
-},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","./header":"../js/header.js","./banner_copy copy":"../js/banner_copy copy.js","../css/landing_page.css":"../css/landing_page.css","./main_menu_modal":"../js/main_menu_modal.js","./landingPageContent":"../js/landingPageContent.js","./cloudautomation":"../js/cloudautomation.js","./marketingautomation":"../js/marketingautomation.js","./digitaltransformation":"../js/digitaltransformation.js","./contactus":"../js/contactus.js","./nameform":"../js/nameform.js","axios":"../node_modules/axios/index.js","qs":"../node_modules/qs/lib/index.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js","./footer":"../js/footer.js"}],"../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","./header":"../js/header.js","./banner_copy copy":"../js/banner_copy copy.js","../css/landing_page.css":"../css/landing_page.css","./main_menu_modal copy":"../js/main_menu_modal copy.js","./landingPageContent":"../js/landingPageContent.js","./cloudautomation":"../js/cloudautomation.js","./marketingautomation":"../js/marketingautomation.js","./digitaltransformation":"../js/digitaltransformation.js","./contactus":"../js/contactus.js","./nameform":"../js/nameform.js","axios":"../node_modules/axios/index.js","qs":"../node_modules/qs/lib/index.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js","./footer":"../js/footer.js"}],"../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -43206,7 +43236,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60631" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58842" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

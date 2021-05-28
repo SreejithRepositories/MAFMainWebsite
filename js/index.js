@@ -5,7 +5,8 @@ import Header from "./header";
 import Banner from "./banner_copy copy";
 import "../css/landing_page.css";
 // import Test from "./test";
-import MainMenuModal from "./main_menu_modal";
+// import MainMenuModal from "./main_menu_modal";
+import MainMenuModal from "./main_menu_modal copy";
 import LandingPageContent from "./landingPageContent";
 import CloudAutomation from "./cloudautomation";
 import MarketingAutomation from "./marketingautomation";
@@ -23,6 +24,7 @@ class App extends React.Component {
     super(props);
     this.state = {
       displayMenuModal: "none",
+      deactivateScrollBar: false,
     };
     this.hamburgerIconClicked = this.hamburgerIconClicked.bind(this);
     this.menuCloseButtonPressed = this.menuCloseButtonPressed.bind(this);
@@ -57,13 +59,15 @@ class App extends React.Component {
 
   hamburgerIconClicked(n) {
     if (n) {
-      this.setState({ displayMenuModal: null });
+      this.setState({ displayMenuModal: null, deactivateScrollBar: true });
+      document.querySelector("body").style.overflow = "hidden";
     }
   }
 
   menuCloseButtonPressed(n) {
     if (n) {
-      this.setState({ displayMenuModal: "none" });
+      this.setState({ displayMenuModal: "none", deactivateScrollBar: false });
+      document.querySelector("body").style.overflow = "visible";
     }
   }
 
@@ -79,7 +83,18 @@ class App extends React.Component {
           <div style={{ width: "100%" }}>
             <Header hamIconClick={this.hamburgerIconClicked} />
           </div>
-          <div style={{ display: this.state.displayMenuModal }}>
+          <div
+            style={{
+              display: this.state.displayMenuModal,
+              top: "0",
+              width: "99%",
+              bottom: "0",
+
+              position: "fixed",
+              zIndex: "1",
+              height: "100vh",
+            }}
+          >
             <MainMenuModal closeButtonPressed={this.menuCloseButtonPressed} />
           </div>
           <Switch>

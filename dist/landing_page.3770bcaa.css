@@ -1,3 +1,6 @@
+/* body {
+  overflow: hidden;
+} */
 .hamburgerIcon {
   height: 75px;
   float: right;
@@ -24,27 +27,27 @@
 .banner {
   /* position: fixed;
   top: 0px; */
-  z-index: -1;
+  /* z-index: -1; */
   width: 100%;
   /* border: 1px solid red; */
 }
 .MainMenuModal {
-  width: 50%;
+  /* width: 50%;
   min-width: 300px;
   position: -webkit-sticky; /* Safari */
-  position: absolute;
-  left: 25%;
-  background-color: rgb(245, 241, 241);
-  border: 1px solid black;
-  z-index: 1;
-  background-image: linear-gradient(to Bottom right, white, #5b5c5e, white);
+  /* position: absolute;
+  left: 25%;  */
+  /* background-color: rgb(245, 241, 241); */
+  /* border: 1px solid black; */
+  /* z-index: 1; */
+  /* background-image: linear-gradient(to Bottom right, white, #5b5c5e, white); */
 }
 
 /* media query for main menu modal */
 @media (max-width: 500px) {
-  .MainMenuModal {
+  /* .MainMenuModal {
     left: 10%;
-  }
+  } */
 }
 
 .ITServices:hover {

@@ -31278,6 +31278,12 @@ module.exports = "/banner2.ac7eb1d1.jpg";
 module.exports = "/banner3.64db9350.jpg";
 },{}],"../images/banner5.jpg":[function(require,module,exports) {
 module.exports = "/banner5.3f129601.jpg";
+},{}],"../images/banner2_1336_628.jpg":[function(require,module,exports) {
+module.exports = "/banner2_1336_628.3740f2c1.jpg";
+},{}],"../images/banner3_1336_621.jpg":[function(require,module,exports) {
+module.exports = "/banner3_1336_621.62ff5bed.jpg";
+},{}],"../images/banner5_1334_626.jpg":[function(require,module,exports) {
+module.exports = "/banner5_1334_626.e166b2b1.jpg";
 },{}],"../images/banner1_683_319.jpg":[function(require,module,exports) {
 module.exports = "/banner1_683_319.491f2b3a.jpg";
 },{}],"../images/banner1_424_198.jpg":[function(require,module,exports) {
@@ -31337,6 +31343,12 @@ require("../images/banner2.jpg");
 require("../images/banner3.jpg");
 
 require("../images/banner5.jpg");
+
+require("../images/banner2_1336_628.jpg");
+
+require("../images/banner3_1336_621.jpg");
+
+require("../images/banner5_1334_626.jpg");
 
 require("../images/banner1_683_319.jpg");
 
@@ -31399,7 +31411,7 @@ function (_React$Component) {
       counter: 1,
       // imgArr: [img1, img2, img3, img4],
       clicked: false,
-      imgUrlArr: ["../images/banner1.jpg", "../images/banner2.jpg", "../images/banner3.jpg", "../images/banner5.jpg"],
+      imgUrlArr: ["../images/banner1.jpg", "../images/banner2_1336_628.jpg", "../images/banner3_1336_621.jpg", "../images/banner5_1334_626.jpg"],
       carouselDotArr: [_react.default.createElement("img", {
         style: {
           width: "18px",
@@ -32023,9 +32035,7 @@ function (_React$Component) {
         }, _react.default.createElement("img", {
           onClick: _this2.click,
           style: {
-            width: "100%",
-            height: "100%",
-            objectFit: "contain"
+            width: "100%"
           },
           src: require(_this2.state.imgUrlArr[_this2.state.counter - 1])
         }), _react.default.createElement("div", {
@@ -32076,7 +32086,7 @@ function (_React$Component) {
 
 
 exports.default = Banner;
-},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","react-media":"../node_modules/react-media/esm/react-media.js","./carousel copy":"../js/carousel copy.js","../css/landing_page.css":"../css/landing_page.css","../images/banner1.jpg":"../images/banner1.jpg","../images/banner2.jpg":"../images/banner2.jpg","../images/banner3.jpg":"../images/banner3.jpg","../images/banner5.jpg":"../images/banner5.jpg","../images/banner1_683_319.jpg":"../images/banner1_683_319.jpg","../images/banner1_424_198.jpg":"../images/banner1_424_198.jpg","../images/banner1_250_116.jpg":"../images/banner1_250_116.jpg","../images/banner2_250_133.jpg":"../images/banner2_250_133.jpg","../images/banner2_424_226.jpg":"../images/banner2_424_226.jpg","../images/banner2_683_365.jpg":"../images/banner2_683_365.jpg","../images/banner3_424_282.jpg":"../images/banner3_424_282.jpg","../images/banner3_683_455.jpg":"../images/banner3_683_455.jpg","../images/banner3_250_166.jpg":"../images/banner3_250_166.jpg","../images/banner5_683_408.jpg":"../images/banner5_683_408.jpg","../images/banner5_424_253.jpg":"../images/banner5_424_253.jpg","../images/banner5_250_149.jpg":"../images/banner5_250_149.jpg","../images/carouselDot.png":"../images/carouselDot.png","../images/carouselDot_red.png":"../images/carouselDot_red.png","../images/chevron.png":"../images/chevron.png","../images/arrow_back.png":"../images/arrow_back.png","../images/arrow_forward.png":"../images/arrow_forward.png"}],"../node_modules/resolve-pathname/esm/resolve-pathname.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","react-media":"../node_modules/react-media/esm/react-media.js","./carousel copy":"../js/carousel copy.js","../css/landing_page.css":"../css/landing_page.css","../images/banner1.jpg":"../images/banner1.jpg","../images/banner2.jpg":"../images/banner2.jpg","../images/banner3.jpg":"../images/banner3.jpg","../images/banner5.jpg":"../images/banner5.jpg","../images/banner2_1336_628.jpg":"../images/banner2_1336_628.jpg","../images/banner3_1336_621.jpg":"../images/banner3_1336_621.jpg","../images/banner5_1334_626.jpg":"../images/banner5_1334_626.jpg","../images/banner1_683_319.jpg":"../images/banner1_683_319.jpg","../images/banner1_424_198.jpg":"../images/banner1_424_198.jpg","../images/banner1_250_116.jpg":"../images/banner1_250_116.jpg","../images/banner2_250_133.jpg":"../images/banner2_250_133.jpg","../images/banner2_424_226.jpg":"../images/banner2_424_226.jpg","../images/banner2_683_365.jpg":"../images/banner2_683_365.jpg","../images/banner3_424_282.jpg":"../images/banner3_424_282.jpg","../images/banner3_683_455.jpg":"../images/banner3_683_455.jpg","../images/banner3_250_166.jpg":"../images/banner3_250_166.jpg","../images/banner5_683_408.jpg":"../images/banner5_683_408.jpg","../images/banner5_424_253.jpg":"../images/banner5_424_253.jpg","../images/banner5_250_149.jpg":"../images/banner5_250_149.jpg","../images/carouselDot.png":"../images/carouselDot.png","../images/carouselDot_red.png":"../images/carouselDot_red.png","../images/chevron.png":"../images/chevron.png","../images/arrow_back.png":"../images/arrow_back.png","../images/arrow_forward.png":"../images/arrow_forward.png"}],"../node_modules/resolve-pathname/esm/resolve-pathname.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -43236,7 +43246,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58842" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55308" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -16,6 +16,9 @@ import "../images/banner2.jpg";
 import "../images/banner3.jpg";
 // import "../images/banner4.jpg";
 import "../images/banner5.jpg";
+import "../images/banner2_1336_628.jpg";
+import "../images/banner3_1336_621.jpg";
+import "../images/banner5_1334_626.jpg";
 
 //importing responsive banner images
 import "../images/banner1_683_319.jpg";
@@ -43,9 +46,9 @@ export default class Banner extends React.Component {
       clicked: false,
       imgUrlArr: [
         "../images/banner1.jpg",
-        "../images/banner2.jpg",
-        "../images/banner3.jpg",
-        "../images/banner5.jpg",
+        "../images/banner2_1336_628.jpg",
+        "../images/banner3_1336_621.jpg",
+        "../images/banner5_1334_626.jpg",
       ],
       carouselDotArr: [
         <img
@@ -713,8 +716,6 @@ export default class Banner extends React.Component {
                   onClick={this.click}
                   style={{
                     width: "100%",
-                    height: "100%",
-                    objectFit: "contain",
                   }}
                   src={require(this.state.imgUrlArr[this.state.counter - 1])}
                 ></img>

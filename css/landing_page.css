@@ -85,7 +85,7 @@
   /* padding-left: 2%; */
   display: flex;
   flex-direction: row;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 .oneDotOne,
 .oneDotTwo,

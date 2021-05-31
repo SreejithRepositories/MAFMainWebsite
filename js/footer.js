@@ -13,7 +13,7 @@ export default class Footer extends React.Component {
             <b>Services</b>
           </div>
           <div style={{ width: "16.5%" }}>
-            <b>Use Cases</b>
+            <b>UseCases</b>
           </div>
           <div style={{ width: "16.5%" }}>
             <b>Partners</b>
@@ -25,7 +25,7 @@ export default class Footer extends React.Component {
             <b>Careers</b>
           </div>
           <div style={{ width: "16.5%" }}>
-            <b>Contact Us</b>
+            <b>ContactUs</b>
           </div>
         </div>
         <div className="flexTwo">

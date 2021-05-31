@@ -238,6 +238,13 @@
     box-sizing: border-box;
   }
 }
+/* media query for data analytics page styles */
+@media (max-width: 800px) {
+  .howCanWeHelp {
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+  }
+}
 
 
 /*# sourceMappingURL=/landing_page.3770bcaa.css.map */

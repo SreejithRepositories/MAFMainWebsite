@@ -35588,7 +35588,7 @@ function (_React$Component) {
         style: this.state.underLineColorHome
       }, "Home")), _react.default.createElement("tr", null, _react.default.createElement("td", {
         onClick: function onClick() {
-          return window.open("/test");
+          return window.location.pathname = "/aboutus";
         },
         onMouseOver: this.putUnderLineColorAboutUs,
         onMouseOut: this.unputUnderLineColorAboutUs,
@@ -35649,15 +35649,18 @@ function (_React$Component) {
         onMouseOver: this.putUnderLineColorCloudAutomation,
         onMouseOut: this.unputUnderLineColorCloudAutomation,
         style: this.state.underLineColorCloudAutomation
-      }, "Cloud Automation")), _react.default.createElement("tr", {
+      }, "Cloud")), _react.default.createElement("tr", {
         style: {
           display: this.state.displayITServicesSubMenu
         }
       }, _react.default.createElement("td", null), _react.default.createElement("td", {
+        onClick: function onClick() {
+          return window.location.pathname = "/analytics";
+        },
         onMouseOver: this.putUnderLineColorDataAnalytics,
         onMouseOut: this.unputUnderLineColorDataAnalytics,
         style: this.state.underLineColorDataAnalytics
-      }, "Data Analytics")), _react.default.createElement("tr", {
+      }, "Analytics")), _react.default.createElement("tr", {
         style: {
           display: this.state.displayITServicesSubMenu
         }
@@ -35680,18 +35683,10 @@ function (_React$Component) {
         onMouseOut: this.unputUnderLineColorMarkTran,
         style: this.state.underLineColorMarkTran
       }, "Marketing Automation")), _react.default.createElement("tr", null, _react.default.createElement("td", {
-        onMouseOver: this.putUnderLineColorTechWeUse,
-        onMouseOut: this.unputUnderLineColorTechWeUse,
-        style: this.state.underLineColorTechWeUse
-      }, "Technologies We Use")), _react.default.createElement("tr", null, _react.default.createElement("td", {
         onMouseOver: this.putUnderLineColorIndWeServe,
         onMouseOut: this.unputUnderLineColorIndWeServe,
         style: this.state.underLineColorIndWeServe
       }, "Industries We Serve")), _react.default.createElement("tr", null, _react.default.createElement("td", {
-        onMouseOver: this.putUnderLineColorAchieve,
-        onMouseOut: this.unputUnderLineColorAchieve,
-        style: this.state.underLineColorAchieve
-      }, "What we can help you achieve?")), _react.default.createElement("tr", null, _react.default.createElement("td", {
         onMouseOver: this.putUnderLineColorSuccess,
         onMouseOut: this.unputUnderLineColorSuccess,
         style: this.state.underLineColorSuccess
@@ -35700,10 +35695,6 @@ function (_React$Component) {
         onMouseOut: this.unputUnderLineColorBlog,
         style: this.state.underLineColorBlog
       }, "Blog")), _react.default.createElement("tr", null, _react.default.createElement("td", {
-        onMouseOver: this.putUnderLineColorFAQs,
-        onMouseOut: this.unputUnderLineColorFAQs,
-        style: this.state.underLineColorFAQs
-      }, "FAQs")), _react.default.createElement("tr", null, _react.default.createElement("td", {
         onMouseOver: this.putUnderLineColorTerms,
         onMouseOut: this.unputUnderLineColorTerms,
         style: this.state.underLineColorTerms
@@ -36306,7 +36297,7 @@ function (_React$Component) {
         style: {
           width: "16.5%"
         }
-      }, _react.default.createElement("b", null, "Use Cases")), _react.default.createElement("div", {
+      }, _react.default.createElement("b", null, "UseCases")), _react.default.createElement("div", {
         style: {
           width: "16.5%"
         }
@@ -36322,7 +36313,7 @@ function (_React$Component) {
         style: {
           width: "16.5%"
         }
-      }, _react.default.createElement("b", null, "Contact Us"))), _react.default.createElement("div", {
+      }, _react.default.createElement("b", null, "ContactUs"))), _react.default.createElement("div", {
         className: "flexTwo"
       }, _react.default.createElement("img", {
         style: {
@@ -36474,7 +36465,180 @@ function (_React$Component) {
 }(_react.default.Component);
 
 exports.default = LandingPageContent;
-},{"react":"../node_modules/react/index.js","./test":"../js/test.js","../css/landing_page.css":"../css/landing_page.css","./footer":"../js/footer.js","../images/cloud_automation_blurb.png":"../images/cloud_automation_blurb.png","../images/data_analytics_blurb.png":"../images/data_analytics_blurb.png","../images/digital_transformation_blurb.png":"../images/digital_transformation_blurb.png","../images/marketing_automation_blurb.png":"../images/marketing_automation_blurb.png"}],"../images/triangle1.jpg":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","./test":"../js/test.js","../css/landing_page.css":"../css/landing_page.css","./footer":"../js/footer.js","../images/cloud_automation_blurb.png":"../images/cloud_automation_blurb.png","../images/data_analytics_blurb.png":"../images/data_analytics_blurb.png","../images/digital_transformation_blurb.png":"../images/digital_transformation_blurb.png","../images/marketing_automation_blurb.png":"../images/marketing_automation_blurb.png"}],"../images/AboutUsBanner.png":[function(require,module,exports) {
+module.exports = "/AboutUsBanner.3c9ab8a0.png";
+},{}],"../images/AboutUsBlurb.png":[function(require,module,exports) {
+module.exports = "/AboutUsBlurb.31923f82.png";
+},{}],"../images/leadership.jpg":[function(require,module,exports) {
+module.exports = "/leadership.0dd06a2f.jpg";
+},{}],"../images/DoitRightOne.jpg":[function(require,module,exports) {
+module.exports = "/DoitRightOne.5d54e164.jpg";
+},{}],"../js/aboutus.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _footer = _interopRequireDefault(require("./footer"));
+
+var _AboutUsBanner = _interopRequireDefault(require("../images/AboutUsBanner.png"));
+
+var _AboutUsBlurb = _interopRequireDefault(require("../images/AboutUsBlurb.png"));
+
+var _leadership = _interopRequireDefault(require("../images/leadership.jpg"));
+
+var _DoitRightOne = _interopRequireDefault(require("../images/DoitRightOne.jpg"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+// import DoitRightTwo from "..images/DoItRight2.jpg";
+var AboutUs =
+/*#__PURE__*/
+function (_React$Component) {
+  _inherits(AboutUs, _React$Component);
+
+  function AboutUs() {
+    _classCallCheck(this, AboutUs);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(AboutUs).apply(this, arguments));
+  }
+
+  _createClass(AboutUs, [{
+    key: "render",
+    value: function render() {
+      return _react.default.createElement("div", {
+        style: {
+          width: "100%"
+        }
+      }, _react.default.createElement("title", null, "About Us"), _react.default.createElement("div", {
+        style: {
+          width: "100%",
+          position: "relative"
+        }
+      }, _react.default.createElement("img", {
+        src: _AboutUsBanner.default,
+        style: {
+          maxWidth: "100%"
+        }
+      }), _react.default.createElement("div", {
+        style: {
+          color: "white",
+          fontSize: "50px",
+          position: "absolute",
+          top: "20px",
+          left: "35%"
+        }
+      }, "About Us")), _react.default.createElement("div", {
+        style: {
+          // backgroundImage: `url(${BackgroundImage})`,
+          border: "1px solid black",
+          position: "relative",
+          marginTop: "-4px"
+        }
+      }, _react.default.createElement("div", {
+        style: {
+          width: "100%",
+          boxSizing: "borderBox",
+          display: "flex"
+        }
+      }, _react.default.createElement("div", {
+        style: {
+          /*border: "1px solid black",*/
+          width: "50%"
+        }
+      }, _react.default.createElement("h1", null, "About Us"), _react.default.createElement("p", null, "MAF Group is the name you can trust to empower, enrich, and enhance your business. You can count on us to design, deploy, and deliver technology-enabled, enterprise-grade solutions that ensure operational excellence. We design, develop, deploy and maintain systems in verticals such as cloud computing, machine learning, artificial intelligence, data intelligence, data analytics, marketing automation etc. We have helped clients realize their short-term and long-term goals cost-effectively and maximum ROI.")), _react.default.createElement("div", {
+        style: {
+          width: "50%",
+          boxSizing: "borderBox"
+          /*border: "1px solid black",*/
+
+        }
+      }, _react.default.createElement("img", {
+        src: _AboutUsBlurb.default,
+        style: {
+          maxHeight: "100%",
+          maxWidth: "100%",
+          objectFit: "contain",
+          marginLeft: "-20%"
+        }
+      }))), _react.default.createElement("div", {
+        style: {
+          width: "100%",
+          boxSizing: "borderBox",
+          display: "flex"
+        }
+      }, _react.default.createElement("div", {
+        style: {
+          /*border: "1px solid black",*/
+          width: "50%"
+        }
+      }, _react.default.createElement("h1", null, "Strong Leadership"), _react.default.createElement("p", null, "As our leaders have a stronghold on almost every technology present today, the clients can expect avant-garde solutions that are reliable, robust, and help with rejuvenating business performance. Each project we undertake aims to offer a good ROI, visible results, and customized specifications as per your requirements.", " "), _react.default.createElement("p", null, "Passion drives every team member at MAF Group. We work together as a unit on learning new technologies and implementing them seamlessly to deliver flawless solutions that work for the clients. Each MAF Group team member is awe-inspiring, brilliant, creative, dynamic, efficient, and fearless.", " "), _react.default.createElement("p", null, "We grow every minute of every day and ensure client satisfaction by delivering better than expected results.", " ")), _react.default.createElement("div", {
+        style: {
+          width: "50%",
+          boxSizing: "borderBox"
+          /*border: "1px solid black",*/
+
+        }
+      }, _react.default.createElement("img", {
+        src: _leadership.default,
+        style: {
+          maxHeight: "100%",
+          maxWidth: "100%",
+          objectFit: "contain"
+        }
+      }))), _react.default.createElement("div", {
+        className: "WhyMafGroup"
+      }, _react.default.createElement("h1", null, "Why MAF Group? - We Do it Right!"), _react.default.createElement("div", {
+        className: "ExpertiseinDiffAreas",
+        style: {
+          display: "flex"
+        }
+      }, _react.default.createElement("div", {
+        style: {
+          width: "50%"
+        }
+      }, _react.default.createElement("h2", null, "Expertise in Different Areas"), _react.default.createElement("p", null, "We have been serving organizations from different industries for a few years now. You can count on us to map your needs and ensure your business growth according to your industry-specific needs.", " "), _react.default.createElement("h2", null, "Projects Delivered"), _react.default.createElement("p", null, "For us, success lies in helping the clients achieve what they want and expect from us. You can check our exceptional track record to see how we have helped businesses streamline their operations and attain better growth.", " "), _react.default.createElement("h2", null, "We Aim for Success"), _react.default.createElement("p", null, "We take on every project as a challenge and deliver our best time and again. The numbers speak for themselves. Head to our case studies section to know how we have helped brands achieve success.", " "), _react.default.createElement("h2", null, "Experienced and Qualified Team "), _react.default.createElement("p", null, "Over the years, we have built a strong team by ensuring we hire the best minds, most qualified and experienced professionals, and the top tech enthusiasts who can add value for our clients.", " "), _react.default.createElement("p", null, "Talk to us about your pain points and allow us to effectively use our friendly expertise to build solutions that promote and sustain business growth seamlessly. Get in touch to take your business to the next level of success!")), _react.default.createElement("div", {
+        style: {
+          width: "50%"
+        }
+      }, _react.default.createElement("img", {
+        src: _DoitRightOne.default,
+        style: _defineProperty({
+          maxWidth: "100%"
+        }, "maxWidth", "100%")
+      }))))), _react.default.createElement(_footer.default, null));
+    }
+  }]);
+
+  return AboutUs;
+}(_react.default.Component);
+
+exports.default = AboutUs;
+},{"react":"../node_modules/react/index.js","./footer":"../js/footer.js","../images/AboutUsBanner.png":"../images/AboutUsBanner.png","../images/AboutUsBlurb.png":"../images/AboutUsBlurb.png","../images/leadership.jpg":"../images/leadership.jpg","../images/DoitRightOne.jpg":"../images/DoitRightOne.jpg"}],"../images/triangle1.jpg":[function(require,module,exports) {
 module.exports = "/triangle1.d158ea14.jpg";
 },{}],"../images/cloudautomationbanner.png":[function(require,module,exports) {
 module.exports = "/cloudautomationbanner.394ff4a5.png";
@@ -39017,7 +39181,143 @@ function (_React$Component) {
 }(_react.default.Component);
 
 exports.default = DigitalTransformation;
-},{"react":"../node_modules/react/index.js","./footer":"../js/footer.js","../images/ball-63527.jpg":"../images/ball-63527.jpg","../images/digital_transformation_banner.jpg":"../images/digital_transformation_banner.jpg"}],"../node_modules/email-validator/index.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","./footer":"../js/footer.js","../images/ball-63527.jpg":"../images/ball-63527.jpg","../images/digital_transformation_banner.jpg":"../images/digital_transformation_banner.jpg"}],"../images/dataintegration.jpg":[function(require,module,exports) {
+module.exports = "/dataintegration.115d9dac.jpg";
+},{}],"../images/datacube.jpg":[function(require,module,exports) {
+module.exports = "/datacube.6bad9bf5.jpg";
+},{}],"../images/neuralnetwork.png":[function(require,module,exports) {
+module.exports = "/neuralnetwork.7480294a.png";
+},{}],"../images/analytics.jpg":[function(require,module,exports) {
+module.exports = "/analytics.158eac69.jpg";
+},{}],"../js/analytics.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _footer = _interopRequireDefault(require("./footer"));
+
+var _ball = _interopRequireDefault(require("../images/ball-63527.jpg"));
+
+var _dataintegration = _interopRequireDefault(require("../images/dataintegration.jpg"));
+
+var _datacube = _interopRequireDefault(require("../images/datacube.jpg"));
+
+var _neuralnetwork = _interopRequireDefault(require("../images/neuralnetwork.png"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+var Analytics =
+/*#__PURE__*/
+function (_React$Component) {
+  _inherits(Analytics, _React$Component);
+
+  function Analytics() {
+    _classCallCheck(this, Analytics);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(Analytics).apply(this, arguments));
+  }
+
+  _createClass(Analytics, [{
+    key: "render",
+    value: function render() {
+      return _react.default.createElement("div", {
+        style: {
+          marginTop: "4px"
+        }
+      }, _react.default.createElement("title", null, "Analytics"), _react.default.createElement("div", {
+        style: {
+          textAlign: "center",
+          backgroundColor: "#131257",
+          height: "250px"
+        }
+      }, _react.default.createElement("img", {
+        src: require("../images/analytics.jpg"),
+        style: {
+          width: "100%",
+          height: "100%",
+          objectFit: "cover",
+          maxHeight: "100%"
+        }
+      })), _react.default.createElement("div", {
+        style: {
+          // backgroundImage: `url(${BackgroundImage})`,
+          border: "1px solid black",
+          position: "relative",
+          width: "100%"
+        }
+      }, _react.default.createElement("h1", null, "Data Analytics"), _react.default.createElement("p", null, "Organizations' challenges in the ever-changing environment and highly competitive landscape increase the pressure to be the best. One useful tool that can help organizations stay ahead of the competition and meet customer expectations is data analytics that helps eliminate the frustration of dealing with bulk data by driving value from that data. Data analytics can bring together finance, marketing, operational and external data on a single platform.", " "), _react.default.createElement("div", {
+        className: "howCanWeHelp",
+        style: {
+          display: "flex",
+          width: "100%",
+          flexWrap: "wrap"
+        }
+      }, _react.default.createElement("div", {
+        className: "howCanWeHelpFlex1",
+        style: {
+          width: "50%"
+        }
+      }, _react.default.createElement("h1", null, "How Can We Help?"), _react.default.createElement("h2", null, "Data Source Evaluation"), _react.default.createElement("p", null, "We access all the data of your organization and develop an understanding of all the information you possess.", " "), _react.default.createElement("h2", null, "Quality Assessment"), _react.default.createElement("p", null, "Our experts do a thorough cleaning of data and eliminate all unwanted and non-useful data to reduce the clutter. It ensures the availability of correct, consistent, and complete data.", " "), _react.default.createElement("h2", null, "Integration and Modelling"), _react.default.createElement("p", null, "We enable your experts to link data from varied sources and create data models to make data reporting easier and make data more understandable.", " "), _react.default.createElement("h2", null, "Choosing Platform and Technology"), _react.default.createElement("p", null, "Our experts will analyse your data needs and select the right enterprise analytics solution for your organization. They often see to its implementation as well.", " "), _react.default.createElement("h2", null, "Data Reporting"), _react.default.createElement("p", null, "The experts will also recommend the right reporting tools, metrics, and KPIs and offer help with report creation. They also identify data gaps and define use cases.", " ")), _react.default.createElement("div", {
+        className: "howCanWeHelpFlex2",
+        style: {
+          width: "50%"
+        }
+      }, _react.default.createElement("img", {
+        src: _dataintegration.default,
+        style: {
+          maxWidth: "100%",
+          maxHeight: "100%"
+        }
+      })), _react.default.createElement("div", {
+        className: "howCanWeHelpFlex3",
+        style: {
+          width: "50%"
+        }
+      }, _react.default.createElement("h1", null, "Our Expertise"), _react.default.createElement("h2", null, "Data Analytics"), _react.default.createElement("p", null, "To automate data analytics, we will pick the right automation platform that suits your business needs, create a strategy that works and build an actionable plan. We also set up the needed software and ensure its smooth implementation along with creating automated workflows that work for your organization. You can also trust us to train your team on the same to ensure effective operations without outside assistance.", " "), _react.default.createElement("h2", null, "Real-Time Analytics"), _react.default.createElement("p", null, "Our data analytics service helps turn data into insights quickly to help save time and effort. Also known as operational intelligence, real-time analytics can predict failures and make your teams aware of the issue so that the situation can be rectified. For instance, real-time analytics can help detect credit card fraud even before a transaction is completed and help save the end-users' money.", " "), _react.default.createElement("h2", null, "NLP- Natural Language Processing"), _react.default.createElement("p", null, "By using Natural language Processing or NLP, we help you foster human and computer interaction. We integrate the business with intelligent systems to ensure the perpetual growth of your business. Some of the NLP techniques we follow are Information Extraction via machine learning, Text Classification to provide insights and reduce errors, Named Entity Recognition that helps improvise entity extraction by classifying specific words with unstructured data, Intent Classification in which text is classified into various datasets. You can also trust us for Relationship Extraction, Content Clustering, Fact Extraction, and Text Generation, and Summarization."), _react.default.createElement("h2", null, "Machine Learning"), _react.default.createElement("p", null, "As an independent consultancy that loved data science, we use machine learning and statistics to help organizations make the most of data and unleash its full potential. We use the latest data science and technology to ensure your organization benefits from it and explores its potential. Earlier, organizations were limited to predictive analysis to make the most of data. Predictive analysis meant making assumptions and testing by using past data to predict the future or consider what/if scenarios. We use AI Machine Learning to extend the concepts around predictive analytics so that the AI system can makeassumptions, test, and learn autonomously and save human time and effort. As CEOs and CMO's need to make decisions quickly, we help them by using the power of data analytics, predictive analytics, AI, and machine learning. Contact us to know more!")), _react.default.createElement("div", {
+        className: "howCanWeHelpFlex4",
+        style: {
+          width: "50%"
+        }
+      }, _react.default.createElement("img", {
+        src: _neuralnetwork.default,
+        style: {
+          maxWidth: "75%",
+          maxHeight: "100%",
+          marginLeft: "15%",
+          marginTop: "25%"
+        }
+      })))), _react.default.createElement(_footer.default, null));
+    }
+  }]);
+
+  return Analytics;
+}(_react.default.Component);
+
+exports.default = Analytics;
+},{"react":"../node_modules/react/index.js","./footer":"../js/footer.js","../images/ball-63527.jpg":"../images/ball-63527.jpg","../images/dataintegration.jpg":"../images/dataintegration.jpg","../images/datacube.jpg":"../images/datacube.jpg","../images/neuralnetwork.png":"../images/neuralnetwork.png","../images/analytics.jpg":"../images/analytics.jpg"}],"../node_modules/email-validator/index.js":[function(require,module,exports) {
 "use strict";
 
 var tester = /^[-!#$%&'*+\/0-9=?A-Z^_a-z{|}~](\.?[-!#$%&'*+\/0-9=?A-Z^_a-z`{|}~])*@[a-zA-Z0-9](-*\.?[a-zA-Z0-9])*\.[a-zA-Z](-?[a-zA-Z0-9])+$/; // Thanks to:
@@ -43050,11 +43350,15 @@ var _main_menu_modalCopy = _interopRequireDefault(require("./main_menu_modal cop
 
 var _landingPageContent = _interopRequireDefault(require("./landingPageContent"));
 
+var _aboutus = _interopRequireDefault(require("./aboutus"));
+
 var _cloudautomation = _interopRequireDefault(require("./cloudautomation"));
 
 var _marketingautomation = _interopRequireDefault(require("./marketingautomation"));
 
 var _digitaltransformation = _interopRequireDefault(require("./digitaltransformation"));
+
+var _analytics = _interopRequireDefault(require("./analytics"));
 
 var _contactus = _interopRequireDefault(require("./contactus"));
 
@@ -43197,11 +43501,17 @@ function (_React$Component) {
         className: "banner"
       }, _react.default.createElement(_banner_copyCopy.default, null)))), _react.default.createElement(_reactRouterDom.Switch, null, _react.default.createElement(_reactRouterDom.Route, {
         exact: true,
+        path: "/aboutus"
+      }, _react.default.createElement(_aboutus.default, null))), _react.default.createElement(_reactRouterDom.Switch, null, _react.default.createElement(_reactRouterDom.Route, {
+        exact: true,
         path: "/cloudautomation"
       }, _react.default.createElement(_cloudautomation.default, null))), _react.default.createElement(_reactRouterDom.Switch, null, _react.default.createElement(_reactRouterDom.Route, {
         exact: true,
         path: "/marketingautomation"
       }, _react.default.createElement(_marketingautomation.default, null))), _react.default.createElement(_reactRouterDom.Switch, null, _react.default.createElement(_reactRouterDom.Route, {
+        exact: true,
+        path: "/analytics"
+      }, _react.default.createElement(_analytics.default, null))), _react.default.createElement(_reactRouterDom.Switch, null, _react.default.createElement(_reactRouterDom.Route, {
         exact: true,
         path: "/digitaltransformation"
       }, _react.default.createElement(_digitaltransformation.default, null))), _react.default.createElement(_reactRouterDom.Switch, null, _react.default.createElement(_reactRouterDom.Route, {
@@ -43218,7 +43528,7 @@ _reactDom.default.render(_react.default.createElement(App, null), document.getEl
 //   <LandingPageContent />,
 //   document.getElementById("landing_page_content")
 // );
-},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","./header":"../js/header.js","./banner_copy copy":"../js/banner_copy copy.js","../css/landing_page.css":"../css/landing_page.css","./main_menu_modal copy":"../js/main_menu_modal copy.js","./landingPageContent":"../js/landingPageContent.js","./cloudautomation":"../js/cloudautomation.js","./marketingautomation":"../js/marketingautomation.js","./digitaltransformation":"../js/digitaltransformation.js","./contactus":"../js/contactus.js","./nameform":"../js/nameform.js","axios":"../node_modules/axios/index.js","qs":"../node_modules/qs/lib/index.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js","./footer":"../js/footer.js"}],"../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","./header":"../js/header.js","./banner_copy copy":"../js/banner_copy copy.js","../css/landing_page.css":"../css/landing_page.css","./main_menu_modal copy":"../js/main_menu_modal copy.js","./landingPageContent":"../js/landingPageContent.js","./aboutus":"../js/aboutus.js","./cloudautomation":"../js/cloudautomation.js","./marketingautomation":"../js/marketingautomation.js","./digitaltransformation":"../js/digitaltransformation.js","./analytics":"../js/analytics.js","./contactus":"../js/contactus.js","./nameform":"../js/nameform.js","axios":"../node_modules/axios/index.js","qs":"../node_modules/qs/lib/index.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js","./footer":"../js/footer.js"}],"../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -43246,7 +43556,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55308" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62997" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

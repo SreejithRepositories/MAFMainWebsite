@@ -8,9 +8,11 @@ import "../css/landing_page.css";
 // import MainMenuModal from "./main_menu_modal";
 import MainMenuModal from "./main_menu_modal copy";
 import LandingPageContent from "./landingPageContent";
+import AboutUs from "./aboutus";
 import CloudAutomation from "./cloudautomation";
 import MarketingAutomation from "./marketingautomation";
 import DigitalTransformation from "./digitaltransformation";
+import Analytics from "./analytics";
 import ContactUs from "./contactus";
 import NameForm from "./nameform";
 import axios from "axios";
@@ -105,6 +107,12 @@ class App extends React.Component {
             </Route>
           </Switch>
           <Switch>
+            <Route exact path="/aboutus">
+              <AboutUs />
+            </Route>
+          </Switch>
+
+          <Switch>
             <Route exact path="/cloudautomation">
               <CloudAutomation />
             </Route>
@@ -112,6 +120,11 @@ class App extends React.Component {
           <Switch>
             <Route exact path="/marketingautomation">
               <MarketingAutomation />
+            </Route>
+          </Switch>
+          <Switch>
+            <Route exact path="/analytics">
+              <Analytics />
             </Route>
           </Switch>
           <Switch>

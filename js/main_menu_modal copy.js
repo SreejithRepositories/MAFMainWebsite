@@ -314,7 +314,7 @@ export default class Main_Menu_Modal extends React.Component {
           </tr>
           <tr>
             <td
-              onClick={() => window.open("/test")}
+              onClick={() => (window.location.pathname = "/aboutus")}
               onMouseOver={this.putUnderLineColorAboutUs}
               onMouseOut={this.unputUnderLineColorAboutUs}
               style={this.state.underLineColorAboutUs}
@@ -363,17 +363,18 @@ export default class Main_Menu_Modal extends React.Component {
               onMouseOut={this.unputUnderLineColorCloudAutomation}
               style={this.state.underLineColorCloudAutomation}
             >
-              Cloud Automation
+              Cloud
             </td>
           </tr>
           <tr style={{ display: this.state.displayITServicesSubMenu }}>
             <td></td>
             <td
+              onClick={() => (window.location.pathname = "/analytics")}
               onMouseOver={this.putUnderLineColorDataAnalytics}
               onMouseOut={this.unputUnderLineColorDataAnalytics}
               style={this.state.underLineColorDataAnalytics}
             >
-              Data Analytics
+              Analytics
             </td>
           </tr>
           <tr style={{ display: this.state.displayITServicesSubMenu }}>
@@ -403,7 +404,7 @@ export default class Main_Menu_Modal extends React.Component {
             </td>
           </tr>
 
-          <tr>
+          {/* <tr>
             <td
               onMouseOver={this.putUnderLineColorTechWeUse}
               onMouseOut={this.unputUnderLineColorTechWeUse}
@@ -411,7 +412,7 @@ export default class Main_Menu_Modal extends React.Component {
             >
               Technologies We Use
             </td>
-          </tr>
+          </tr> */}
           <tr>
             <td
               onMouseOver={this.putUnderLineColorIndWeServe}
@@ -421,7 +422,7 @@ export default class Main_Menu_Modal extends React.Component {
               Industries We Serve
             </td>
           </tr>
-          <tr>
+          {/* <tr>
             <td
               onMouseOver={this.putUnderLineColorAchieve}
               onMouseOut={this.unputUnderLineColorAchieve}
@@ -429,7 +430,7 @@ export default class Main_Menu_Modal extends React.Component {
             >
               What we can help you achieve?
             </td>
-          </tr>
+          </tr> */}
           <tr>
             <td
               onMouseOver={this.putUnderLineColorSuccess}
@@ -448,7 +449,7 @@ export default class Main_Menu_Modal extends React.Component {
               Blog
             </td>
           </tr>
-          <tr>
+          {/* <tr>
             <td
               onMouseOver={this.putUnderLineColorFAQs}
               onMouseOut={this.unputUnderLineColorFAQs}
@@ -456,7 +457,7 @@ export default class Main_Menu_Modal extends React.Component {
             >
               FAQs
             </td>
-          </tr>
+          </tr> */}
           <tr>
             <td
               onMouseOver={this.putUnderLineColorTerms}

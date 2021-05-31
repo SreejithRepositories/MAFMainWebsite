@@ -8,7 +8,7 @@ import NeutralNetworkBlurb from "../images/neuralnetwork.png";
 export default class Analytics extends React.Component {
   render() {
     return (
-      <div style={{ marginTop: "4px" }}>
+      <div style={{ marginTop: "6px" }}>
         <title>Analytics</title>
 
         <div

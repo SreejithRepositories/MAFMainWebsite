@@ -9,23 +9,23 @@ export default class Footer extends React.Component {
     return (
       <div className="flexContainerFooter">
         <div className="flexOne">
-          <div style={{ width: "16.5%" }}>
+          <div className="Services">
             <b>Services</b>
           </div>
-          <div style={{ width: "16.5%" }}>
-            <b>UseCases</b>
+          <div className="UseCases">
+            <b>Use Cases</b>
           </div>
-          <div style={{ width: "16.5%" }}>
+          <div className="Partners">
             <b>Partners</b>
           </div>
-          <div style={{ width: "16.5%" }}>
+          <div className="Clients">
             <b>Clients</b>
           </div>
-          <div style={{ width: "16.5%" }}>
+          <div className="Careers">
             <b>Careers</b>
           </div>
-          <div style={{ width: "16.5%" }}>
-            <b>ContactUs</b>
+          <div className="ContactUs">
+            <b>Contact Us</b>
           </div>
         </div>
         <div className="flexTwo">

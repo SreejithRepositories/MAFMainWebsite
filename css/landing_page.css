@@ -207,6 +207,14 @@
     flex-wrap: wrap;
     justify-content: "space-around";
   }
+  .Services,
+  .UseCases,
+  .Partners,
+  .Clients,
+  .Careers,
+  .ContactUs {
+    width: 16.5%;
+  }
   .flexTwo {
     display: flex;
     box-sizing: border-box;
@@ -224,6 +232,7 @@
     width: 100%;
   }
 }
+/* media query for footer */
 
 @media (max-width: 800px) {
   .flexOne > div {
@@ -231,11 +240,28 @@
     /* border: 1px solid green; */
     vertical-align: middle;
     text-align: center;
-    line-height: 50px;
+    /* line-height: 50px; */
   }
 
   .flexTwo > img {
     box-sizing: border-box;
+  }
+}
+
+@media (max-width: 500px) {
+  .flexOne {
+    box-sizing: border-box;
+    flex-wrap: wrap;
+  }
+
+  .Services,
+  .UseCases,
+  .Partners,
+  .Clients,
+  .Careers,
+  .ContactUs {
+    width: 33%;
+    height: 50px;
   }
 }
 /* media query for data analytics page styles */

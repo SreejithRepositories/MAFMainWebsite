@@ -6,7 +6,7 @@ import BackgroundImage from "../images/marketingautomationbackground.jpg";
 export default class MarketingAutomation extends React.Component {
   render() {
     return (
-      <div>
+      <div style={{ marginTop: "7px" }}>
         <title>Marketing Automation</title>
 
         <div
@@ -20,6 +20,7 @@ export default class MarketingAutomation extends React.Component {
             style={{
               height: "252px",
               verticalAlign: "text-bottom",
+              maxWidth: "100%",
             }}
           ></img>
         </div>

@@ -36290,30 +36290,18 @@ function (_React$Component) {
       }, _react.default.createElement("div", {
         className: "flexOne"
       }, _react.default.createElement("div", {
-        style: {
-          width: "16.5%"
-        }
+        className: "Services"
       }, _react.default.createElement("b", null, "Services")), _react.default.createElement("div", {
-        style: {
-          width: "16.5%"
-        }
-      }, _react.default.createElement("b", null, "UseCases")), _react.default.createElement("div", {
-        style: {
-          width: "16.5%"
-        }
+        className: "UseCases"
+      }, _react.default.createElement("b", null, "Use Cases")), _react.default.createElement("div", {
+        className: "Partners"
       }, _react.default.createElement("b", null, "Partners")), _react.default.createElement("div", {
-        style: {
-          width: "16.5%"
-        }
+        className: "Clients"
       }, _react.default.createElement("b", null, "Clients")), _react.default.createElement("div", {
-        style: {
-          width: "16.5%"
-        }
+        className: "Careers"
       }, _react.default.createElement("b", null, "Careers")), _react.default.createElement("div", {
-        style: {
-          width: "16.5%"
-        }
-      }, _react.default.createElement("b", null, "ContactUs"))), _react.default.createElement("div", {
+        className: "ContactUs"
+      }, _react.default.createElement("b", null, "Contact Us"))), _react.default.createElement("div", {
         className: "flexTwo"
       }, _react.default.createElement("img", {
         style: {
@@ -36690,16 +36678,23 @@ function (_React$Component) {
   _createClass(CloudAutomation, [{
     key: "render",
     value: function render() {
-      return _react.default.createElement("div", null, _react.default.createElement("title", null, "Cloud Automation"), _react.default.createElement("div", {
+      return _react.default.createElement("div", {
+        style: {
+          width: "100%",
+          marginTop: "6px"
+        }
+      }, _react.default.createElement("title", null, "Cloud Automation"), _react.default.createElement("div", {
         style: {
           textAlign: "center",
-          backgroundColor: "#131257"
+          backgroundColor: "#131257",
+          width: "100%"
         }
       }, _react.default.createElement("img", {
         src: require("../images/cloudautomationbanner.png"),
         style: {
           height: "250px",
-          verticalAlign: "text-bottom"
+          verticalAlign: "text-bottom",
+          maxWidth: "100%"
         }
       })), _react.default.createElement("div", {
         style: {
@@ -39058,7 +39053,11 @@ function (_React$Component) {
   _createClass(MarketingAutomation, [{
     key: "render",
     value: function render() {
-      return _React.default.createElement("div", null, _React.default.createElement("title", null, "Marketing Automation"), _React.default.createElement("div", {
+      return _React.default.createElement("div", {
+        style: {
+          marginTop: "7px"
+        }
+      }, _React.default.createElement("title", null, "Marketing Automation"), _React.default.createElement("div", {
         style: {
           textAlign: "center",
           backgroundColor: "#0b9cb5"
@@ -39067,7 +39066,8 @@ function (_React$Component) {
         src: require("../images/marketingautomationbanner.png"),
         style: {
           height: "252px",
-          verticalAlign: "text-bottom"
+          verticalAlign: "text-bottom",
+          maxWidth: "100%"
         }
       })), _React.default.createElement("div", {
         style: {
@@ -39145,7 +39145,11 @@ function (_React$Component) {
   _createClass(DigitalTransformation, [{
     key: "render",
     value: function render() {
-      return _react.default.createElement("div", null, _react.default.createElement("title", null, "Digital Transformation"), _react.default.createElement("div", {
+      return _react.default.createElement("div", {
+        style: {
+          marginTop: "7px"
+        }
+      }, _react.default.createElement("title", null, "Digital Transformation"), _react.default.createElement("div", {
         style: {
           textAlign: "center",
           backgroundColor: "#131257"
@@ -39155,7 +39159,8 @@ function (_React$Component) {
         style: {
           height: "250px",
           verticalAlign: "text-bottom",
-          marginTop: "2px"
+          marginTop: "2px",
+          maxWidth: "100%"
         }
       })), _react.default.createElement("div", {
         style: {
@@ -39245,7 +39250,7 @@ function (_React$Component) {
     value: function render() {
       return _react.default.createElement("div", {
         style: {
-          marginTop: "4px"
+          marginTop: "6px"
         }
       }, _react.default.createElement("title", null, "Analytics"), _react.default.createElement("div", {
         style: {
@@ -43556,7 +43561,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62997" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63850" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

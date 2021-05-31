@@ -5,7 +5,7 @@ import BackgroundImage from "../images/ball-63527.jpg";
 export default class DigitalTransformation extends React.Component {
   render() {
     return (
-      <div>
+      <div style={{ marginTop: "7px" }}>
         <title>Digital Transformation</title>
 
         <div
@@ -20,6 +20,7 @@ export default class DigitalTransformation extends React.Component {
               height: "250px",
               verticalAlign: "text-bottom",
               marginTop: "2px",
+              maxWidth: "100%",
             }}
           ></img>
         </div>

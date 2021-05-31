@@ -5,18 +5,23 @@ import BackgroundImage from "../images/triangle1.jpg";
 export default class CloudAutomation extends React.Component {
   render() {
     return (
-      <div>
+      <div style={{ width: "100%", marginTop: "6px" }}>
         <title>Cloud Automation</title>
 
         <div
           style={{
             textAlign: "center",
             backgroundColor: "#131257",
+            width: "100%",
           }}
         >
           <img
             src={require("../images/cloudautomationbanner.png")}
-            style={{ height: "250px", verticalAlign: "text-bottom" }}
+            style={{
+              height: "250px",
+              verticalAlign: "text-bottom",
+              maxWidth: "100%",
+            }}
           ></img>
         </div>
         <div

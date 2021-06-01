@@ -36406,7 +36406,7 @@ function (_React$Component) {
         }, _react.default.createElement("a", {
           href: "/cloudautomation",
           target: "_blank"
-        }, "Cloud Automation"))), _react.default.createElement("div", {
+        }, "Cloud"))), _react.default.createElement("div", {
           className: "oneDotTwo"
         }, _react.default.createElement("img", {
           style: {
@@ -36417,7 +36417,10 @@ function (_React$Component) {
           style: {
             textAlign: "center"
           }
-        }, "Data Analytics")), _react.default.createElement("div", {
+        }, _react.default.createElement("a", {
+          href: "/analytics",
+          target: "_blank"
+        }, "Analytics"))), _react.default.createElement("div", {
           className: "oneDotThree"
         }, _react.default.createElement("img", {
           style: {
@@ -36428,7 +36431,10 @@ function (_React$Component) {
           style: {
             textAlign: "center"
           }
-        }, "Digital Transformation")), _react.default.createElement("div", {
+        }, " ", _react.default.createElement("a", {
+          href: "/digitaltransformation",
+          target: "_blank"
+        }, "Digital Transformation"))), _react.default.createElement("div", {
           className: "oneDotFour"
         }, _react.default.createElement("img", {
           style: {
@@ -36457,8 +36463,8 @@ exports.default = LandingPageContent;
 module.exports = "/AboutUsBanner.3c9ab8a0.png";
 },{}],"../images/AboutUsBlurb.png":[function(require,module,exports) {
 module.exports = "/AboutUsBlurb.31923f82.png";
-},{}],"../images/leadership.jpg":[function(require,module,exports) {
-module.exports = "/leadership.0dd06a2f.jpg";
+},{}],"../images/businessmen.jpg":[function(require,module,exports) {
+module.exports = "/businessmen.7b29b0e1.jpg";
 },{}],"../images/DoitRightOne.jpg":[function(require,module,exports) {
 module.exports = "/DoitRightOne.5d54e164.jpg";
 },{}],"../js/aboutus.js":[function(require,module,exports) {
@@ -36477,7 +36483,7 @@ var _AboutUsBanner = _interopRequireDefault(require("../images/AboutUsBanner.png
 
 var _AboutUsBlurb = _interopRequireDefault(require("../images/AboutUsBlurb.png"));
 
-var _leadership = _interopRequireDefault(require("../images/leadership.jpg"));
+var _businessmen = _interopRequireDefault(require("../images/businessmen.jpg"));
 
 var _DoitRightOne = _interopRequireDefault(require("../images/DoitRightOne.jpg"));
 
@@ -36548,23 +36554,11 @@ function (_React$Component) {
           marginTop: "-4px"
         }
       }, _react.default.createElement("div", {
-        style: {
-          width: "100%",
-          boxSizing: "borderBox",
-          display: "flex"
-        }
+        className: "AboutUsFlex"
       }, _react.default.createElement("div", {
-        style: {
-          /*border: "1px solid black",*/
-          width: "50%"
-        }
+        className: "AboutUsFlexOne"
       }, _react.default.createElement("h1", null, "About Us"), _react.default.createElement("p", null, "MAF Group is the name you can trust to empower, enrich, and enhance your business. You can count on us to design, deploy, and deliver technology-enabled, enterprise-grade solutions that ensure operational excellence. We design, develop, deploy and maintain systems in verticals such as cloud computing, machine learning, artificial intelligence, data intelligence, data analytics, marketing automation etc. We have helped clients realize their short-term and long-term goals cost-effectively and maximum ROI.")), _react.default.createElement("div", {
-        style: {
-          width: "50%",
-          boxSizing: "borderBox"
-          /*border: "1px solid black",*/
-
-        }
+        className: "AboutUsFlexTwo"
       }, _react.default.createElement("img", {
         src: _AboutUsBlurb.default,
         style: {
@@ -36574,25 +36568,13 @@ function (_React$Component) {
           marginLeft: "-20%"
         }
       }))), _react.default.createElement("div", {
-        style: {
-          width: "100%",
-          boxSizing: "borderBox",
-          display: "flex"
-        }
+        className: "StrongLeadershipFlex"
       }, _react.default.createElement("div", {
-        style: {
-          /*border: "1px solid black",*/
-          width: "50%"
-        }
+        className: "StrongLeadershipFlexOne"
       }, _react.default.createElement("h1", null, "Strong Leadership"), _react.default.createElement("p", null, "As our leaders have a stronghold on almost every technology present today, the clients can expect avant-garde solutions that are reliable, robust, and help with rejuvenating business performance. Each project we undertake aims to offer a good ROI, visible results, and customized specifications as per your requirements.", " "), _react.default.createElement("p", null, "Passion drives every team member at MAF Group. We work together as a unit on learning new technologies and implementing them seamlessly to deliver flawless solutions that work for the clients. Each MAF Group team member is awe-inspiring, brilliant, creative, dynamic, efficient, and fearless.", " "), _react.default.createElement("p", null, "We grow every minute of every day and ensure client satisfaction by delivering better than expected results.", " ")), _react.default.createElement("div", {
-        style: {
-          width: "50%",
-          boxSizing: "borderBox"
-          /*border: "1px solid black",*/
-
-        }
+        className: "StrongLeadershipFlexTwo"
       }, _react.default.createElement("img", {
-        src: _leadership.default,
+        src: _businessmen.default,
         style: {
           maxHeight: "100%",
           maxWidth: "100%",
@@ -36601,18 +36583,11 @@ function (_React$Component) {
       }))), _react.default.createElement("div", {
         className: "WhyMafGroup"
       }, _react.default.createElement("h1", null, "Why MAF Group? - We Do it Right!"), _react.default.createElement("div", {
-        className: "ExpertiseinDiffAreas",
-        style: {
-          display: "flex"
-        }
+        className: "ExpertiseinDiffAreas"
       }, _react.default.createElement("div", {
-        style: {
-          width: "50%"
-        }
+        className: "ExpertiseinDiffAreasFlexOne"
       }, _react.default.createElement("h2", null, "Expertise in Different Areas"), _react.default.createElement("p", null, "We have been serving organizations from different industries for a few years now. You can count on us to map your needs and ensure your business growth according to your industry-specific needs.", " "), _react.default.createElement("h2", null, "Projects Delivered"), _react.default.createElement("p", null, "For us, success lies in helping the clients achieve what they want and expect from us. You can check our exceptional track record to see how we have helped businesses streamline their operations and attain better growth.", " "), _react.default.createElement("h2", null, "We Aim for Success"), _react.default.createElement("p", null, "We take on every project as a challenge and deliver our best time and again. The numbers speak for themselves. Head to our case studies section to know how we have helped brands achieve success.", " "), _react.default.createElement("h2", null, "Experienced and Qualified Team "), _react.default.createElement("p", null, "Over the years, we have built a strong team by ensuring we hire the best minds, most qualified and experienced professionals, and the top tech enthusiasts who can add value for our clients.", " "), _react.default.createElement("p", null, "Talk to us about your pain points and allow us to effectively use our friendly expertise to build solutions that promote and sustain business growth seamlessly. Get in touch to take your business to the next level of success!")), _react.default.createElement("div", {
-        style: {
-          width: "50%"
-        }
+        className: ".ExpertiseinDiffAreasFlexTwo"
       }, _react.default.createElement("img", {
         src: _DoitRightOne.default,
         style: _defineProperty({
@@ -36626,7 +36601,7 @@ function (_React$Component) {
 }(_react.default.Component);
 
 exports.default = AboutUs;
-},{"react":"../node_modules/react/index.js","./footer":"../js/footer.js","../images/AboutUsBanner.png":"../images/AboutUsBanner.png","../images/AboutUsBlurb.png":"../images/AboutUsBlurb.png","../images/leadership.jpg":"../images/leadership.jpg","../images/DoitRightOne.jpg":"../images/DoitRightOne.jpg"}],"../images/triangle1.jpg":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","./footer":"../js/footer.js","../images/AboutUsBanner.png":"../images/AboutUsBanner.png","../images/AboutUsBlurb.png":"../images/AboutUsBlurb.png","../images/businessmen.jpg":"../images/businessmen.jpg","../images/DoitRightOne.jpg":"../images/DoitRightOne.jpg"}],"../images/triangle1.jpg":[function(require,module,exports) {
 module.exports = "/triangle1.d158ea14.jpg";
 },{}],"../images/cloudautomationbanner.png":[function(require,module,exports) {
 module.exports = "/cloudautomationbanner.394ff4a5.png";
@@ -39274,22 +39249,11 @@ function (_React$Component) {
           width: "100%"
         }
       }, _react.default.createElement("h1", null, "Data Analytics"), _react.default.createElement("p", null, "Organizations' challenges in the ever-changing environment and highly competitive landscape increase the pressure to be the best. One useful tool that can help organizations stay ahead of the competition and meet customer expectations is data analytics that helps eliminate the frustration of dealing with bulk data by driving value from that data. Data analytics can bring together finance, marketing, operational and external data on a single platform.", " "), _react.default.createElement("div", {
-        className: "howCanWeHelp",
-        style: {
-          display: "flex",
-          width: "100%",
-          flexWrap: "wrap"
-        }
+        className: "howCanWeHelp"
       }, _react.default.createElement("div", {
-        className: "howCanWeHelpFlex1",
-        style: {
-          width: "50%"
-        }
+        className: "howCanWeHelpFlex1"
       }, _react.default.createElement("h1", null, "How Can We Help?"), _react.default.createElement("h2", null, "Data Source Evaluation"), _react.default.createElement("p", null, "We access all the data of your organization and develop an understanding of all the information you possess.", " "), _react.default.createElement("h2", null, "Quality Assessment"), _react.default.createElement("p", null, "Our experts do a thorough cleaning of data and eliminate all unwanted and non-useful data to reduce the clutter. It ensures the availability of correct, consistent, and complete data.", " "), _react.default.createElement("h2", null, "Integration and Modelling"), _react.default.createElement("p", null, "We enable your experts to link data from varied sources and create data models to make data reporting easier and make data more understandable.", " "), _react.default.createElement("h2", null, "Choosing Platform and Technology"), _react.default.createElement("p", null, "Our experts will analyse your data needs and select the right enterprise analytics solution for your organization. They often see to its implementation as well.", " "), _react.default.createElement("h2", null, "Data Reporting"), _react.default.createElement("p", null, "The experts will also recommend the right reporting tools, metrics, and KPIs and offer help with report creation. They also identify data gaps and define use cases.", " ")), _react.default.createElement("div", {
-        className: "howCanWeHelpFlex2",
-        style: {
-          width: "50%"
-        }
+        className: "howCanWeHelpFlex2"
       }, _react.default.createElement("img", {
         src: _dataintegration.default,
         style: {
@@ -39297,22 +39261,15 @@ function (_React$Component) {
           maxHeight: "100%"
         }
       })), _react.default.createElement("div", {
-        className: "howCanWeHelpFlex3",
-        style: {
-          width: "50%"
-        }
+        className: "howCanWeHelpFlex3"
       }, _react.default.createElement("h1", null, "Our Expertise"), _react.default.createElement("h2", null, "Data Analytics"), _react.default.createElement("p", null, "To automate data analytics, we will pick the right automation platform that suits your business needs, create a strategy that works and build an actionable plan. We also set up the needed software and ensure its smooth implementation along with creating automated workflows that work for your organization. You can also trust us to train your team on the same to ensure effective operations without outside assistance.", " "), _react.default.createElement("h2", null, "Real-Time Analytics"), _react.default.createElement("p", null, "Our data analytics service helps turn data into insights quickly to help save time and effort. Also known as operational intelligence, real-time analytics can predict failures and make your teams aware of the issue so that the situation can be rectified. For instance, real-time analytics can help detect credit card fraud even before a transaction is completed and help save the end-users' money.", " "), _react.default.createElement("h2", null, "NLP- Natural Language Processing"), _react.default.createElement("p", null, "By using Natural language Processing or NLP, we help you foster human and computer interaction. We integrate the business with intelligent systems to ensure the perpetual growth of your business. Some of the NLP techniques we follow are Information Extraction via machine learning, Text Classification to provide insights and reduce errors, Named Entity Recognition that helps improvise entity extraction by classifying specific words with unstructured data, Intent Classification in which text is classified into various datasets. You can also trust us for Relationship Extraction, Content Clustering, Fact Extraction, and Text Generation, and Summarization."), _react.default.createElement("h2", null, "Machine Learning"), _react.default.createElement("p", null, "As an independent consultancy that loved data science, we use machine learning and statistics to help organizations make the most of data and unleash its full potential. We use the latest data science and technology to ensure your organization benefits from it and explores its potential. Earlier, organizations were limited to predictive analysis to make the most of data. Predictive analysis meant making assumptions and testing by using past data to predict the future or consider what/if scenarios. We use AI Machine Learning to extend the concepts around predictive analytics so that the AI system can makeassumptions, test, and learn autonomously and save human time and effort. As CEOs and CMO's need to make decisions quickly, we help them by using the power of data analytics, predictive analytics, AI, and machine learning. Contact us to know more!")), _react.default.createElement("div", {
-        className: "howCanWeHelpFlex4",
-        style: {
-          width: "50%"
-        }
+        className: "howCanWeHelpFlex4"
       }, _react.default.createElement("img", {
         src: _neuralnetwork.default,
         style: {
           maxWidth: "75%",
           maxHeight: "100%",
-          marginLeft: "15%",
-          marginTop: "25%"
+          marginLeft: "15%"
         }
       })))), _react.default.createElement(_footer.default, null));
     }
@@ -43561,7 +43518,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63850" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50710" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

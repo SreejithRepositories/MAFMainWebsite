@@ -264,11 +264,115 @@
     height: 50px;
   }
 }
+
+/* About Us page styles */
+.AboutUsFlex {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.AboutUsFlexOne {
+  width: 50%;
+}
+
+.AboutUsFlexTwo {
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.StrongLeadershipFlex {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.StrongLeadershipFlexOne {
+  width: 50%;
+}
+
+.StrongLeadershipFlexTwo {
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.ExpertiseinDiffAreas {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ExpertiseinDiffAreasFlexOne {
+  width: 50%;
+}
+
+.ExpertiseinDiffAreasFlexTwo {
+  width: 50%;
+}
+
+/* Media query for about us */
+@media (max-width: 650px) {
+  .AboutUsFlexOne {
+    width: 100%;
+  }
+
+  .AboutUsFlexTwo {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .StrongLeadershipFlexOne {
+    width: 100%;
+  }
+  .StrongLeadershipFlexTwo {
+    width: 100%;
+  }
+  .ExpertiseinDiffAreasFlexOne {
+    width: 100%;
+  }
+  .ExpertiseinDiffAreasFlexTwo {
+    width: 100%;
+  }
+}
+
+/*Analytic page styles*/
+.howCanWeHelp {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.howCanWeHelpFlex1 {
+  width: 50%;
+}
+
+.howCanWeHelpFlex2 {
+  width: 50%;
+}
+
+.howCanWeHelpFlex3 {
+  width: 50%;
+}
+
+.howCanWeHelpFlex4 {
+  width: 50%;
+  margin-top: 5%;
+}
+
 /* media query for data analytics page styles */
 @media (max-width: 800px) {
   .howCanWeHelp {
     flex-direction: row-reverse;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
+  }
+  .howCanWeHelpFlex1,
+  .howCanWeHelpFlex2,
+  .howCanWeHelpFlex3,
+  .howCanWeHelpFlex4 {
+    width: 100%;
+  }
+  .howCanWeHelpFlex4 {
+    margin-top: 0;
   }
 }
 

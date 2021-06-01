@@ -46,11 +46,8 @@ export default class Analytics extends React.Component {
             value from that data. Data analytics can bring together finance,
             marketing, operational and external data on a single platform.{" "}
           </p>
-          <div
-            className="howCanWeHelp"
-            style={{ display: "flex", width: "100%", flexWrap: "wrap" }}
-          >
-            <div className="howCanWeHelpFlex1" style={{ width: "50%" }}>
+          <div className="howCanWeHelp">
+            <div className="howCanWeHelpFlex1">
               <h1>How Can We Help?</h1>
               <h2>Data Source Evaluation</h2>
               <p>
@@ -82,13 +79,13 @@ export default class Analytics extends React.Component {
                 identify data gaps and define use cases.{" "}
               </p>
             </div>
-            <div className="howCanWeHelpFlex2" style={{ width: "50%" }}>
+            <div className="howCanWeHelpFlex2">
               <img
                 src={DataIntegrationBlurb}
                 style={{ maxWidth: "100%", maxHeight: "100%" }}
               ></img>
             </div>
-            <div className="howCanWeHelpFlex3" style={{ width: "50%" }}>
+            <div className="howCanWeHelpFlex3">
               <h1>Our Expertise</h1>
               <h2>Data Analytics</h2>
               <p>
@@ -143,14 +140,13 @@ export default class Analytics extends React.Component {
                 know more!
               </p>
             </div>
-            <div className="howCanWeHelpFlex4" style={{ width: "50%" }}>
+            <div className="howCanWeHelpFlex4">
               <img
                 src={NeutralNetworkBlurb}
                 style={{
                   maxWidth: "75%",
                   maxHeight: "100%",
                   marginLeft: "15%",
-                  marginTop: "25%",
                 }}
               ></img>
             </div>

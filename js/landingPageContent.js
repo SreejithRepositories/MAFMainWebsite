@@ -22,7 +22,7 @@ export default class LandingPageContent extends React.Component {
               ></img>
               <p style={{ textAlign: "center" }}>
                 <a href="/cloudautomation" target="_blank">
-                  Cloud Automation
+                  Cloud
                 </a>
               </p>
             </div>
@@ -31,14 +31,23 @@ export default class LandingPageContent extends React.Component {
                 style={{ width: "100%" }}
                 src={require("../images/data_analytics_blurb.png")}
               ></img>
-              <p style={{ textAlign: "center" }}>Data Analytics</p>
+              <p style={{ textAlign: "center" }}>
+                <a href="/analytics" target="_blank">
+                  Analytics
+                </a>
+              </p>
             </div>
             <div className="oneDotThree">
               <img
                 style={{ width: "100%" }}
                 src={require("../images/digital_transformation_blurb.png")}
               ></img>
-              <p style={{ textAlign: "center" }}>Digital Transformation</p>
+              <p style={{ textAlign: "center" }}>
+                {" "}
+                <a href="/digitaltransformation" target="_blank">
+                  Digital Transformation
+                </a>
+              </p>
             </div>
 
             <div className="oneDotFour">

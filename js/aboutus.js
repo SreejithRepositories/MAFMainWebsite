@@ -3,7 +3,7 @@ import Footer from "./footer";
 import BannerImage from "../images/AboutUsBanner.png";
 import BackgroundImage from "../images/AboutUsBanner.png";
 import AboutUsBlurb from "../images/AboutUsBlurb.png";
-import LeadershipBlurb from "../images/leadership.jpg";
+import LeadershipBlurb from "../images/businessmen.jpg";
 import DoitRightOne from "../images/DoitRightOne.jpg";
 // import DoitRightTwo from "..images/DoItRight2.jpg";
 
@@ -35,19 +35,8 @@ export default class AboutUs extends React.Component {
             marginTop: "-4px",
           }}
         >
-          <div
-            style={{
-              width: "100%",
-              boxSizing: "borderBox",
-              display: "flex",
-            }}
-          >
-            <div
-              style={{
-                /*border: "1px solid black",*/
-                width: "50%",
-              }}
-            >
+          <div className="AboutUsFlex">
+            <div className="AboutUsFlexOne">
               <h1>About Us</h1>
               <p>
                 MAF Group is the name you can trust to empower, enrich, and
@@ -61,13 +50,7 @@ export default class AboutUs extends React.Component {
                 and maximum ROI.
               </p>
             </div>
-            <div
-              style={{
-                width: "50%",
-                boxSizing: "borderBox",
-                /*border: "1px solid black",*/
-              }}
-            >
+            <div className="AboutUsFlexTwo">
               <img
                 src={AboutUsBlurb}
                 style={{
@@ -79,19 +62,8 @@ export default class AboutUs extends React.Component {
               ></img>
             </div>
           </div>
-          <div
-            style={{
-              width: "100%",
-              boxSizing: "borderBox",
-              display: "flex",
-            }}
-          >
-            <div
-              style={{
-                /*border: "1px solid black",*/
-                width: "50%",
-              }}
-            >
+          <div className="StrongLeadershipFlex">
+            <div className="StrongLeadershipFlexOne">
               <h1>Strong Leadership</h1>
               <p>
                 As our leaders have a stronghold on almost every technology
@@ -114,13 +86,7 @@ export default class AboutUs extends React.Component {
               </p>
             </div>
 
-            <div
-              style={{
-                width: "50%",
-                boxSizing: "borderBox",
-                /*border: "1px solid black",*/
-              }}
-            >
+            <div className="StrongLeadershipFlexTwo">
               <img
                 src={LeadershipBlurb}
                 style={{
@@ -133,8 +99,8 @@ export default class AboutUs extends React.Component {
           </div>
           <div className="WhyMafGroup">
             <h1>Why MAF Group? - We Do it Right!</h1>
-            <div className="ExpertiseinDiffAreas" style={{ display: "flex" }}>
-              <div style={{ width: "50%" }}>
+            <div className="ExpertiseinDiffAreas">
+              <div className="ExpertiseinDiffAreasFlexOne">
                 <h2>Expertise in Different Areas</h2>
                 <p>
                   We have been serving organizations from different industries
@@ -170,7 +136,7 @@ export default class AboutUs extends React.Component {
                   business to the next level of success!
                 </p>
               </div>
-              <div style={{ width: "50%" }}>
+              <div className=".ExpertiseinDiffAreasFlexTwo">
                 <img
                   src={DoitRightOne}
                   style={{ maxWidth: "100%", maxWidth: "100%" }}

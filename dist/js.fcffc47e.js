@@ -31471,7 +31471,7 @@ function (_React$Component) {
   }, {
     key: "componentDidMount",
     value: function componentDidMount() {
-      this.state.timer = setInterval(this.timeOutMethod, 3000);
+      this.state.timer = setInterval(this.timeOutMethod, 5000);
     }
   }, {
     key: "click",
@@ -35596,7 +35596,7 @@ function (_React$Component) {
       }, "About Us")), _react.default.createElement("tr", null, _react.default.createElement("td", {
         className: "ITServices",
         onClick: this.ITServices
-      }, "IT Services"), _react.default.createElement("td", null)), _react.default.createElement("tr", {
+      }, "Services"), _react.default.createElement("td", null)), _react.default.createElement("tr", {
         style: {
           display: this.state.displayITServicesSubMenu
         }
@@ -35683,6 +35683,9 @@ function (_React$Component) {
         onMouseOut: this.unputUnderLineColorMarkTran,
         style: this.state.underLineColorMarkTran
       }, "Marketing Automation")), _react.default.createElement("tr", null, _react.default.createElement("td", {
+        onClick: function onClick() {
+          return window.location.pathname = "/industriesweserve";
+        },
         onMouseOver: this.putUnderLineColorIndWeServe,
         onMouseOut: this.unputUnderLineColorIndWeServe,
         style: this.state.underLineColorIndWeServe
@@ -36463,8 +36466,8 @@ exports.default = LandingPageContent;
 module.exports = "/AboutUsBanner.3c9ab8a0.png";
 },{}],"../images/AboutUsBlurb.png":[function(require,module,exports) {
 module.exports = "/AboutUsBlurb.31923f82.png";
-},{}],"../images/businessmen.jpg":[function(require,module,exports) {
-module.exports = "/businessmen.7b29b0e1.jpg";
+},{}],"../images/software-development.jpg":[function(require,module,exports) {
+module.exports = "/software-development.6ec862ff.jpg";
 },{}],"../images/DoitRightOne.jpg":[function(require,module,exports) {
 module.exports = "/DoitRightOne.5d54e164.jpg";
 },{}],"../js/aboutus.js":[function(require,module,exports) {
@@ -36483,7 +36486,7 @@ var _AboutUsBanner = _interopRequireDefault(require("../images/AboutUsBanner.png
 
 var _AboutUsBlurb = _interopRequireDefault(require("../images/AboutUsBlurb.png"));
 
-var _businessmen = _interopRequireDefault(require("../images/businessmen.jpg"));
+var _softwareDevelopment = _interopRequireDefault(require("../images/software-development.jpg"));
 
 var _DoitRightOne = _interopRequireDefault(require("../images/DoitRightOne.jpg"));
 
@@ -36557,7 +36560,7 @@ function (_React$Component) {
         className: "AboutUsFlex"
       }, _react.default.createElement("div", {
         className: "AboutUsFlexOne"
-      }, _react.default.createElement("h1", null, "About Us"), _react.default.createElement("p", null, "MAF Group is the name you can trust to empower, enrich, and enhance your business. You can count on us to design, deploy, and deliver technology-enabled, enterprise-grade solutions that ensure operational excellence. We design, develop, deploy and maintain systems in verticals such as cloud computing, machine learning, artificial intelligence, data intelligence, data analytics, marketing automation etc. We have helped clients realize their short-term and long-term goals cost-effectively and maximum ROI.")), _react.default.createElement("div", {
+      }, _react.default.createElement("h1", null, "About Us"), _react.default.createElement("p", null, "MAF Group is the name you can trust to empower, enrich, and enhance your business. You can count on us to design, deploy, and deliver technology-enabled, enterprise-grade solutions that ensure operational excellence."), _react.default.createElement("p", null, "By leveraging the potential of our key services like Cloud Automation, Data Analytics, Digital Transformation, and Marketing Automation, we ensure that you eliminate all complexities from your business and achieve operational excellence, attain business goals, and reach a high business growth level.")), _react.default.createElement("div", {
         className: "AboutUsFlexTwo"
       }, _react.default.createElement("img", {
         src: _AboutUsBlurb.default,
@@ -36574,7 +36577,7 @@ function (_React$Component) {
       }, _react.default.createElement("h1", null, "Strong Leadership"), _react.default.createElement("p", null, "As our leaders have a stronghold on almost every technology present today, the clients can expect avant-garde solutions that are reliable, robust, and help with rejuvenating business performance. Each project we undertake aims to offer a good ROI, visible results, and customized specifications as per your requirements.", " "), _react.default.createElement("p", null, "Passion drives every team member at MAF Group. We work together as a unit on learning new technologies and implementing them seamlessly to deliver flawless solutions that work for the clients. Each MAF Group team member is awe-inspiring, brilliant, creative, dynamic, efficient, and fearless.", " "), _react.default.createElement("p", null, "We grow every minute of every day and ensure client satisfaction by delivering better than expected results.", " ")), _react.default.createElement("div", {
         className: "StrongLeadershipFlexTwo"
       }, _react.default.createElement("img", {
-        src: _businessmen.default,
+        src: _softwareDevelopment.default,
         style: {
           maxHeight: "100%",
           maxWidth: "100%",
@@ -36587,7 +36590,7 @@ function (_React$Component) {
       }, _react.default.createElement("div", {
         className: "ExpertiseinDiffAreasFlexOne"
       }, _react.default.createElement("h2", null, "Expertise in Different Areas"), _react.default.createElement("p", null, "We have been serving organizations from different industries for a few years now. You can count on us to map your needs and ensure your business growth according to your industry-specific needs.", " "), _react.default.createElement("h2", null, "Projects Delivered"), _react.default.createElement("p", null, "For us, success lies in helping the clients achieve what they want and expect from us. You can check our exceptional track record to see how we have helped businesses streamline their operations and attain better growth.", " "), _react.default.createElement("h2", null, "We Aim for Success"), _react.default.createElement("p", null, "We take on every project as a challenge and deliver our best time and again. The numbers speak for themselves. Head to our case studies section to know how we have helped brands achieve success.", " "), _react.default.createElement("h2", null, "Experienced and Qualified Team "), _react.default.createElement("p", null, "Over the years, we have built a strong team by ensuring we hire the best minds, most qualified and experienced professionals, and the top tech enthusiasts who can add value for our clients.", " "), _react.default.createElement("p", null, "Talk to us about your pain points and allow us to effectively use our friendly expertise to build solutions that promote and sustain business growth seamlessly. Get in touch to take your business to the next level of success!")), _react.default.createElement("div", {
-        className: ".ExpertiseinDiffAreasFlexTwo"
+        className: "ExpertiseinDiffAreasFlexTwo"
       }, _react.default.createElement("img", {
         src: _DoitRightOne.default,
         style: _defineProperty({
@@ -36601,7 +36604,7 @@ function (_React$Component) {
 }(_react.default.Component);
 
 exports.default = AboutUs;
-},{"react":"../node_modules/react/index.js","./footer":"../js/footer.js","../images/AboutUsBanner.png":"../images/AboutUsBanner.png","../images/AboutUsBlurb.png":"../images/AboutUsBlurb.png","../images/businessmen.jpg":"../images/businessmen.jpg","../images/DoitRightOne.jpg":"../images/DoitRightOne.jpg"}],"../images/triangle1.jpg":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","./footer":"../js/footer.js","../images/AboutUsBanner.png":"../images/AboutUsBanner.png","../images/AboutUsBlurb.png":"../images/AboutUsBlurb.png","../images/software-development.jpg":"../images/software-development.jpg","../images/DoitRightOne.jpg":"../images/DoitRightOne.jpg"}],"../images/triangle1.jpg":[function(require,module,exports) {
 module.exports = "/triangle1.d158ea14.jpg";
 },{}],"../images/cloudautomationbanner.png":[function(require,module,exports) {
 module.exports = "/cloudautomationbanner.394ff4a5.png";
@@ -39279,7 +39282,183 @@ function (_React$Component) {
 }(_react.default.Component);
 
 exports.default = Analytics;
-},{"react":"../node_modules/react/index.js","./footer":"../js/footer.js","../images/ball-63527.jpg":"../images/ball-63527.jpg","../images/dataintegration.jpg":"../images/dataintegration.jpg","../images/datacube.jpg":"../images/datacube.jpg","../images/neuralnetwork.png":"../images/neuralnetwork.png","../images/analytics.jpg":"../images/analytics.jpg"}],"../node_modules/email-validator/index.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","./footer":"../js/footer.js","../images/ball-63527.jpg":"../images/ball-63527.jpg","../images/dataintegration.jpg":"../images/dataintegration.jpg","../images/datacube.jpg":"../images/datacube.jpg","../images/neuralnetwork.png":"../images/neuralnetwork.png","../images/analytics.jpg":"../images/analytics.jpg"}],"../images/industriesweserve.jpg":[function(require,module,exports) {
+module.exports = "/industriesweserve.0eee63d3.jpg";
+},{}],"../images/retail.jpg":[function(require,module,exports) {
+module.exports = "/retail.1051f039.jpg";
+},{}],"../images/gaming.jpg":[function(require,module,exports) {
+module.exports = "/gaming.b6436953.jpg";
+},{}],"../images/ecommerce.jpg":[function(require,module,exports) {
+module.exports = "/ecommerce.12b87176.jpg";
+},{}],"../images/banking.jpg":[function(require,module,exports) {
+module.exports = "/banking.9df71108.jpg";
+},{}],"../images/insurance.jpg":[function(require,module,exports) {
+module.exports = "/insurance.b5f2df8f.jpg";
+},{}],"../images/hospitality.jpg":[function(require,module,exports) {
+module.exports = "/hospitality.9b1e455e.jpg";
+},{}],"../js/industriesweserve.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _footer = _interopRequireDefault(require("./footer"));
+
+var _industriesweserve = _interopRequireDefault(require("../images/industriesweserve.jpg"));
+
+var _retail = _interopRequireDefault(require("../images/retail.jpg"));
+
+var _gaming = _interopRequireDefault(require("../images/gaming.jpg"));
+
+var _ecommerce = _interopRequireDefault(require("../images/ecommerce.jpg"));
+
+var _banking = _interopRequireDefault(require("../images/banking.jpg"));
+
+var _insurance = _interopRequireDefault(require("../images/insurance.jpg"));
+
+var _hospitality = _interopRequireDefault(require("../images/hospitality.jpg"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+var IndustriesWeServe =
+/*#__PURE__*/
+function (_React$Component) {
+  _inherits(IndustriesWeServe, _React$Component);
+
+  function IndustriesWeServe() {
+    _classCallCheck(this, IndustriesWeServe);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(IndustriesWeServe).apply(this, arguments));
+  }
+
+  _createClass(IndustriesWeServe, [{
+    key: "render",
+    value: function render() {
+      return _react.default.createElement("div", {
+        style: {
+          marginTop: "6px"
+        }
+      }, _react.default.createElement("title", null, "Industries We Serve"), _react.default.createElement("div", {
+        style: {
+          textAlign: "center",
+          backgroundColor: "#131257",
+          height: "250px"
+        }
+      }, _react.default.createElement("img", {
+        src: _industriesweserve.default,
+        style: {
+          width: "100%",
+          height: "100%",
+          objectFit: "cover"
+        }
+      })), _react.default.createElement("div", {
+        style: {
+          // backgroundImage: `url(${BackgroundImage})`,
+          border: "1px solid black",
+          position: "relative",
+          width: "100%"
+        }
+      }, _react.default.createElement("h1", null, "Industries We Serve"), _react.default.createElement("div", {
+        className: "industriesWeServe"
+      }, _react.default.createElement("div", {
+        className: "retail"
+      }, _react.default.createElement("h2", null, "Retail"), _react.default.createElement("p", null, "Adapting to changes brought on with time has always been a key element in the retail industry. We help retail industry players adapt quickly, evolve with time, and stay resilient even when external pressure and global disruptions occur.", " "), _react.default.createElement("p", null, "As a reliable B2B consultancy using advanced technologies, we help you adapt to new social, economic, and environmental climates, meet the expectations of key stakeholders (employees, investors, and customers), and work seamlessly amid rising competition by using the latest technological tools and beneficial partnerships.", " "), _react.default.createElement("p", null, "Retail is never simple, and it will not ever be. Let us help you by providing deftly handling digital transformation, ensuring smooth Data Migration and Digital Analytics Migration, taking care of Cloud Ingestion and Data management (with useful tools like Google Cloud), and assisting with Data Lab practice.", " "), _react.default.createElement("p", null, "To know how we helped a leading player in the retail industry, Sainsbury's, click here.", " ")), _react.default.createElement("div", {
+        className: "retailImage"
+      }, _react.default.createElement("img", {
+        src: _retail.default,
+        style: {
+          height: "100%",
+          width: "100%",
+          objectFit: "cover"
+        }
+      })), _react.default.createElement("div", {
+        className: "gaming"
+      }, _react.default.createElement("h2", null, "Gaming"), _react.default.createElement("p", null, "Gaming is a challenging industry where the competition is stiff, and the expectations are high. To help the leading players in the gaming industry, we offer solutions that lead to optimization. Everything is done with one aim, to boost your ROI. Whether you need floor optimization or marketing consulting, or even help with the content, we are there for you. You can focus on the things you do best while our consultants do the best for you.", " "), _react.default.createElement("p", null, "Over the years, we have helped leading brands in the gaming industry with digital experimentation, cloud migration, data management, Cloud- AI, and real-time segmentation.", " "), _react.default.createElement("p", null, "To know how we helped players like Rank Group and William Hill, click here.", " ")), _react.default.createElement("div", {
+        className: "gamingImage"
+      }, _react.default.createElement("img", {
+        src: _gaming.default,
+        style: {
+          height: "100%",
+          width: "100%",
+          objectFit: "cover"
+        }
+      })), _react.default.createElement("div", {
+        className: "eCommerce"
+      }, _react.default.createElement("h2", null, "E-Commerce"), _react.default.createElement("p", null, "The world of e-commerce is changing thanks to the rise in trends like borderless business, cross-border commerce, and international online retail growth rapidly. Two years back, the sales from online purchases were 13.6 per cent only. It will reach 19.5 per cent in 2021 and 21.8 per cent in 2024. All this says that an e-commerce company needs to make itself stand out if it wants to stay ahead of the competition and make the most of the rapid growth in the industry."), _react.default.createElement("p", null, "One of the things that can help greatly is personalization and leveraging the content to target specific customers. Mobile App integrations, Digital Transformations, Cloud NLP,and Data Migration also help greatly. MAF Group can handle it all for you and lets you leverage advanced technologies to play a vital role in the future of consumerism.", " "), _react.default.createElement("p", null, " ", "To know how we have helped clients in the banking sector, click here.", " ")), _react.default.createElement("div", {
+        className: "eCommerceImage"
+      }, _react.default.createElement("img", {
+        src: _ecommerce.default,
+        style: {
+          height: "100%",
+          width: "100%",
+          objectFit: "cover"
+        }
+      })), _react.default.createElement("div", {
+        className: "banking"
+      }, _react.default.createElement("h2", null, "Banking"), _react.default.createElement("p", null, "Due to the recent changes, the banking industry is witnessing more disruption than ever. New, advanced, and innovative technologies are changing the way the market is structured. New industry players are taking a bite out of the revenues of existing banking organizations and challenging them at every turn.", " "), _react.default.createElement("p", null, "So, banking industry players who want to sustain their position need to act now. Being digital and offering better online service is one thing. Another is to constantly adapt to change and be the best versions of themselves. Otherwise, they might be at the risk of lagging!"), _react.default.createElement("p", null, "That is where MAF Group can help. Whether you want to migrate to the cloud or hope to offer a better mobile experience or even create cool content that motivates people to connect, our experts can deliver perfect solutions to you after delving through data-driven insights and using the latest technological tools that go with the flow and improve with time.", " ")), _react.default.createElement("div", {
+        className: "bankingImage"
+      }, _react.default.createElement("img", {
+        src: _banking.default,
+        style: {
+          height: "100%",
+          width: "100%",
+          objectFit: "cover"
+        }
+      })), _react.default.createElement("div", {
+        className: "insurance"
+      }, _react.default.createElement("h2", null, "Insurance"), _react.default.createElement("p", null, "The needs of clients in the insurance industry are dynamic. Insurance companies need to align their strategies and offer new products/services constantly. So, one challenge this industry faces is measuring and meeting clients' expectations via data and insights. MAF group allows you to make the most of data, cloud, automation, and digitally transform your business to meet and exceed customer expectations via innovation.", " "), _react.default.createElement("p", null, "Our experts have the right knowledge, qualifications, and skills required to help insurance industry players cultivate agility to meet any challenge head-on and consistently develop new income streams.", " ")), _react.default.createElement("div", {
+        className: "insuranceImage"
+      }, _react.default.createElement("img", {
+        src: _insurance.default,
+        style: {
+          height: "100%",
+          width: "100%",
+          objectFit: "cover"
+        }
+      })), _react.default.createElement("div", {
+        className: "hospitality"
+      }, _react.default.createElement("h2", null, "Hospitality"), _react.default.createElement("p", null, "The hospitality industry has been going through many changes, and the players are trying to offer more holistic experiences to customers in the last few years. One of the key tools that are helping this industry measure, map, and deliver on customer expectations is the use of data. Digitalization is also helping the industry players to stay connected with the customers, seek their feedback, and improvise accordingly.", " "), _react.default.createElement("p", null, "Access to marketing automation and customer data is a key factor for success in this industry, as customer experience matters a lot. If customers get what they expect, they will stay engaged with the brand and be more loyal. However, even one disappointment can lead to disasters. So, there is no scope for an error.", " "), _react.default.createElement("p", null, "At MAF Group, we help ensure a perfect customer experience using the latest tools like cloud, AI, data ingestion, marketing automation, and analytics implementation. With achievable goals like supporting real-time experience on digital platforms, MAF Group has helped countless customers in the hospitality industry to get the endcustomers the best-ever experience.", " "), _react.default.createElement("p", null, "To know how we helped Bourne Leisure Limited, click here. ")), _react.default.createElement("div", {
+        className: "hospitalityImage"
+      }, _react.default.createElement("img", {
+        src: _hospitality.default,
+        style: {
+          height: "100%",
+          width: "100%",
+          objectFit: "cover"
+        }
+      })), _react.default.createElement("div", {
+        className: "workInOtherIndustries"
+      }, _react.default.createElement("h2", null, "Work in Other Industries"), _react.default.createElement("p", null, "With time, MAF Group is expanding its reach to industries/sectors not mentioned here. So, if you belong to any of those categories, you can depend on us for seamless solutionssuch asDigital Transformation, Data & Analytics Implementation [Digital and Legacy], Marketing Automation, Cloud practice, Data Engineering & Data Science, Application Development, and Management and Digital Lab. Connect with us to know how exactly we can help and what we can bring to the table.", " ")))), _react.default.createElement(_footer.default, null));
+    }
+  }]);
+
+  return IndustriesWeServe;
+}(_react.default.Component);
+
+exports.default = IndustriesWeServe;
+},{"react":"../node_modules/react/index.js","./footer":"../js/footer.js","../images/industriesweserve.jpg":"../images/industriesweserve.jpg","../images/retail.jpg":"../images/retail.jpg","../images/gaming.jpg":"../images/gaming.jpg","../images/ecommerce.jpg":"../images/ecommerce.jpg","../images/banking.jpg":"../images/banking.jpg","../images/insurance.jpg":"../images/insurance.jpg","../images/hospitality.jpg":"../images/hospitality.jpg"}],"../node_modules/email-validator/index.js":[function(require,module,exports) {
 "use strict";
 
 var tester = /^[-!#$%&'*+\/0-9=?A-Z^_a-z{|}~](\.?[-!#$%&'*+\/0-9=?A-Z^_a-z`{|}~])*@[a-zA-Z0-9](-*\.?[a-zA-Z0-9])*\.[a-zA-Z](-?[a-zA-Z0-9])+$/; // Thanks to:
@@ -43322,6 +43501,8 @@ var _digitaltransformation = _interopRequireDefault(require("./digitaltransforma
 
 var _analytics = _interopRequireDefault(require("./analytics"));
 
+var _industriesweserve = _interopRequireDefault(require("./industriesweserve"));
+
 var _contactus = _interopRequireDefault(require("./contactus"));
 
 var _nameform = _interopRequireDefault(require("./nameform"));
@@ -43478,6 +43659,9 @@ function (_React$Component) {
         path: "/digitaltransformation"
       }, _react.default.createElement(_digitaltransformation.default, null))), _react.default.createElement(_reactRouterDom.Switch, null, _react.default.createElement(_reactRouterDom.Route, {
         exact: true,
+        path: "/industriesweserve"
+      }, _react.default.createElement(_industriesweserve.default, null))), _react.default.createElement(_reactRouterDom.Switch, null, _react.default.createElement(_reactRouterDom.Route, {
+        exact: true,
         path: "/contactus"
       }, _react.default.createElement(_contactus.default, null))), _react.default.createElement(_landingPageContent.default, null)));
     }
@@ -43490,7 +43674,7 @@ _reactDom.default.render(_react.default.createElement(App, null), document.getEl
 //   <LandingPageContent />,
 //   document.getElementById("landing_page_content")
 // );
-},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","./header":"../js/header.js","./banner_copy copy":"../js/banner_copy copy.js","../css/landing_page.css":"../css/landing_page.css","./main_menu_modal copy":"../js/main_menu_modal copy.js","./landingPageContent":"../js/landingPageContent.js","./aboutus":"../js/aboutus.js","./cloudautomation":"../js/cloudautomation.js","./marketingautomation":"../js/marketingautomation.js","./digitaltransformation":"../js/digitaltransformation.js","./analytics":"../js/analytics.js","./contactus":"../js/contactus.js","./nameform":"../js/nameform.js","axios":"../node_modules/axios/index.js","qs":"../node_modules/qs/lib/index.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js","./footer":"../js/footer.js"}],"../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","./header":"../js/header.js","./banner_copy copy":"../js/banner_copy copy.js","../css/landing_page.css":"../css/landing_page.css","./main_menu_modal copy":"../js/main_menu_modal copy.js","./landingPageContent":"../js/landingPageContent.js","./aboutus":"../js/aboutus.js","./cloudautomation":"../js/cloudautomation.js","./marketingautomation":"../js/marketingautomation.js","./digitaltransformation":"../js/digitaltransformation.js","./analytics":"../js/analytics.js","./industriesweserve":"../js/industriesweserve.js","./contactus":"../js/contactus.js","./nameform":"../js/nameform.js","axios":"../node_modules/axios/index.js","qs":"../node_modules/qs/lib/index.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js","./footer":"../js/footer.js"}],"../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -43518,7 +43702,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50710" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50670" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -3,7 +3,7 @@ import Footer from "./footer";
 import BannerImage from "../images/AboutUsBanner.png";
 import BackgroundImage from "../images/AboutUsBanner.png";
 import AboutUsBlurb from "../images/AboutUsBlurb.png";
-import LeadershipBlurb from "../images/businessmen.jpg";
+import LeadershipBlurb from "../images/software-development.jpg";
 import DoitRightOne from "../images/DoitRightOne.jpg";
 // import DoitRightTwo from "..images/DoItRight2.jpg";
 
@@ -42,12 +42,15 @@ export default class AboutUs extends React.Component {
                 MAF Group is the name you can trust to empower, enrich, and
                 enhance your business. You can count on us to design, deploy,
                 and deliver technology-enabled, enterprise-grade solutions that
-                ensure operational excellence. We design, develop, deploy and
-                maintain systems in verticals such as cloud computing, machine
-                learning, artificial intelligence, data intelligence, data
-                analytics, marketing automation etc. We have helped clients
-                realize their short-term and long-term goals cost-effectively
-                and maximum ROI.
+                ensure operational excellence.
+              </p>
+              <p>
+                By leveraging the potential of our key services like Cloud
+                Automation, Data Analytics, Digital Transformation, and
+                Marketing Automation, we ensure that you eliminate all
+                complexities from your business and achieve operational
+                excellence, attain business goals, and reach a high business
+                growth level.
               </p>
             </div>
             <div className="AboutUsFlexTwo">
@@ -136,10 +139,13 @@ export default class AboutUs extends React.Component {
                   business to the next level of success!
                 </p>
               </div>
-              <div className=".ExpertiseinDiffAreasFlexTwo">
+              <div className="ExpertiseinDiffAreasFlexTwo">
                 <img
                   src={DoitRightOne}
-                  style={{ maxWidth: "100%", maxWidth: "100%" }}
+                  style={{
+                    maxWidth: "100%",
+                    maxWidth: "100%",
+                  }}
                 ></img>
               </div>
             </div>

@@ -376,5 +376,47 @@
   }
 }
 
+/* industries we serve styles */
+.industriesWeServe {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.retail,
+.retailImage,
+.gaming,
+.gamingImage,
+.eCommerce,
+.eCommerceImage,
+.banking,
+.bankingImage,
+.insurance,
+.insuranceImage,
+.hospitality,
+.hospitalityImage {
+  width: 48%;
+}
+.retail > p {
+  text-align: justify;
+}
+@media (max-width: 900px) {
+  .retail,
+  .retailImage,
+  .gaming,
+  .gamingImage,
+  .eCommerce,
+  .eCommerceImage,
+  .banking,
+  .bankingImage,
+  .insurance,
+  .insuranceImage,
+  .hospitality,
+  .hospitalityImage {
+    width: 100%;
+  }
+}
+
 
 /*# sourceMappingURL=/js.fcffc47e.css.map */

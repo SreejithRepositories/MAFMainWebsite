@@ -13,6 +13,7 @@ import CloudAutomation from "./cloudautomation";
 import MarketingAutomation from "./marketingautomation";
 import DigitalTransformation from "./digitaltransformation";
 import Analytics from "./analytics";
+import IndustriesWeServe from "./industriesweserve";
 import ContactUs from "./contactus";
 import NameForm from "./nameform";
 import axios from "axios";
@@ -130,6 +131,11 @@ class App extends React.Component {
           <Switch>
             <Route exact path="/digitaltransformation">
               <DigitalTransformation />
+            </Route>
+          </Switch>
+          <Switch>
+            <Route exact path="/industriesweserve">
+              <IndustriesWeServe />
             </Route>
           </Switch>
           <Switch>

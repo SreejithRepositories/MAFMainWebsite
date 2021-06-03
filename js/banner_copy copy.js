@@ -121,7 +121,7 @@ export default class Banner extends React.Component {
     });
   }
   componentDidMount() {
-    this.state.timer = setInterval(this.timeOutMethod, 3000);
+    this.state.timer = setInterval(this.timeOutMethod, 5000);
   }
 
   click() {

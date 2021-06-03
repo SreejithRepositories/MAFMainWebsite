@@ -322,10 +322,9 @@ export default class Main_Menu_Modal extends React.Component {
               About Us
             </td>
           </tr>
-
           <tr>
             <td className="ITServices" onClick={this.ITServices}>
-              IT Services
+              Services
             </td>
             <td></td>
           </tr>
@@ -415,6 +414,7 @@ export default class Main_Menu_Modal extends React.Component {
           </tr> */}
           <tr>
             <td
+              onClick={() => (window.location.pathname = "/industriesweserve")}
               onMouseOver={this.putUnderLineColorIndWeServe}
               onMouseOut={this.unputUnderLineColorIndWeServe}
               style={this.state.underLineColorIndWeServe}

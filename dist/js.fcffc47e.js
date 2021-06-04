@@ -43328,10 +43328,16 @@ function (_React$Component) {
           "content-type": "application/x-www-form-urlencoded"
         },
         data: qs.stringify(data),
-        url: "/mail"
+        url: "https://formspree.io/f/mqkwpapl"
       };
       axios(options).then(function (res) {
-        return console.log(res);
+        return alert("thanks!");
+      });
+      this.setState({
+        Name: "",
+        Email: "",
+        Subject: "",
+        Message: ""
       });
       event.preventDefault();
     }
@@ -43341,7 +43347,7 @@ function (_React$Component) {
       return _react.default.createElement("div", {
         className: "formDiv"
       }, _react.default.createElement("h1", null, "Write to us"), _react.default.createElement("form", {
-        action: "",
+        action: "https://formspree.io/f/mqkwpapl",
         onSubmit: this.handleSubmit,
         style: {
           border: "1px solid black",
@@ -43350,21 +43356,25 @@ function (_React$Component) {
       }, _react.default.createElement("label", null, "Name:", _react.default.createElement("input", {
         type: "text",
         id: "Name",
+        required: true,
         value: this.state.Name,
         onChange: this.handleChange
       })), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("label", null, "Email:", _react.default.createElement("input", {
-        type: "text",
+        type: "email",
         id: "Email",
+        required: true,
         value: this.state.Email,
         onChange: this.handleChange
       })), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("label", null, "Subject:", _react.default.createElement("input", {
         type: "text",
         id: "Subject",
+        required: true,
         value: this.state.Subject,
         onChange: this.handleChange
       })), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("label", null, "Message:", _react.default.createElement("textarea", {
         type: "text",
         id: "Message",
+        required: true,
         value: this.state.Message,
         onChange: this.handleChange
       })), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("input", {
@@ -43702,7 +43712,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50670" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49489" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

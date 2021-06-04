@@ -36,9 +36,15 @@ export default class NameForm extends React.Component {
       method: "POST",
       headers: { "content-type": "application/x-www-form-urlencoded" },
       data: qs.stringify(data),
-      url: "/mail",
+      url: "https://formspree.io/f/mqkwpapl",
     };
-    axios(options).then((res) => console.log(res));
+    axios(options).then((res) => alert("thanks!"));
+    this.setState({
+      Name: "",
+      Email: "",
+      Subject: "",
+      Message: "",
+    });
     event.preventDefault();
   }
 
@@ -47,7 +53,7 @@ export default class NameForm extends React.Component {
       <div className="formDiv">
         <h1>Write to us</h1>
         <form
-          action=""
+          action="https://formspree.io/f/mqkwpapl"
           onSubmit={this.handleSubmit}
           style={{
             border: "1px solid black",
@@ -60,6 +66,7 @@ export default class NameForm extends React.Component {
             <input
               type="text"
               id="Name"
+              required
               value={this.state.Name}
               onChange={this.handleChange}
             />
@@ -69,8 +76,9 @@ export default class NameForm extends React.Component {
           <label>
             Email:
             <input
-              type="text"
+              type="email"
               id="Email"
+              required
               value={this.state.Email}
               onChange={this.handleChange}
             />
@@ -84,6 +92,7 @@ export default class NameForm extends React.Component {
             <input
               type="text"
               id="Subject"
+              required
               value={this.state.Subject}
               onChange={this.handleChange}
             />
@@ -95,6 +104,7 @@ export default class NameForm extends React.Component {
             <textarea
               type="text"
               id="Message"
+              required
               value={this.state.Message}
               onChange={this.handleChange}
             />

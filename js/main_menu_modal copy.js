@@ -460,6 +460,7 @@ export default class Main_Menu_Modal extends React.Component {
           </tr> */}
           <tr>
             <td
+              onClick={() => (window.location.pathname = "/termsandconditions")}
               onMouseOver={this.putUnderLineColorTerms}
               onMouseOut={this.unputUnderLineColorTerms}
               style={this.state.underLineColorTerms}

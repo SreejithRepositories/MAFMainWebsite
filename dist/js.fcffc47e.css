@@ -417,6 +417,27 @@
     width: 100%;
   }
 }
+/* styles for cookie banner */
+.cookieBanner {
+  width: 25%;
+  border: 1px solid #417539;
+  position: fixed;
+  z-index: 1;
+  bottom: 0;
+  left: 35%;
+  background-color: #417539;
+  font-family: Garamond;
+}
+.cookieBanner > div {
+  width: 100%;
+}
+.cookieBannerAccept {
+  width: 35%;
+}
+.cookieBannerReject {
+  width: 35%;
+  float: right;
+}
 
 
 /*# sourceMappingURL=/js.fcffc47e.css.map */

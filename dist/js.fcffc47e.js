@@ -35698,6 +35698,9 @@ function (_React$Component) {
         onMouseOut: this.unputUnderLineColorBlog,
         style: this.state.underLineColorBlog
       }, "Blog")), _react.default.createElement("tr", null, _react.default.createElement("td", {
+        onClick: function onClick() {
+          return window.location.pathname = "/termsandconditions";
+        },
         onMouseOver: this.putUnderLineColorTerms,
         onMouseOut: this.unputUnderLineColorTerms,
         style: this.state.underLineColorTerms
@@ -39458,7 +39461,88 @@ function (_React$Component) {
 }(_react.default.Component);
 
 exports.default = IndustriesWeServe;
-},{"react":"../node_modules/react/index.js","./footer":"../js/footer.js","../images/industriesweserve.jpg":"../images/industriesweserve.jpg","../images/retail.jpg":"../images/retail.jpg","../images/gaming.jpg":"../images/gaming.jpg","../images/ecommerce.jpg":"../images/ecommerce.jpg","../images/banking.jpg":"../images/banking.jpg","../images/insurance.jpg":"../images/insurance.jpg","../images/hospitality.jpg":"../images/hospitality.jpg"}],"../node_modules/email-validator/index.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","./footer":"../js/footer.js","../images/industriesweserve.jpg":"../images/industriesweserve.jpg","../images/retail.jpg":"../images/retail.jpg","../images/gaming.jpg":"../images/gaming.jpg","../images/ecommerce.jpg":"../images/ecommerce.jpg","../images/banking.jpg":"../images/banking.jpg","../images/insurance.jpg":"../images/insurance.jpg","../images/hospitality.jpg":"../images/hospitality.jpg"}],"../images/termsandconditions.jpg":[function(require,module,exports) {
+module.exports = "/termsandconditions.f2103d69.jpg";
+},{}],"../js/termsnconditions.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _footer = _interopRequireDefault(require("./footer"));
+
+var _termsandconditions = _interopRequireDefault(require("../images/termsandconditions.jpg"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+var TermsAndConditions =
+/*#__PURE__*/
+function (_React$Component) {
+  _inherits(TermsAndConditions, _React$Component);
+
+  function TermsAndConditions() {
+    _classCallCheck(this, TermsAndConditions);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(TermsAndConditions).apply(this, arguments));
+  }
+
+  _createClass(TermsAndConditions, [{
+    key: "render",
+    value: function render() {
+      return _react.default.createElement("div", {
+        style: {
+          marginTop: "6px"
+        }
+      }, _react.default.createElement("title", null, "Industries We Serve"), _react.default.createElement("div", {
+        style: {
+          textAlign: "center",
+          backgroundColor: "#131257",
+          height: "250px"
+        }
+      }, _react.default.createElement("img", {
+        src: _termsandconditions.default,
+        style: {
+          maxWidth: "100%",
+          maxHeight: "100%"
+        }
+      })), _react.default.createElement("div", {
+        style: {
+          // backgroundImage: `url(${BackgroundImage})`,
+          border: "1px solid black",
+          position: "relative",
+          width: "100%"
+        }
+      }, _react.default.createElement("h1", null, "Cookie Policy"), _react.default.createElement("h2", null, "Effective date: January 1, 2021"), _react.default.createElement("p", null, "MAF Group understands that your privacy is important to you. So, we do our best to be open to you about the technologies we use. In this Cookie Policy, we have explained why and how cookies, pixels, web beacons, clear gifs, and other technologies, which are known as Cookies and other tracking technologies, might be stored on your device, or accessed from it whenever you use MAF Group website. Read on to know more.", " "), _react.default.createElement("h2", null, "What are Cookies? What Other Tracking Technologies Do We Use?"), _react.default.createElement("p", null, "A cookie is a small text file that can be accessed from your device or stored on it when you visit the MAF Group website to the extent you agree. Several other similar technologies place small files on your devices or monitor your activity on the website to ensure that we know how you use our website. By knowing how you use our website, we can recognize your device in the future. To know more about cookies and other tracking technologies, visit www.allaboutcookies.org and www.youronlinechoices.eu."), _react.default.createElement("h2", null, "How MAF Group Uses Cookies and Other Similar Tracking Technologies?"), _react.default.createElement("p", null, "MAF Group uses cookies and other tracking technologies to know you better and identify your interests. It helps us to remember your preferences on our website. It also allows us to control access to certain content available on our website, protect our website, and to process any requests you make from us rightly.", " "), _react.default.createElement("p", null, "In order to administer our sites and for research purposes, MAF Group also has contracted with third-party service providers who not only track but also analyse statistical usage as well as volume information from the people who visit MAF Group. The third-party service providers usually use cookies that allow us to improve the user experience, analyse how a user navigates the site, how they utilize it, and manage our website content in a better manner.", " "), _react.default.createElement("h2", null, "What are First- and Third-Party Cookies?"), _react.default.createElement("p", null, "First-party cookies are those which MAF Group uses and placed on your device, while third-party cookies are those placed on your device by a third party while you visit our website. We might contract with third-party service providers and send emails to users who have shared their contact information with MAF Group. The third-party service providers may place cookies on your device to help us measure and enhance the effectiveness of our email communication. They might also do it to know whether messages we send have been opened or the links in the messages have been clicked on or not.", " "), _react.default.createElement("p", null, "To know more about how third-party companies use and collect information on MAF Group's behalf, please refer to their privacy policies.", " "), _react.default.createElement("h2", null, "What Types of Cookies Do We Use?"), _react.default.createElement("p", null, "There are a few types of cookies used by MAF Group. They are:"), _react.default.createElement("ul", null, _react.default.createElement("li", null, "Persistent Cookies"), _react.default.createElement("p", null, "These are used to enhance your experience of using our website. It includes recording your consent regarding our cookie policy when you first enter our website. Only when you agree, the message that pops up will go away.", " "), _react.default.createElement("li", null, "Session Cookies"), _react.default.createElement("p", null, "These cookies are temporary and will be deleted from your device when the web browser is closed. The purpose of these cookies is to track internet usage.", " "), _react.default.createElement("p", null, "You have the right to refuse the acceptance of browser cookies. For that, you can activate the appropriate setting on the browser. Do remember that you might not see some parts of the MAF Group website if you choose to change this setting. If you adjust the browser setting to refuse cookies, the cookies will be automatically issued by our system when you visit our website through that browser.", " "), _react.default.createElement("p", null, "The data that is collected by the MAF Group website via cookies will be kept on your device only until its purpose is met. The maximum period for which these cookies can be kept on your device is one year.", " ")), _react.default.createElement("h2", null, "What are the Purposes of Each Type of Cookies?"), _react.default.createElement("ul", null, _react.default.createElement("li", null, "Technical"), _react.default.createElement("p", null, "Also known as strictly necessary cookies, these allow the MAF Group website to operate smoothly and give you access to the sections you need to visit. For example, they can help the MAF Group website know your previous actions within the same browsing sessions and secure the MAF Group website."), _react.default.createElement("li", null, "Analytical"), _react.default.createElement("p", null, "These cookies are also known as performance cookies and can be used by either the MAF Group website or the third-party service providers to analyse how the websites are used and how they are performing. For instance, these analytical cookies will track where our visitors are coming from, and which pages are visited more frequently than others. An example of these cookies is Google Analytics cookies.", " "), _react.default.createElement("li", null, "Functionality"), _react.default.createElement("p", null, "Meant to remember the users who visited the MAF Group website before, these cookies allow us to provide you the same experience as we did when you visited our website before.", " "), _react.default.createElement("li", null, "Third-Party Advertising"), _react.default.createElement("p", null, "These cookies aim to collect information regarding a visitor's activities on the MAF Group website so that a visitor can be offered targeted advertising. MAF Group might allow the third-party service providers to use cookies on the MAF Group website for that same aim and let them collect information regarding your online activities across different websites and over time. Some of these third-party service providers could be Google, Facebook, Twitter, etc. You are urged to read their privacy policies for more information. They might use their cookies to target advertising to you when you visit other websites after you have visited the MAF Group website.", " ")), _react.default.createElement("h2", null, "How to Refuse Cookies or Withdraw Consent to Using Cookies?"), _react.default.createElement("p", null, "If you do not want the MAF Group website or the third-party service providers to drop cookies on your device, you can adjust the settings in your browser to reject some or all cookies. You can also make sure that you are alerted when a cookie is placed on your device. To know more, kindly visit the help section of your browser. Do remember that if you refuse cookies or withdraw consent to using cookies, you might not be able to access the MAF Group website or use all or parts or functionalities of the MAF Group website."), _react.default.createElement("p", null, "To remove the cookies that were previously stored on your device, you can manually delete them. It will not prevent websites like the MAF Group website from placing them again on your device.", " "), _react.default.createElement("p", null, "To know more about cookies, please visit www.youronlinechoices.eu if you are located in Europe. You can visit www.aboutads.info/choices if you are located in the United States."), _react.default.createElement("h2", null, "How Does MAF Group Use Other Tracking Technologies in the Communications?"), _react.default.createElement("p", null, "MAF Group's website might collect information regarding whether you open any links that are in the knowledge, research, or event communications that we send to you through web beacons. Yes, we use web beacons. A web beacon is a graphic image that is placed on a website or can be added to an email. It can be added in conjunction with cookies and collect information regarding your interaction with the MAF Group website or the emails we send you. The information gathered helps us to enhance the effectiveness of the content and formats of our websites/email communications.", " "), _react.default.createElement("h2", null, "Can I Refuse to Consent to the Use of Web Beacons?"), _react.default.createElement("p", null, "You can configure the email reader program to avoid web beacons. For that, you need to disable the functionality which enables the loading of remote images. You can also avoid clicking on any links that are present in emails you receive from MAF Group or other companies.", " "), _react.default.createElement("h2", null, "Contact Us"), _react.default.createElement("p", null, "To know more about our cookie policy or to discuss any concerns, please feel free to contact us.", " ")), _react.default.createElement(_footer.default, null));
+    }
+  }]);
+
+  return TermsAndConditions;
+}(_react.default.Component);
+
+exports.default = TermsAndConditions;
+},{"react":"../node_modules/react/index.js","./footer":"../js/footer.js","../images/termsandconditions.jpg":"../images/termsandconditions.jpg"}],"../node_modules/email-validator/index.js":[function(require,module,exports) {
 "use strict";
 
 var tester = /^[-!#$%&'*+\/0-9=?A-Z^_a-z{|}~](\.?[-!#$%&'*+\/0-9=?A-Z^_a-z`{|}~])*@[a-zA-Z0-9](-*\.?[a-zA-Z0-9])*\.[a-zA-Z](-?[a-zA-Z0-9])+$/; // Thanks to:
@@ -43484,7 +43568,270 @@ function (_React$Component) {
 }(_react.default.Component);
 
 exports.default = ContactUs;
-},{"react":"../node_modules/react/index.js","./footer":"../js/footer.js","./nameform":"../js/nameform.js","../images/contactUs.jpg":"../images/contactUs.jpg","../images/call.jpg":"../images/call.jpg","../images/letters.png":"../images/letters.png","../images/mailbox.jpg":"../images/mailbox.jpg"}],"../js/index.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","./footer":"../js/footer.js","./nameform":"../js/nameform.js","../images/contactUs.jpg":"../images/contactUs.jpg","../images/call.jpg":"../images/call.jpg","../images/letters.png":"../images/letters.png","../images/mailbox.jpg":"../images/mailbox.jpg"}],"../node_modules/js-cookie/src/js.cookie.js":[function(require,module,exports) {
+var define;
+/*!
+ * JavaScript Cookie v2.2.1
+ * https://github.com/js-cookie/js-cookie
+ *
+ * Copyright 2006, 2015 Klaus Hartl & Fagner Brack
+ * Released under the MIT license
+ */
+;(function (factory) {
+	var registeredInModuleLoader;
+	if (typeof define === 'function' && define.amd) {
+		define(factory);
+		registeredInModuleLoader = true;
+	}
+	if (typeof exports === 'object') {
+		module.exports = factory();
+		registeredInModuleLoader = true;
+	}
+	if (!registeredInModuleLoader) {
+		var OldCookies = window.Cookies;
+		var api = window.Cookies = factory();
+		api.noConflict = function () {
+			window.Cookies = OldCookies;
+			return api;
+		};
+	}
+}(function () {
+	function extend () {
+		var i = 0;
+		var result = {};
+		for (; i < arguments.length; i++) {
+			var attributes = arguments[ i ];
+			for (var key in attributes) {
+				result[key] = attributes[key];
+			}
+		}
+		return result;
+	}
+
+	function decode (s) {
+		return s.replace(/(%[0-9A-Z]{2})+/g, decodeURIComponent);
+	}
+
+	function init (converter) {
+		function api() {}
+
+		function set (key, value, attributes) {
+			if (typeof document === 'undefined') {
+				return;
+			}
+
+			attributes = extend({
+				path: '/'
+			}, api.defaults, attributes);
+
+			if (typeof attributes.expires === 'number') {
+				attributes.expires = new Date(new Date() * 1 + attributes.expires * 864e+5);
+			}
+
+			// We're using "expires" because "max-age" is not supported by IE
+			attributes.expires = attributes.expires ? attributes.expires.toUTCString() : '';
+
+			try {
+				var result = JSON.stringify(value);
+				if (/^[\{\[]/.test(result)) {
+					value = result;
+				}
+			} catch (e) {}
+
+			value = converter.write ?
+				converter.write(value, key) :
+				encodeURIComponent(String(value))
+					.replace(/%(23|24|26|2B|3A|3C|3E|3D|2F|3F|40|5B|5D|5E|60|7B|7D|7C)/g, decodeURIComponent);
+
+			key = encodeURIComponent(String(key))
+				.replace(/%(23|24|26|2B|5E|60|7C)/g, decodeURIComponent)
+				.replace(/[\(\)]/g, escape);
+
+			var stringifiedAttributes = '';
+			for (var attributeName in attributes) {
+				if (!attributes[attributeName]) {
+					continue;
+				}
+				stringifiedAttributes += '; ' + attributeName;
+				if (attributes[attributeName] === true) {
+					continue;
+				}
+
+				// Considers RFC 6265 section 5.2:
+				// ...
+				// 3.  If the remaining unparsed-attributes contains a %x3B (";")
+				//     character:
+				// Consume the characters of the unparsed-attributes up to,
+				// not including, the first %x3B (";") character.
+				// ...
+				stringifiedAttributes += '=' + attributes[attributeName].split(';')[0];
+			}
+
+			return (document.cookie = key + '=' + value + stringifiedAttributes);
+		}
+
+		function get (key, json) {
+			if (typeof document === 'undefined') {
+				return;
+			}
+
+			var jar = {};
+			// To prevent the for loop in the first place assign an empty array
+			// in case there are no cookies at all.
+			var cookies = document.cookie ? document.cookie.split('; ') : [];
+			var i = 0;
+
+			for (; i < cookies.length; i++) {
+				var parts = cookies[i].split('=');
+				var cookie = parts.slice(1).join('=');
+
+				if (!json && cookie.charAt(0) === '"') {
+					cookie = cookie.slice(1, -1);
+				}
+
+				try {
+					var name = decode(parts[0]);
+					cookie = (converter.read || converter)(cookie, name) ||
+						decode(cookie);
+
+					if (json) {
+						try {
+							cookie = JSON.parse(cookie);
+						} catch (e) {}
+					}
+
+					jar[name] = cookie;
+
+					if (key === name) {
+						break;
+					}
+				} catch (e) {}
+			}
+
+			return key ? jar[key] : jar;
+		}
+
+		api.set = set;
+		api.get = function (key) {
+			return get(key, false /* read as raw */);
+		};
+		api.getJSON = function (key) {
+			return get(key, true /* read as json */);
+		};
+		api.remove = function (key, attributes) {
+			set(key, '', extend(attributes, {
+				expires: -1
+			}));
+		};
+
+		api.defaults = {};
+
+		api.withConverter = init;
+
+		return api;
+	}
+
+	return init(function () {});
+}));
+
+},{}],"../js/cookiebanner.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _jsCookie = _interopRequireDefault(require("js-cookie"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+var CookieBanner =
+/*#__PURE__*/
+function (_React$Component) {
+  _inherits(CookieBanner, _React$Component);
+
+  function CookieBanner(props) {
+    var _this;
+
+    _classCallCheck(this, CookieBanner);
+
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(CookieBanner).call(this, props));
+    _this.state = {
+      display: ""
+    };
+    _this.acceptClicked = _this.acceptClicked.bind(_assertThisInitialized(_this));
+    _this.rejectClicked = _this.rejectClicked.bind(_assertThisInitialized(_this));
+    return _this;
+  }
+
+  _createClass(CookieBanner, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      _jsCookie.default.get("mafgdpr", "seen") ? this.setState({
+        display: "none"
+      }) : _jsCookie.default.set("mafgdpr", "seen");
+    }
+  }, {
+    key: "acceptClicked",
+    value: function acceptClicked() {
+      this.setState({
+        display: "none"
+      });
+    }
+  }, {
+    key: "rejectClicked",
+    value: function rejectClicked() {
+      this.setState({
+        display: "none"
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      return _react.default.createElement("div", {
+        style: {
+          display: this.state.display
+        },
+        className: "cookieBanner"
+      }, _react.default.createElement("div", null, "By accepting our cookie policy you consent to using cookies on your site for us to provide you personalized experiences. Read our", " ", _react.default.createElement("a", {
+        href: "/termsandconditions",
+        target: "_blank"
+      }, "cookie policy"), "."), _react.default.createElement("div", null, _react.default.createElement("button", {
+        className: "cookieBannerAccept",
+        onClick: this.acceptClicked
+      }, "Accept"), _react.default.createElement("button", {
+        className: "cookieBannerReject",
+        onClick: this.rejectClicked
+      }, "Reject")));
+    }
+  }]);
+
+  return CookieBanner;
+}(_react.default.Component);
+
+exports.default = CookieBanner;
+},{"react":"../node_modules/react/index.js","js-cookie":"../node_modules/js-cookie/src/js.cookie.js"}],"../js/index.js":[function(require,module,exports) {
 "use strict";
 
 var _react = _interopRequireDefault(require("react"));
@@ -43513,9 +43860,11 @@ var _analytics = _interopRequireDefault(require("./analytics"));
 
 var _industriesweserve = _interopRequireDefault(require("./industriesweserve"));
 
+var _termsnconditions = _interopRequireDefault(require("./termsnconditions"));
+
 var _contactus = _interopRequireDefault(require("./contactus"));
 
-var _nameform = _interopRequireDefault(require("./nameform"));
+var _cookiebanner = _interopRequireDefault(require("./cookiebanner"));
 
 var _axios = _interopRequireDefault(require("axios"));
 
@@ -43672,8 +44021,11 @@ function (_React$Component) {
         path: "/industriesweserve"
       }, _react.default.createElement(_industriesweserve.default, null))), _react.default.createElement(_reactRouterDom.Switch, null, _react.default.createElement(_reactRouterDom.Route, {
         exact: true,
+        path: "/termsandconditions"
+      }, _react.default.createElement(_termsnconditions.default, null))), _react.default.createElement(_reactRouterDom.Switch, null, _react.default.createElement(_reactRouterDom.Route, {
+        exact: true,
         path: "/contactus"
-      }, _react.default.createElement(_contactus.default, null))), _react.default.createElement(_landingPageContent.default, null)));
+      }, _react.default.createElement(_contactus.default, null))), _react.default.createElement(_landingPageContent.default, null), _react.default.createElement(_cookiebanner.default, null)));
     }
   }]);
 
@@ -43684,7 +44036,7 @@ _reactDom.default.render(_react.default.createElement(App, null), document.getEl
 //   <LandingPageContent />,
 //   document.getElementById("landing_page_content")
 // );
-},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","./header":"../js/header.js","./banner_copy copy":"../js/banner_copy copy.js","../css/landing_page.css":"../css/landing_page.css","./main_menu_modal copy":"../js/main_menu_modal copy.js","./landingPageContent":"../js/landingPageContent.js","./aboutus":"../js/aboutus.js","./cloudautomation":"../js/cloudautomation.js","./marketingautomation":"../js/marketingautomation.js","./digitaltransformation":"../js/digitaltransformation.js","./analytics":"../js/analytics.js","./industriesweserve":"../js/industriesweserve.js","./contactus":"../js/contactus.js","./nameform":"../js/nameform.js","axios":"../node_modules/axios/index.js","qs":"../node_modules/qs/lib/index.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js","./footer":"../js/footer.js"}],"../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js","./header":"../js/header.js","./banner_copy copy":"../js/banner_copy copy.js","../css/landing_page.css":"../css/landing_page.css","./main_menu_modal copy":"../js/main_menu_modal copy.js","./landingPageContent":"../js/landingPageContent.js","./aboutus":"../js/aboutus.js","./cloudautomation":"../js/cloudautomation.js","./marketingautomation":"../js/marketingautomation.js","./digitaltransformation":"../js/digitaltransformation.js","./analytics":"../js/analytics.js","./industriesweserve":"../js/industriesweserve.js","./termsnconditions":"../js/termsnconditions.js","./contactus":"../js/contactus.js","./cookiebanner":"../js/cookiebanner.js","axios":"../node_modules/axios/index.js","qs":"../node_modules/qs/lib/index.js","react-router-dom":"../node_modules/react-router-dom/esm/react-router-dom.js","./footer":"../js/footer.js"}],"../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -43712,7 +44064,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53217" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54984" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -14,8 +14,9 @@ import MarketingAutomation from "./marketingautomation";
 import DigitalTransformation from "./digitaltransformation";
 import Analytics from "./analytics";
 import IndustriesWeServe from "./industriesweserve";
+import TermsAndConditions from "./termsnconditions";
 import ContactUs from "./contactus";
-import NameForm from "./nameform";
+import CookieBanner from "./cookiebanner";
 import axios from "axios";
 import qs from "qs";
 
@@ -139,12 +140,19 @@ class App extends React.Component {
             </Route>
           </Switch>
           <Switch>
+            <Route exact path="/termsandconditions">
+              <TermsAndConditions />
+            </Route>
+          </Switch>
+
+          <Switch>
             <Route exact path="/contactus">
               <ContactUs />
             </Route>
           </Switch>
 
           <LandingPageContent />
+          <CookieBanner />
         </div>
         {/* <button
           onClick={this.testClick}

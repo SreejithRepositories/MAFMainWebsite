@@ -6,7 +6,7 @@ export default class TermsAndConditions extends React.Component {
   render() {
     return (
       <div style={{ marginTop: "6px" }}>
-        <title>Industries We Serve</title>
+        <title>Terms and Conditions</title>
 
         <div
           style={{

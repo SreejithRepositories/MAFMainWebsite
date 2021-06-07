@@ -39515,7 +39515,7 @@ function (_React$Component) {
         style: {
           marginTop: "6px"
         }
-      }, _react.default.createElement("title", null, "Industries We Serve"), _react.default.createElement("div", {
+      }, _react.default.createElement("title", null, "Terms and Conditions"), _react.default.createElement("div", {
         style: {
           textAlign: "center",
           backgroundColor: "#131257",
@@ -44072,7 +44072,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56630" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52381" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

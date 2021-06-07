@@ -11,26 +11,29 @@ export default class CookieBanner extends React.Component {
     this.rejectClicked = this.rejectClicked.bind(this);
   }
   componentDidMount() {
-    Cookies.get("mafgdpr", "seen")
-      ? this.setState({ display: "none" })
-      : Cookies.set("mafgdpr", "seen");
+    if (Cookies.get("mafgdpr", "seen")) {
+      this.setState({ display: "none" });
+    }
   }
   acceptClicked() {
+    Cookies.set("mafgdpr", "seen", { expires: 1 });
     this.setState({ display: "none" });
   }
   rejectClicked() {
+    Cookies.set("mafgdpr", "seen");
     this.setState({ display: "none" });
   }
   render() {
     return (
       <div style={{ display: this.state.display }} className="cookieBanner">
         <div>
-          By accepting our cookie policy you consent to using cookies on your
-          site for us to provide you personalized experiences. Read our{" "}
+          This website uses cookies to provide you with more personalized and
+          responsive service. By continuing to use this website, you agree to
+          our Cookie Policy. Please read our{" "}
           <a href="/termsandconditions" target="_blank">
             cookie policy
-          </a>
-          .
+          </a>{" "}
+          for more information.
         </div>
         <div>
           <button className="cookieBannerAccept" onClick={this.acceptClicked}>

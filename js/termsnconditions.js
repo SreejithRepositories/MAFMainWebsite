@@ -31,6 +31,142 @@ export default class TermsAndConditions extends React.Component {
             width: "100%",
           }}
         >
+          <h1>MAF Group- Privacy Policy</h1>
+          <p>
+            This privacy policy is created to offer you information on how MAF
+            Group collects and processes your data whenever you use our website.
+            If you have any questions regarding this privacy policy and want to
+            exercise any of your legal rights, please feel free to contact us
+            using the information displayed at the end of this webpage.{" "}
+          </p>
+          <h2>What Data MAF Group Collects?</h2>
+          <p>We usually need the following information from you:</p>
+          <ul>
+            <li>Name</li>
+            <li>Business Name</li>
+            <li>Contact Information</li>
+            <li>IP Address</li>
+            <li>
+              Information regarding job application for people who want to join
+              us.
+            </li>
+            <li>Information regarding your business queries</li>
+          </ul>
+          <h2>How Do We Use Your Personal Data?</h2>
+          <p>
+            We can use the data you share to contact you for business purposes
+            or to review your candidature for a job.
+          </p>
+          <p>
+            In case you sign up to be on our mailing list, we will use the data
+            to send you business newsletters and emailers at times.
+          </p>
+          <h2>How Do We Collect Your Personal Data?</h2>
+          <p>
+            We collect data about you or from you via any of the following
+            methods:
+          </p>
+          <h2>Direct Collection</h2>
+          <p>
+            We directly collect the data from you when you contact us by using
+            the online chat tool or the contact us form.{" "}
+          </p>
+          <h2>Automated Collection</h2>
+          <p>
+            When you use the MAF Group website, we collect technical data
+            regarding your equipment, browsing actions, and usage patterns. This
+            data is collected as a part of our cookie policy.{" "}
+          </p>
+          <h2>Collection via Calls</h2>
+          <p>
+            We might also record the telephone calls you make to MAF Group or
+            any of our employees. It is usually done for proof of information,
+            advice offered to you, or even training purposes.{" "}
+          </p>
+          <h2>Collection via Chats</h2>
+          <p>
+            If you connect with MAF Group via chat, we might collect data like
+            your name, telephone number, address, email ID, location
+            information, website, platform navigation path, and even IP address.
+            You should also know that the profile data can also be processed in
+            order to provide you our services or to support the services we
+            offer. The legal basis for this can be either our legitimate
+            interests or consent. It means that we collect this information to
+            ensure that we provide the best possible service to you when we
+            enter into a contract with you.{" "}
+          </p>
+          <h2>How Long Do We Store Your Data?</h2>
+          <p>
+            We store your data for as long as needed until the purpose for it is
+            fulfilled. We have specific retention periods for all the data we
+            collect.{" "}
+          </p>
+          <h2>What are the Legal Grounds for Processing Your Data?</h2>
+          <p>
+            We process your personal data because it is in our legitimate
+            interests to fulfil enquiries that you have made on the MAF Group
+            website.{" "}
+          </p>
+          <h2>Do We Share Your Data with Other Organizations?</h2>
+          <p>
+            No, we do not share your personal data with other organizations. It
+            is for internal purposes only.{" "}
+          </p>
+          <h2>Will Your Data be Transferred to outside the UK or even EEA?</h2>
+          <p>No, we will never transfer your personal data outside the UK. </p>
+          <h2>What About Cookies?</h2>
+          <p>Please read our Cookie Policy. </p>
+          <h2>Security of Your Data</h2>
+          <p>
+            You can be assured that we will hold your data securely. We will
+            ensure no unauthorized disclosure or no one who has not authorized
+            access to your information by constantly implementing strong
+            electronic security and physical safeguards. Furthermore, all your
+            personal data will be used as per the latest Data Protection
+            Regulations.
+          </p>
+          <h2>What Are Your Legal Rights?</h2>
+          <p>
+            In specific circumstances, you have the rights as per the data
+            protection laws you can use. Here are some of them.
+          </p>
+          <ul>
+            <li>
+              You are free to request access to your personal data or data
+              subject access request.
+            </li>
+            <li>
+              You have the right to request correction of the personal data we
+              have on you. You can get the data corrected, and we will verify
+              the accuracy of the data corrections you are asking us to make.{" "}
+            </li>
+            <li>
+              You can even request that we erase your personal data if you feel
+              that we are holding it can impact your fundamental rights and
+              freedom.
+            </li>
+            <li>
+              You also have the right to object if we process your personal data
+              for direct marketing purposes.
+            </li>
+            <li>
+              You can also request restrictions on the way we process your
+              personal data.
+            </li>
+            <li>
+              You can request the transfer of your personal data we have to you
+              or a third party. This right is only applicable to automated
+              information provided by you or the information we used to initiate
+              a contract with you.
+            </li>
+            <li>
+              You can also withdraw consent at any time in cases where we rely
+              on your consent to process your personal data
+            </li>
+            <li>
+              If you want to exercise any of these rights, please contact us.{" "}
+            </li>
+          </ul>
           <h1>Cookie Policy</h1>
           <h2>Effective date: January 1, 2021</h2>
           <p>

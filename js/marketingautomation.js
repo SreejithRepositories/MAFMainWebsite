@@ -1,4 +1,4 @@
-import React from "React";
+import React from "react";
 
 import Footer from "./footer";
 import BackgroundImage from "../images/marketingautomationbackground.jpg";

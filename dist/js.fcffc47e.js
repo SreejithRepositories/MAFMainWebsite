@@ -35694,10 +35694,18 @@ function (_React$Component) {
         onMouseOut: this.unputUnderLineColorSuccess,
         style: this.state.underLineColorSuccess
       }, "Customer Success Stories")), _react.default.createElement("tr", null, _react.default.createElement("td", {
+        // onClick={() => (window.location.pathname = "/admin/index.html#/")}
         onMouseOver: this.putUnderLineColorBlog,
         onMouseOut: this.unputUnderLineColorBlog,
         style: this.state.underLineColorBlog
-      }, "Blog")), _react.default.createElement("tr", null, _react.default.createElement("td", {
+      }, _react.default.createElement("a", {
+        href: "/admin/index.html",
+        target: "_blank",
+        style: {
+          textDecoration: "none",
+          color: "inherit"
+        }
+      }, "Blog"))), _react.default.createElement("tr", null, _react.default.createElement("td", {
         onClick: function onClick() {
           return window.location.pathname = "/termsandconditions";
         },
@@ -44072,7 +44080,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52381" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65438" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

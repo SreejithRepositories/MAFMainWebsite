@@ -442,11 +442,18 @@ export default class Main_Menu_Modal extends React.Component {
           </tr>
           <tr>
             <td
+              // onClick={() => (window.location.pathname = "/admin/index.html#/")}
               onMouseOver={this.putUnderLineColorBlog}
               onMouseOut={this.unputUnderLineColorBlog}
               style={this.state.underLineColorBlog}
             >
-              Blog
+              <a
+                href="/admin/index.html"
+                target="_blank"
+                style={{ textDecoration: "none", color: "inherit" }}
+              >
+                Blog
+              </a>
             </td>
           </tr>
           {/* <tr>

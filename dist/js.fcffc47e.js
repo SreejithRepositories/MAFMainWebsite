@@ -36479,8 +36479,8 @@ module.exports = "/AboutUsBanner.3c9ab8a0.png";
 module.exports = "/AboutUsBlurb.31923f82.png";
 },{}],"../images/software-development.jpg":[function(require,module,exports) {
 module.exports = "/software-development.6ec862ff.jpg";
-},{}],"../images/DoitRightOne.jpg":[function(require,module,exports) {
-module.exports = "/DoitRightOne.5d54e164.jpg";
+},{}],"../images/DoItRightOne.jpg":[function(require,module,exports) {
+module.exports = "/DoItRightOne.2e648505.jpg";
 },{}],"../js/aboutus.js":[function(require,module,exports) {
 "use strict";
 
@@ -36499,7 +36499,7 @@ var _AboutUsBlurb = _interopRequireDefault(require("../images/AboutUsBlurb.png")
 
 var _softwareDevelopment = _interopRequireDefault(require("../images/software-development.jpg"));
 
-var _DoitRightOne = _interopRequireDefault(require("../images/DoitRightOne.jpg"));
+var _DoItRightOne = _interopRequireDefault(require("../images/DoItRightOne.jpg"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -36603,7 +36603,7 @@ function (_React$Component) {
       }, _react.default.createElement("h2", null, "Expertise in Different Areas"), _react.default.createElement("p", null, "We have been serving organizations from different industries for a few years now. You can count on us to map your needs and ensure your business growth according to your industry-specific needs.", " "), _react.default.createElement("h2", null, "Projects Delivered"), _react.default.createElement("p", null, "For us, success lies in helping the clients achieve what they want and expect from us. You can check our exceptional track record to see how we have helped businesses streamline their operations and attain better growth.", " "), _react.default.createElement("h2", null, "We Aim for Success"), _react.default.createElement("p", null, "We take on every project as a challenge and deliver our best time and again. The numbers speak for themselves. Head to our case studies section to know how we have helped brands achieve success.", " "), _react.default.createElement("h2", null, "Experienced and Qualified Team "), _react.default.createElement("p", null, "Over the years, we have built a strong team by ensuring we hire the best minds, most qualified and experienced professionals, and the top tech enthusiasts who can add value for our clients.", " "), _react.default.createElement("p", null, "Talk to us about your pain points and allow us to effectively use our friendly expertise to build solutions that promote and sustain business growth seamlessly. Get in touch to take your business to the next level of success!")), _react.default.createElement("div", {
         className: "ExpertiseinDiffAreasFlexTwo"
       }, _react.default.createElement("img", {
-        src: _DoitRightOne.default,
+        src: _DoItRightOne.default,
         style: _defineProperty({
           maxWidth: "100%"
         }, "maxWidth", "100%")
@@ -36615,7 +36615,7 @@ function (_React$Component) {
 }(_react.default.Component);
 
 exports.default = AboutUs;
-},{"react":"../node_modules/react/index.js","./footer":"../js/footer.js","../images/AboutUsBanner.png":"../images/AboutUsBanner.png","../images/AboutUsBlurb.png":"../images/AboutUsBlurb.png","../images/software-development.jpg":"../images/software-development.jpg","../images/DoitRightOne.jpg":"../images/DoitRightOne.jpg"}],"../images/triangle1.jpg":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","./footer":"../js/footer.js","../images/AboutUsBanner.png":"../images/AboutUsBanner.png","../images/AboutUsBlurb.png":"../images/AboutUsBlurb.png","../images/software-development.jpg":"../images/software-development.jpg","../images/DoItRightOne.jpg":"../images/DoItRightOne.jpg"}],"../images/triangle1.jpg":[function(require,module,exports) {
 module.exports = "/triangle1.d158ea14.jpg";
 },{}],"../images/cloudautomationbanner.png":[function(require,module,exports) {
 module.exports = "/cloudautomationbanner.394ff4a5.png";
@@ -41788,7 +41788,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62023" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61879" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

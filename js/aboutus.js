@@ -4,7 +4,7 @@ import BannerImage from "../images/AboutUsBanner.png";
 import BackgroundImage from "../images/AboutUsBanner.png";
 import AboutUsBlurb from "../images/AboutUsBlurb.png";
 import LeadershipBlurb from "../images/software-development.jpg";
-import DoitRightOne from "../images/DoitRightOne.jpg";
+import DoitRightOne from "../images/DoItRightOne.jpg";
 // import DoitRightTwo from "..images/DoItRight2.jpg";
 
 export default class AboutUs extends React.Component {
